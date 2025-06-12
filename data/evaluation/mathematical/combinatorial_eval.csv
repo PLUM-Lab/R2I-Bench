@@ -1,0 +1,835 @@
+source_id,evaluation_criteria,id,question,weight
+1,"The score is 1 if the permutation (Landscape, Abstract, Portrait) is present in the image, otherwise 0.",1,"Does the image contain the permutation (Landscape, Abstract, Portrait)?",8
+1,"The score is 1 if the permutation (Portrait, Landscape, Abstract) is present in the image, otherwise 0.",2,"Does the image contain the permutation (Portrait, Landscape, Abstract)?",8
+1,"The score is 1 if the permutation (Portrait, Abstract, Landscape) is present in the image, otherwise 0.",3,"Does the image contain the permutation (Portrait, Abstract, Landscape)?",8
+1,"The score is 1 if the permutation (Abstract, Landscape, Portrait) is present in the image, otherwise 0.",4,"Does the image contain the permutation (Abstract, Landscape, Portrait)?",8
+1,"The score is 1 if no invalid permutation (e.g., (Landscape, Portrait, Abstract), (Abstract, Portrait, Landscape)) is present. The score is 0 if an invalid permutation is found.",5,Does the image contain any invalid permutation where Portrait appears in the middle position?,5
+1,The score is 1 if no duplicate permutations are present in the image. The score is 0 if duplicates are detected.,6,Are there any duplicate permutations present in the image?,5
+2,"If the arrangement '(apple, banana, cat, dog)' is shown correctly, score 1; if it is not shown or does not match exactly, score 0.",1,"Does the image contain the arrangement '(apple, banana, cat, dog)'?",8
+2,"If the arrangement '(banana, apple, cat, dog)' is shown correctly, score 1; if it is not shown or does not match exactly, score 0.",2,"Does the image contain the arrangement '(banana, apple, cat, dog)'?",8
+2,"If the arrangement '(apple, banana, dog, cat)' is shown correctly, score 1; if it is not shown or does not match exactly, score 0.",3,"Does the image contain the arrangement '(apple, banana, dog, cat)'?",8
+2,"If the arrangement '(banana, apple, dog, cat)' is shown correctly, score 1; if it is not shown or does not match exactly, score 0.",4,"Does the image contain the arrangement '(banana, apple, dog, cat)'?",8
+2,"If the arrangement '(cat, dog, apple, banana)' is shown correctly, score 1; if it is not shown or does not match exactly, score 0.",5,"Does the image contain the arrangement '(cat, dog, apple, banana)'?",8
+2,"If the arrangement '(dog, cat, apple, banana)' is shown correctly, score 1; if it is not shown or does not match exactly, score 0.",6,"Does the image contain the arrangement '(dog, cat, apple, banana)'?",8
+2,"If the arrangement '(cat, dog, banana, apple)' is shown correctly, score 1; if it is not shown or does not match exactly, score 0.",7,"Does the image contain the arrangement '(cat, dog, banana, apple)'?",8
+2,"If the arrangement '(dog, cat, banana, apple)' is shown correctly, score 1; if it is not shown or does not match exactly, score 0.",8,"Does the image contain the arrangement '(dog, cat, banana, apple)'?",8
+2,"If there are any duplicate arrangements in the image, score 0; if there are no duplicates, score 1.",9,Does the image contain any duplicate arrangements?,5
+2,"If any arrangement is invalid (e.g., apple and banana are not adjacent, or cat and dog are not adjacent), score 0; if all arrangements are valid, score 1.",10,Does the image contain any invalid arrangements?,5
+3,"If the arrangement '(Apple, Banana, Orange, Car, Bicycle)' is shown correctly, score 1; if it is not shown or does not match exactly, score 0.",1,"Does the image contain the arrangement '(Apple, Banana, Orange, Car, Bicycle)'?",8
+3,"If the arrangement '(Apple, Banana, Orange, Bicycle, Car)' is shown correctly, score 1; if it is not shown or does not match exactly, score 0.",2,"Does the image contain the arrangement '(Apple, Banana, Orange, Bicycle, Car)'?",8
+3,"If the arrangement '(Car, Apple, Banana, Orange, Bicycle)' is shown correctly, score 1; if it is not shown or does not match exactly, score 0.",3,"Does the image contain the arrangement '(Car, Apple, Banana, Orange, Bicycle)'?",8
+3,"If the arrangement '(Bicycle, Apple, Banana, Orange, Car)' is shown correctly, score 1; if it is not shown or does not match exactly, score 0.",4,"Does the image contain the arrangement '(Bicycle, Apple, Banana, Orange, Car)'?",8
+3,"If the arrangement '(Car, Bicycle, Apple, Banana, Orange)' is shown correctly, score 1; if it is not shown or does not match exactly, score 0.",5,"Does the image contain the arrangement '(Car, Bicycle, Apple, Banana, Orange)'?",8
+3,"If the arrangement '(Bicycle, Car, Apple, Banana, Orange)' is shown correctly, score 1; if it is not shown or does not match exactly, score 0.",6,"Does the image contain the arrangement '(Bicycle, Car, Apple, Banana, Orange)'?",8
+3,"If there are any duplicate arrangements in the image, score 0; if there are no duplicates, score 1.",7,Does the image contain any duplicate arrangements?,5
+3,"If any arrangement is invalid (e.g., fruits are not together or the vehicles are not placed properly), score 0; if all arrangements are valid, score 1.",8,Does the image contain any invalid arrangements?,5
+4,"If the arrangement '(red ball, red ball, blue ball)' is shown correctly, score 1; if it is not shown or does not match exactly, score 0.",1,"Does the image contain the arrangement '(red ball, red ball, blue ball)'?",8
+4,"If the arrangement '(red ball, blue ball, red ball)' is shown correctly, score 1; if it is not shown or does not match exactly, score 0.",2,"Does the image contain the arrangement '(red ball, blue ball, red ball)'?",8
+4,"If the arrangement '(blue ball, red ball, red ball)' is shown correctly, score 1; if it is not shown or does not match exactly, score 0.",3,"Does the image contain the arrangement '(blue ball, red ball, red ball)'?",8
+4,"If there are any duplicate arrangements in the image, score 0; if there are no duplicates, score 1.",4,Does the image contain any duplicate arrangements?,5
+4,"If any arrangement is invalid (e.g., missing balls or incorrect color placement), score 0; if all arrangements are valid, score 1.",5,Does the image contain any invalid arrangements?,5
+5,"If the arrangement '(triangle, square, circle)' is shown correctly, score 1; if it is not shown or does not match exactly, score 0.",1,"Does the image contain the arrangement '(triangle, square, circle)'?",8
+5,"If the arrangement '(triangle, circle, square)' is shown correctly, score 1; if it is not shown or does not match exactly, score 0.",2,"Does the image contain the arrangement '(triangle, circle, square)'?",8
+5,"If the arrangement '(square, circle, triangle)' is shown correctly, score 1; if it is not shown or does not match exactly, score 0.",3,"Does the image contain the arrangement '(square, circle, triangle)'?",8
+5,"If the arrangement '(circle, square, triangle)' is shown correctly, score 1; if it is not shown or does not match exactly, score 0.",4,"Does the image contain the arrangement '(circle, square, triangle)'?",8
+5,"If there are any duplicate arrangements in the image, score 0; if there are no duplicates, score 1.",5,Does the image contain any duplicate arrangements?,5
+5,"If any arrangement is invalid (e.g., triangle is in the middle), score 0; if all arrangements are valid, score 1.",6,Does the image contain any invalid arrangements?,5
+6,"1.0: The arrangement of (apple, apple, orange, orange) is clearly displayed.
+0.0: This arrangement is not displayed.",1,"Is there an arrangement of (apple, apple, orange, orange)?",8
+6,"1.0: The arrangement of (apple, orange, apple, orange) is clearly displayed.
+0.0: This arrangement is not displayed.",2,"Is there an arrangement of (apple, orange, apple, orange)?",8
+6,"1.0: The arrangement of (apple, orange, orange, apple) is clearly displayed.
+0.0: This arrangement is not displayed.",3,"Is there an arrangement of (apple, orange, orange, apple)?",8
+6,"1.0: The arrangement of (orange, apple, apple, orange) is clearly displayed.
+0.0: This arrangement is not displayed.",4,"Is there an arrangement of (orange, apple, apple, orange)?",8
+6,"1.0: The arrangement of (orange, apple, orange, apple) is clearly displayed.
+0.0: This arrangement is not displayed.",5,"Is there an arrangement of (orange, apple, orange, apple)?",8
+6,"1.0: The arrangement of (orange, orange, apple, apple) is clearly displayed.
+0.0: This arrangement is not displayed.",6,"Is there an arrangement of (orange, orange, apple, apple)?",8
+6,"0: The model did not recognize the duplicates and listed repeated arrangements.
+0.5: The model identified some duplicates but still listed one or more repeated arrangements.
+1: The model completely recognized and avoided all duplicates, displaying only unique arrangements.",7,"Can the model identify and avoid duplicates in the arrangement? If duplicates exist, does the model display only unique combinations?",5
+6,"1: No illegal arrangement combinations, 0: There are illegal arrangement combinations",8,"Does the image display any illegal arrangement combinations, such as the portrait painting being at the ends?",5
+7,"1: The image clearly shows the triangle, square, and circle arranged in the order of 'triangle-square-circle', and the triangle is not in the last position.
+0: The image does not contain this arrangement at all, or the triangle is in the last position.",1,Does the image contain the arrangement 'triangle-square-circle'?,8
+7,"1: The image clearly shows the triangle, circle, and square arranged in the order of 'triangle-circle-square', and the triangle is not in the last position.
+0: The image does not contain this arrangement at all, or the triangle is in the last position.",2,Does the image contain the arrangement 'triangle-circle-square'?,8
+7,"1: The image clearly shows the square, triangle, and circle arranged in the order of 'square-triangle-circle', and the triangle is not in the last position.
+0: The image does not contain this arrangement at all, or the triangle is in the last position.",3,Does the image contain the arrangement 'square-triangle-circle'?,8
+7,"1: The image clearly shows the circle, triangle, and square arranged in the order of 'circle-triangle-square', and the triangle is not in the last position.
+0: The image does not contain this arrangement at all, or the triangle is in the last position.",4,Does the image contain the arrangement 'circle-triangle-square'?,8
+7,"1: The model completely avoids generating any invalid arrangements, and all arrangements follow the rules (triangle is not in the last position).
+0.5: The model generated some invalid arrangements, but most of them follow the rules.
+0: The model generated multiple invalid arrangements (for example, the triangle appears in the last position), indicating that the model did not understand the rules correctly.",5,"Check if the arrangements generated by the model include any invalid ones, especially if the triangle appears in the last position.",5
+7,"1: No illegal arrangement combinations, 0: There are illegal arrangement combinations",4,Does the image display any illegal arrangement combinations?,5
+8,"1 point: The arrangement in the image fully matches (red square, blue square, blue square), with the red square in the first position and two blue squares in the last two positions.
+0 points: The image does not contain this arrangement at all.",1,"Does the arrangement (red square, blue square, blue square) exist?",8
+8,"1 point: The arrangement in the image fully matches (blue square, red square, blue square), with the blue squares in the first and third positions, and the red square in the middle.
+0 points: The image does not contain this arrangement at all.",2,"Does the arrangement (blue square, red square, blue square) exist?",8
+8,"1 point: The arrangement in the image fully matches (blue square, blue square, red square), with two blue squares in the first two positions and the red square in the last position.
+0 points: The image does not contain this arrangement at all.",3,"Does the arrangement (blue square, blue square, red square) exist?",8
+8,"1.0: The model correctly reasoned the number of unique arrangements and there are no duplicates.
+0.5: The model listed duplicate arrangements or missed some unique arrangements.
+0.0: The model did not correctly reason the number of unique arrangements, or there are many duplicates.",4,"Did the model correctly reason the number and uniqueness of the arrangements (i.e., no repeated arrangements)?",5
+8,"1 point: If the image contains no invalid arrangements, and all displayed arrangements meet the requirements (only one red square, two blue squares, and a total of three squares with the correct colors).
+0.5 points: If the image contains some invalid arrangements but they are not dominant (e.g., only a few incorrect arrangements).
+0 points: If the image contains obvious invalid arrangements (e.g., multiple red squares, fewer than three squares, incorrect colors, or other arrangements that do not meet the requirements).",5,"Are there any invalid arrangements in the image, such as mismatched square colors or incorrect quantity?",5
+9,"1: The image contains the arrangement of red book, green book, and blue book. The red book is at the front, the green book is in the middle, and the blue book is at the end.
+0: The image does not contain the arrangement of red book, green book, and blue book.",1,Does the image contain the arrangement of 'red book - green book - blue book'?,8
+9,"1: The image contains the arrangement of red book, blue book, and green book. The red book is at the front, the blue book is in the middle, and the green book is at the end.
+0: The image does not contain the arrangement of red book, blue book, and green book.",2,Does the image contain the arrangement of 'red book - blue book - green book'?,8
+9,"1: The image contains the arrangement of green book, blue book, and red book. The red book is at the end, the green book is at the front, and the blue book is in the middle.
+0: The image does not contain the arrangement of green book, blue book, and red book.",3,Does the image contain the arrangement of 'green book - blue book - red book'?,8
+9,"1: The image contains the arrangement of blue book, green book, and red book. The red book is at the end, the blue book is at the front, and the green book is in the middle.
+0: The image does not contain the arrangement of blue book, green book, and red book.",4,Does the image contain the arrangement of 'blue book - green book - red book'?,8
+9,"0: The model generated duplicate arrangements. Even if the arrangements meet the requirements, the model repeatedly generates the same arrangement without showing sufficient diversity.
+1: All generated arrangements are diverse, with no duplicate arrangements, showing all valid combinations.",5,Did the model generate any duplicate arrangements?,5
+9,"0: The model generated one or more invalid arrangements. For example, the red book is in the middle position, or other arrangements violate the question's constraints.
+0.5: The model may have generated some valid arrangements, but also has some invalid ones or some arrangements that did not fully meet the requirements.
+1: All generated arrangements meet the question's requirements, with no invalid arrangements, and all arrangements conform to the constraint of the red book being at the front or the end.",6,"Did the model generate any arrangements that do not meet the constraints of the question, such as the red book not being at the front or the end, or other parts of the arrangement violating the question requirements?",5
+10,"1: The sequence ‘cat - dog - dog - cat’ exists, 0: The sequence ‘cat - dog - dog - cat’ does not exist",1,Does the image display an arrangement where the sequence is ‘cat - dog - dog - cat’?,8
+10,"1: The sequence ‘cat - dog - cat - dog’ exists, 0: The sequence ‘cat - dog - cat - dog’ does not exist",2,Does the image display an arrangement where the sequence is ‘cat - dog - cat - dog’?,8
+10,"1: The sequence ‘dog - cat - dog - cat’ exists, 0: The sequence ‘dog - cat - dog - cat’ does not exist",3,Does the image display an arrangement where the sequence is ‘dog - cat - dog - cat’?,8
+10,"1: No repeated arrangement combinations, 0: There are repeated arrangement combinations",4,Does the image display any repeated arrangement combinations?,5
+10,"1: No adjacent cats in the arrangement, 0: There are adjacent cats in the arrangement",5,"Does the image display any invalid arrangement combinations, such as two cats being adjacent?",5
+11,"1: This arrangement exists, 0: This arrangement does not exist",1,"Does the image show an arrangement where the student with a red backpack is first, the student with a green backpack is second, the student with a yellow backpack is third, and the student with a blue backpack is fourth, in the order: red backpacked student - green backpacked student - yellow backpacked student - blue backpacked student?",8
+11,"1: This arrangement exists, 0: This arrangement does not exist",2,"Does the image show an arrangement where the student with a red backpack is first, the student with a green backpack is second, the student with a blue backpack is third, and the student with a yellow backpack is fourth, in the order: red backpacked student - green backpacked student - blue backpacked student - yellow backpacked student?",8
+11,"1: This arrangement exists, 0: This arrangement does not exist",3,"Does the image show an arrangement where the student with a yellow backpack is first, the student with a green backpack is second, the student with a red backpack is third, and the student with a blue backpack is fourth, in the order: yellow backpacked student - green backpacked student - red backpacked student - blue backpacked student?",8
+11,"1: This arrangement exists, 0: This arrangement does not exist",4,"Does the image show an arrangement where the student with a yellow backpack is first, the student with a green backpack is second, the student with a blue backpack is third, and the student with a red backpack is fourth, in the order: yellow backpacked student - green backpacked student - blue backpacked student - red backpacked student?",8
+11,"1: This arrangement exists, 0: This arrangement does not exist",5,"Does the image show an arrangement where the student with a blue backpack is first, the student with a green backpack is second, the student with a red backpack is third, and the student with a yellow backpack is fourth, in the order: blue backpacked student - green backpacked student - red backpacked student - yellow backpacked student?",8
+11,"1: This arrangement exists, 0: This arrangement does not exist",6,"Does the image show an arrangement where the student with a blue backpack is first, the student with a green backpack is second, the student with a yellow backpack is third, and the student with a red backpack is fourth, in the order: blue backpacked student - green backpacked student - yellow backpacked student - red backpacked student?",8
+11,"1: No duplicate arrangements, 0: Duplicate arrangements exist",7,Does the image show any duplicate arrangement combinations?,5
+11,"1: No invalid arrangements, 0: Invalid arrangements exist",8,"Does the image show any invalid arrangement combinations, i.e., where the student with a green backpack is not in the second position?",5
+12,"1: The arrangement red flag - green flag - blue flag exists and meets the condition (green flag is not at the top), 0: The arrangement does not exist or violates the condition.",1,"Does the image show an arrangement where the red flag is at the top, the green flag is in the middle, and the blue flag is at the bottom, with the order being red flag - green flag - blue flag?",8
+12,"1: The arrangement red flag - blue flag - green flag exists and meets the condition (green flag is not at the top), 0: The arrangement does not exist or violates the condition.",2,"Does the image show an arrangement where the red flag is at the top, the blue flag is in the middle, and the green flag is at the bottom, with the order being red flag - blue flag - green flag?",8
+12,"1: The arrangement blue flag - green flag - red flag exists and meets the condition (green flag is not at the top), 0: The arrangement does not exist or violates the condition.",3,"Does the image show an arrangement where the blue flag is at the top, the green flag is in the middle, and the red flag is at the bottom, with the order being blue flag - green flag - red flag?",8
+12,"1: The arrangement blue flag - red flag - green flag exists and meets the condition (green flag is not at the top), 0: The arrangement does not exist or violates the condition.",4,"Does the image show an arrangement where the blue flag is at the top, the red flag is in the middle, and the green flag is at the bottom, with the order being blue flag - red flag - green flag?",8
+12,"1: There are no repeated arrangement combinations, 0: There are repeated arrangement combinations.",5,Does the image show any repeated arrangement combinations?,5
+12,"1: There are no illegal arrangements with the green flag at the top, 0: There are illegal arrangements with the green flag at the top.",6,"Does the image show any illegal arrangement combinations, such as the green flag being at the top?",5
+13,"1: The arrangement exists, 0: The arrangement does not exist",1,"Does the image display a arrangement where 3 triangles (▲) are placed together followed by a star (★), in the order ▲▲▲★?",8
+13,"1: The arrangement exists, 0: The arrangement does not exist",2,"Does the image display a arrangement where 2 triangles (▲) are placed together, with a star (★) in the middle and a triangle (▲) at the end, in the order ▲▲★▲?",8
+13,"1: The arrangement exists, 0: The arrangement does not exist",3,"Does the image display a arrangement where a triangle (▲) is at the front, followed by a star (★), with the remaining two triangles (▲) after it, in the order ▲★▲▲?",8
+13,"1: The arrangement exists, 0: The arrangement does not exist",4,"Does the image display a arrangement where the star (★) is at the front, followed by 3 triangles (▲), in the order ★▲▲▲?",8
+13,"1: No repeated arrangements, 0: There are repeated arrangements",5,"Does the image display repeated arrangements, i.e., multiple instances of the same arrangement?",5
+13,"1: No invalid arrangements, 0: There are invalid arrangements",6,"Does the image display invalid arrangements, such as incorrect number or incorrect symbol arrangements?",5
+14,"1: 0111 exists, 0: 0111 does not exist",1,"Does the image show a permutation where there are 3 ones and 1 zero, with the order being 0111?",8
+14,"1: 1011 exists, 0: 1011 does not exist",2,"Does the image show a permutation where there are 3 ones and 1 zero, with the order being 1011?",8
+14,"1: 1101 exists, 0: 1101 does not exist",3,"Does the image show a permutation where there are 3 ones and 1 zero, with the order being 1101?",8
+14,"1: 1110 exists, 0: 1110 does not exist",4,"Does the image show a permutation where there are 3 ones and 1 zero, with the order being 1110?",8
+14,"1: No repeated permutations, 0: Repeated permutations exist",5,Does the image show any repeated permutations?,5
+14,"1: No invalid permutations, 0: Invalid permutations exist",6,"Does the image show any invalid permutations, such as those that do not meet the condition of having 'three 1s and one 0'?",5
+15,"1: The arrangement exists, 0: The arrangement does not exist",1,"Does the image display an arrangement where the sequence is mountain painting, portrait painting, colorful abstract painting?",8
+15,"1: The arrangement exists, 0: The arrangement does not exist",2,"Does the image display an arrangement where the sequence is colorful abstract painting, portrait painting, mountain painting?",8
+15,"1: No repeated arrangement combinations, 0: There are repeated arrangement combinations",3,Does the image display any repeated arrangement combinations?,5
+15,"1: No illegal arrangement combinations, 0: There are illegal arrangement combinations",4,"Does the image display any illegal arrangement combinations, such as the portrait painting being at the ends?",5
+16,"1: The arrangement exists, 0: The arrangement does not exist",1,Does the image show an arrangement where the two apples and two oranges are ordered as apple - apple - orange - orange?,8
+16,"1: The arrangement exists, 0: The arrangement does not exist",2,Does the image show an arrangement where the two apples and two oranges are ordered as apple - orange - apple - orange?,8
+16,"1: No repeated arrangements, 0: Repeated arrangements exist",3,Does the image show any repeated arrangement combinations?,5
+16,"1: No invalid arrangements, 0: Invalid arrangements exist",4,"Does the image show any invalid arrangement combinations, such as the order of apples or oranges being incorrect?",5
+17,"1: 'Lion - Elephant - Giraffe' exists, 0: This permutation is not present",1,"Does the image show a permutation where the Lion is at the front, in the order 'Lion - Elephant - Giraffe'?",8
+17,"1: 'Lion - Giraffe - Elephant' exists, 0: This permutation is not present",2,"Does the image show a permutation where the Lion is at the front, in the order 'Lion - Giraffe - Elephant'?",8
+17,"1: 'Elephant - Giraffe - Lion' exists, 0: This permutation is not present",3,"Does the image show a permutation where the Lion is at the back, in the order 'Elephant - Giraffe - Lion'?",8
+17,"1: 'Giraffe - Elephant - Lion' exists, 0: This permutation is not present",4,"Does the image show a permutation where the Lion is at the back, in the order 'Giraffe - Elephant - Lion'?",8
+17,"1: No repeated permutations, 0: Repeated permutations exist",5,Does the image show any repeated permutations?,5
+17,"1: No permutations with the Lion in the middle, 0: Permutations with the Lion in the middle exist",6,"Does the image show any invalid permutations, i.e., the Lion is in the middle?",5
+18,"1: Ball - Carrot - Book - Donut exists, 0: This permutation does not exist",1,"Does the image display a permutation where Ball is placed before Carrot, in the order Ball - Carrot - Book - Donut?",8
+18,"1: Ball - Carrot - Donut - Book exists, 0: This permutation does not exist",2,"Does the image display a permutation where Ball is placed before Carrot, in the order Ball - Carrot - Donut - Book?",8
+18,"1: Book - Carrot - Ball - Donut exists, 0: This permutation does not exist",3,"Does the image display a permutation where Book is placed before Carrot, in the order Book - Carrot - Ball - Donut?",8
+18,"1: Book - Carrot - Donut - Ball exists, 0: This permutation does not exist",4,"Does the image display a permutation where Book is placed before Carrot, in the order Book - Carrot - Donut - Ball?",8
+18,"1: Donut - Carrot - Ball - Book exists, 0: This permutation does not exist",5,"Does the image display a permutation where Donut is placed before Carrot, in the order Donut - Carrot - Ball - Book?",8
+18,"1: Donut - Carrot - Book - Ball exists, 0: This permutation does not exist",6,"Does the image display a permutation where Donut is placed before Carrot, in the order Donut - Carrot - Book - Ball?",8
+18,"1: No duplicate permutations, 0: Duplicate permutations exist",7,Does the image display any duplicate permutations?,5
+18,"1: No invalid permutations, 0: Invalid permutations exist",8,"Does the image display any invalid permutations, where Carrot is not fixed in the second position?",5
+19,"1: The arrangement exists, 0: The arrangement does not exist",1,"Does the image show an arrangement where Mug is not in the middle, with the order 'Cup - Plate - Mug'?",8
+19,"1: The arrangement exists, 0: The arrangement does not exist",2,"Does the image show an arrangement where Mug is not in the middle, with the order 'Mug - Cup - Plate'?",8
+19,"1: The arrangement exists, 0: The arrangement does not exist",3,"Does the image show an arrangement where Mug is not in the middle, with the order 'Mug - Plate - Cup'?",8
+19,"1: The arrangement exists, 0: The arrangement does not exist",4,"Does the image show an arrangement where Mug is not in the middle, with the order 'Plate - Cup - Mug'?",8
+19,"1: No repeated arrangement, 0: There are repeated arrangements",5,Does the image show any repeated arrangement combinations?,5
+19,"1: No illegal arrangement, 0: There is an illegal arrangement",6,"Does the image show any illegal arrangement combinations, i.e., where Mug is in the middle?",5
+20,"1: The arrangement exists, 0: The arrangement does not exist",1,Does the image show an arrangement with the order 'hat - hat - boot - boot'?,8
+20,"1: The arrangement exists, 0: The arrangement does not exist",2,Does the image show an arrangement with the order 'hat - boot - hat - boot'?,8
+20,"1: The arrangement exists, 0: The arrangement does not exist",3,Does the image show an arrangement with the order 'hat - boot - boot - hat'?,8
+20,"1: The arrangement exists, 0: The arrangement does not exist",4,Does the image show an arrangement with the order 'boot - hat - hat - boot'?,8
+20,"1: The arrangement exists, 0: The arrangement does not exist",5,Does the image show an arrangement with the order 'boot - hat - boot - hat'?,8
+20,"1: The arrangement exists, 0: The arrangement does not exist",6,Does the image show an arrangement with the order 'boot - boot - hat - hat'?,8
+20,"1: No repeated arrangements, 0: Repeated arrangements exist",7,Does the image display any repeated arrangements?,5
+20,"1: No illegal arrangements, 0: Illegal arrangements exist",8,"Does the image display any illegal arrangements, such as too many or too few hats or boots?",5
+21,"1: The ambulance is before the bus in the order of ambulance - bus - car, 0: This arrangement is not present",1,"Does the image show an arrangement where the ambulance is before the bus, in the order of ambulance - bus - car?",8
+21,"1: The ambulance is before the bus in the order of ambulance - car - bus, 0: This arrangement is not present",2,"Does the image show an arrangement where the ambulance is before the bus, in the order of ambulance - car - bus?",8
+21,"1: The car is before the ambulance and bus in the order of car - ambulance - bus, 0: This arrangement is not present",3,"Does the image show an arrangement where the car is before the ambulance and bus, in the order of car - ambulance - bus?",8
+21,"1: No duplicate arrangement combinations, 0: Duplicate arrangement combinations are present",4,Does the image show any duplicate arrangement combinations?,5
+21,"1: The ambulance is not after the bus, 0: The ambulance is after the bus",5,"Does the image show any invalid arrangement combinations, i.e., the ambulance is after the bus?",5
+22,"1: This arrangement exists, 0: This arrangement does not exist",1,"Does the image show an arrangement where the robot is first, the kite is last, and the sequence is: robot - dinosaur - teddy bear - kite?",8
+22,"1: This arrangement exists, 0: This arrangement does not exist",2,"Does the image show an arrangement where the robot is first, the kite is last, and the sequence is: robot - teddy bear - dinosaur - kite?",8
+22,"1: No repeated arrangements, 0: Repeated arrangements exist",3,"Does the image show any repeated arrangement combinations, such as robot - dinosaur - teddy bear - kite and robot - teddy bear - dinosaur - kite appearing more than once?",5
+22,"1: No illegal arrangements, 0: Illegal arrangements exist",4,"Does the image show any illegal arrangement combinations, i.e., arrangements that do not satisfy the condition of 'robot first, kite last'?",5
+23,"1: ★★♥ exists, 0: ★★♥ does not exist",1,Does the image display a permutation where two stars (★★) and one heart (♥) are arranged in the order of ★★♥?,8
+23,"1: ★♥★ exists, 0: ★♥★ does not exist",2,Does the image display a permutation where one star (★) and two stars (★) are arranged in the order of ★♥★?,8
+23,"1: ♥★★ exists, 0: ♥★★ does not exist",3,Does the image display a permutation where one heart (♥) and two stars (★★) are arranged in the order of ♥★★?,8
+23,"1: No duplicate permutations exist, 0: Duplicate permutations exist",4,"Does the image show any duplicate permutations, for example, if ★★♥ appears twice?",5
+23,"1: No invalid permutations exist, 0: Invalid permutations exist",5,"Does the image show any invalid permutations, such as combinations with more than two stars or hearts?",5
+24,"1: The arrangement red kite - blue kite - green kite exists, 0: This arrangement does not exist",1,"Does the image display an arrangement where the red kite is on the left, the blue kite is in the middle, and the green kite is on the right?",8
+24,"1: The arrangement red kite - green kite - blue kite exists, 0: This arrangement does not exist",2,"Does the image display an arrangement where the red kite is on the left, the green kite is in the middle, and the blue kite is on the right?",8
+24,"1: The arrangement blue kite - green kite - red kite exists, 0: This arrangement does not exist",3,"Does the image display an arrangement where the blue kite is on the left, the green kite is in the middle, and the red kite is on the right?",8
+24,"1: The arrangement green kite - blue kite - red kite exists, 0: This arrangement does not exist",4,"Does the image display an arrangement where the green kite is on the left, the blue kite is in the middle, and the red kite is on the right?",8
+24,"1: No repeated arrangements, 0: Repeated arrangements exist",5,Does the image display any repeated arrangement combinations?,5
+24,"1: No illegal arrangement with the red kite in the middle, 0: Illegal arrangement with the red kite in the middle exists",6,"Does the image display any illegal arrangement combinations, such as the red kite being in the middle?",5
+25,"1: There is an arrangement in the order 'pillow - pillow - pillow - lamp', 0: There is no such arrangement",1,"Does the image display an arrangement where 3 pillows are in front, 1 lamp is at the back, in the order 'pillow - pillow - pillow - lamp'?",8
+25,"1: There is an arrangement in the order 'pillow - pillow - lamp - pillow', 0: There is no such arrangement",2,"Does the image display an arrangement where 2 pillows are in front, 1 lamp is in the middle, and 1 pillow is at the back, in the order 'pillow - pillow - lamp - pillow'?",8
+25,"1: There is an arrangement in the order 'lamp - pillow - pillow - pillow', 0: There is no such arrangement",3,"Does the image display an arrangement where 1 lamp is in front, and 2 pillows are at the back, in the order 'lamp - pillow - pillow - pillow'?",8
+25,"1: There is an arrangement in the order 'pillow - lamp - pillow - pillow', 0: There is no such arrangement",4,"Does the image display an arrangement where 1 lamp is in front, 1 pillow is in the middle, and 2 pillows are at the back, in the order 'pillow - lamp - pillow - pillow'?",8
+25,"1: There are no repeated arrangements, all arrangements are unique, 0: There are repeated arrangements",5,Does the image display repeated arrangements?,5
+25,"1: There are no illegal arrangements, 0: There are illegal arrangements",6,"Does the image display illegal arrangements, i.e., arrangements that do not contain exactly 3 pillows and 1 lamp?",5
+26,"1: Exists (red marble in the first position, blue marble in the second position), 0: Does not exist",1,"Does the image show a layout where the red marble is in the first position, the blue marble is in the second position, and the other cells are empty?",8
+26,"1: Exists (red marble in the first position, blue marble in the third position), 0: Does not exist",2,"Does the image show a layout where the red marble is in the first position, the blue marble is in the third position, and the other cells are empty?",8
+26,"1: Exists (red marble in the first position, blue marble in the fourth position), 0: Does not exist",3,"Does the image show a layout where the red marble is in the first position, the blue marble is in the fourth position, and the other cells are empty?",8
+26,"1: Exists (blue marble in the first position, red marble in the second position), 0: Does not exist",4,"Does the image show a layout where the blue marble is in the first position, the red marble is in the second position, and the other cells are empty?",8
+26,"1: Exists (blue marble in the first position, red marble in the third position), 0: Does not exist",5,"Does the image show a layout where the blue marble is in the first position, the red marble is in the third position, and the other cells are empty?",8
+26,"1: Exists (blue marble in the first position, red marble in the fourth position), 0: Does not exist",6,"Does the image show a layout where the blue marble is in the first position, the red marble is in the fourth position, and the other cells are empty?",8
+26,"1: No repeated layouts, 0: Repeated layouts exist",7,Does the image show any repeated layout combinations?,5
+26,"1: No invalid layouts, 0: Invalid layouts exist",8,"Does the image show any invalid layout combinations, such as two marbles placed in the same cell, or cells that do not match the layout requirements?",5
+27,"1: This arrangement exists, 0: This arrangement does not exist",1,Does the image show an arrangement where the order is: 'bike - truck - scooter'?,8
+27,"1: This arrangement exists, 0: This arrangement does not exist",2,Does the image show an arrangement where the order is: 'bike - scooter - truck'?,8
+27,"1: This arrangement exists, 0: This arrangement does not exist",3,Does the image show an arrangement where the order is: 'truck - bike - scooter'?,8
+27,"1: This arrangement exists, 0: This arrangement does not exist",4,Does the image show an arrangement where the order is: 'scooter - bike - truck'?,8
+27,"1: No repeated arrangements, 0: Repeated arrangements exist",5,Does the image show any repeated arrangements?,5
+27,"1: No illegal arrangements, 0: Illegal arrangements exist",6,"Does the image show any illegal arrangements, such as 'bike' being in the middle position?",5
+28,"1: The sequence wood block - metal block - plastic block exists, 0: The sequence does not exist",1,Does the image display a sequence where the order is: wood block - metal block - plastic block?,8
+28,"1: The sequence wood block - plastic block - metal block exists, 0: The sequence does not exist",2,Does the image display a sequence where the order is: wood block - plastic block - metal block?,8
+28,"1: The sequence metal block - wood block - plastic block exists, 0: The sequence does not exist",3,Does the image display a sequence where the order is: metal block - wood block - plastic block?,8
+28,"1: The sequence metal block - plastic block - wood block exists, 0: The sequence does not exist",4,Does the image display a sequence where the order is: metal block - plastic block - wood block?,8
+28,"1: The sequence plastic block - wood block - metal block exists, 0: The sequence does not exist",5,Does the image display a sequence where the order is: plastic block - wood block - metal block?,8
+28,"1: The sequence plastic block - metal block - wood block exists, 0: The sequence does not exist",6,Does the image display a sequence where the order is: plastic block - metal block - wood block?,8
+28,"1: No repeated sequences, 0: There are repeated sequences",7,Does the image display any repeated sequences?,5
+28,"1: No invalid sequences, 0: There are invalid sequences",8,"Does the image display any invalid sequences, such as any sequence containing duplicate wood, metal, or plastic blocks?",5
+29,"1: This permutation exists, 0: This permutation does not exist",1,"Does the image display a permutation where the scooter is to the left of the truck, with the order (scooter, truck, bicycle)?",8
+29,"1: This permutation exists, 0: This permutation does not exist",2,"Does the image display a permutation where the scooter is to the left of the truck, with the order (scooter, bicycle, truck)?",8
+29,"1: This permutation exists, 0: This permutation does not exist",3,"Does the image display a permutation where the scooter is to the left of the truck, with the order (bicycle, scooter, truck)?",8
+29,"1: No duplicate permutations, 0: Duplicate permutations exist",4,Does the image display any duplicate permutations?,5
+29,"1: No illegal permutations, 0: Illegal permutations exist",5,"Does the image display any illegal permutations, i.e., where the scooter is not to the left of the truck?",5
+30,"1: Present, 0: Not present",1,"Does the image display an arrangement where the medium box, heavy box, light box, and fragile box are arranged in the order, with the heavy box and light box adjacent, in the sequence (medium box, heavy box, light box, fragile box)?",8
+30,"1: Present, 0: Not present",2,"Does the image display an arrangement where the medium box, heavy box, light box, and fragile box are arranged in the order, with the heavy box and light box adjacent, in the sequence (medium box, light box, heavy box, fragile box)?",8
+30,"1: Present, 0: Not present",3,"Does the image display an arrangement where the medium box, heavy box, light box, and fragile box are arranged in the order, with the heavy box and light box adjacent, in the sequence (fragile box, heavy box, light box, medium box)?",8
+30,"1: Present, 0: Not present",4,"Does the image display an arrangement where the medium box, heavy box, light box, and fragile box are arranged in the order, with the heavy box and light box adjacent, in the sequence (fragile box, light box, heavy box, medium box)?",8
+30,"1: Present, 0: Not present",5,"Does the image display an arrangement where the medium box, heavy box, light box, and fragile box are arranged in the order, with the heavy box and light box adjacent, in the sequence (heavy box, light box, medium box, fragile box)?",8
+30,"1: Present, 0: Not present",6,"Does the image display an arrangement where the medium box, heavy box, light box, and fragile box are arranged in the order, with the heavy box and light box adjacent, in the sequence (light box, heavy box, medium box, fragile box)?",8
+30,"1: Present, 0: Not present",7,"Does the image display an arrangement where the medium box, heavy box, light box, and fragile box are arranged in the order, with the heavy box and light box adjacent, in the sequence (heavy box, light box, fragile box, medium box)?",8
+30,"1: Present, 0: Not present",8,"Does the image display an arrangement where the medium box, heavy box, light box, and fragile box are arranged in the order, with the heavy box and light box adjacent, in the sequence (light box, heavy box, fragile box, medium box)?",8
+30,"1: Present, 0: Not present",9,"Does the image display an arrangement where the medium box, heavy box, light box, and fragile box are arranged in the order, with the heavy box and light box adjacent, in the sequence (medium box, fragile box, heavy box, light box)?",8
+30,"1: Present, 0: Not present",10,"Does the image display an arrangement where the medium box, heavy box, light box, and fragile box are arranged in the order, with the heavy box and light box adjacent, in the sequence (medium box, fragile box, light box, heavy box)?",8
+30,"1: Present, 0: Not present",11,"Does the image display an arrangement where the medium box, heavy box, light box, and fragile box are arranged in the order, with the heavy box and light box adjacent, in the sequence (fragile box, medium box, heavy box, light box)?",8
+30,"1: Present, 0: Not present",12,"Does the image display an arrangement where the medium box, heavy box, light box, and fragile box are arranged in the order, with the heavy box and light box adjacent, in the sequence (fragile box, medium box, light box, heavy box)?",8
+30,"1: No duplicates, 0: Duplicates present",13,Does the image display any duplicate arrangements?,5
+30,"1: No invalid arrangements, 0: Invalid arrangements present",14,Does the image display any invalid arrangements where the heavy box and light box are not adjacent?,5
+31,"1: The arrangement exists, 0: The arrangement does not exist",1,"Does the image show an arrangement where the order is: pillow, lamp, pillow, lamp?",8
+31,"1: The arrangement exists, 0: The arrangement does not exist",2,"Does the image show an arrangement where the order is: lamp, pillow, lamp, pillow?",8
+31,"1: No repeated arrangements, 0: Repeated arrangements exist",3,Does the image show any repeated arrangement combinations?,5
+31,"1: No illegal arrangements, 0: Illegal arrangements exist",4,"Does the image show any illegal arrangement combinations, i.e., two pillows adjacent to each other?",5
+32,"1: This permutation '(backpack, chair, umbrella, bowl)' exists, 0: This permutation does not exist",1,"Does the image show a permutation where the backpack is first, the bowl is last, and the order of the chair and umbrella is chair, umbrella?",8
+32,"1: This permutation '(backpack, umbrella, chair, bowl)' exists, 0: This permutation does not exist",2,"Does the image show a permutation where the backpack is first, the bowl is last, and the order of the chair and umbrella is umbrella, chair?",8
+32,"1: No repeated permutations, 0: Repeated permutations exist",3,Does the image show any repeated permutation combinations?,5
+32,"1: No illegal permutations, 0: Illegal permutations exist",4,"Does the image show any illegal permutation combinations, such as the backpack not being first or the bowl not being last?",5
+33,"1: The permutation exists, 0: The permutation does not exist",1,"Does the image show a permutation where the tools are arranged in the order (wrench, screwdriver, hammer)?",8
+33,"1: The permutation exists, 0: The permutation does not exist",2,"Does the image show a permutation where the tools are arranged in the order (hammer, wrench, screwdriver)?",8
+33,"1: The permutation exists, 0: The permutation does not exist",3,"Does the image show a permutation where the tools are arranged in the order (hammer, screwdriver, wrench)?",8
+33,"1: The permutation exists, 0: The permutation does not exist",4,"Does the image show a permutation where the tools are arranged in the order (screwdriver, wrench, hammer)?",8
+33,"1: No repeated permutations, 0: Repeated permutations exist",5,Does the image show any repeated permutation combinations?,5
+33,"1: No hammer in the middle, 0: Hammer is in the middle",6,"Does the image show any invalid permutation combinations, i.e., the hammer is in the middle position?",5
+34,"1: There is an arrangement of envelope, laptop, tape with envelope and tape not adjacent, 0: There is not",1,"Does the image show an arrangement where the envelope and laptop are together, and tape is at the end?",8
+34,"1: There is an arrangement of tape, laptop, envelope with envelope and tape not adjacent, 0: There is not",2,"Does the image show an arrangement where tape and laptop are together, and envelope is at the end?",8
+34,"1: There are no repeated arrangements, 0: There are repeated arrangements",3,Does the image show any repeated arrangements?,5
+34,"1: There are no adjacent envelope and tape, 0: Envelope and tape are adjacent",4,"Does the image show any invalid arrangements, meaning the envelope and tape are adjacent?",5
+35,"1: The arrangement exists, 0: The arrangement does not exist",1,"Does the image display an arrangement where the stool and potted plant are adjacent in the order (stool, potted plant, clock, cabinet)?",8
+35,"1: The arrangement exists, 0: The arrangement does not exist",2,"Does the image display an arrangement where the stool and potted plant are adjacent in the order (potted plant, stool, clock, cabinet)?",8
+35,"1: The arrangement exists, 0: The arrangement does not exist",3,"Does the image display an arrangement where the stool and potted plant are adjacent in the order (stool, potted plant, cabinet, clock)?",8
+35,"1: The arrangement exists, 0: The arrangement does not exist",4,"Does the image display an arrangement where the stool and potted plant are adjacent in the order (potted plant, stool, cabinet, clock)?",8
+35,"1: The arrangement exists, 0: The arrangement does not exist",5,"Does the image display an arrangement where the stool and potted plant are adjacent in the order (clock, stool, potted plant, cabinet)?",8
+35,"1: The arrangement exists, 0: The arrangement does not exist",6,"Does the image display an arrangement where the stool and potted plant are adjacent in the order (clock, potted plant, stool, cabinet)?",8
+35,"1: The arrangement exists, 0: The arrangement does not exist",7,"Does the image display an arrangement where the stool and potted plant are adjacent in the order (cabinet, stool, potted plant, clock)?",8
+35,"1: The arrangement exists, 0: The arrangement does not exist",8,"Does the image display an arrangement where the stool and potted plant are adjacent in the order (cabinet, potted plant, stool, clock)?",8
+35,"1: No repeated arrangement combinations, 0: There are repeated arrangement combinations",9,Does the image display any repeated arrangement combinations?,5
+35,"1: No illegal arrangement combinations, 0: There are illegal arrangement combinations",10,"Does the image display any illegal arrangement combinations, meaning the stool and potted plant are not adjacent?",5
+36,"1: Exists (mouse, monitor, keyboard), 0: Does not exist (mouse, monitor, keyboard)",1,"Does the image display a permutation where the mouse is first, in the order (mouse, monitor, keyboard)?",8
+36,"1: Exists (mouse, keyboard, monitor), 0: Does not exist (mouse, keyboard, monitor)",2,"Does the image display a permutation where the mouse is first, in the order (mouse, keyboard, monitor)?",8
+36,"1: Exists (monitor, mouse, keyboard), 0: Does not exist (monitor, mouse, keyboard)",3,"Does the image display a permutation where the mouse is second, in the order (monitor, mouse, keyboard)?",8
+36,"1: Exists (keyboard, mouse, monitor), 0: Does not exist (keyboard, mouse, monitor)",4,"Does the image display a permutation where the mouse is second, in the order (keyboard, mouse, monitor)?",8
+36,"1: No repeated permutations, 0: There are repeated permutations",5,Does the image display any repeated permutations?,5
+36,"1: No invalid permutations, 0: There are invalid permutations",6,"Does the image display any invalid permutations, where the mouse is in the last position?",5
+37,"1: The permutation (tire, jack, ladder, toolbox) exists, 0: The permutation does not exist",1,"Does the image show a permutation where tire is before jack, and ladder is in the third position, with the order (tire, jack, ladder, toolbox)?",8
+37,"1: The permutation (tire, toolbox, ladder, jack) exists, 0: The permutation does not exist",2,"Does the image show a permutation where tire is before jack, and ladder is in the third position, with the order (tire, toolbox, ladder, jack)?",8
+37,"1: The permutation (toolbox, tire, ladder, jack) exists, 0: The permutation does not exist",3,"Does the image show a permutation where tire is before jack, and ladder is in the third position, with the order (toolbox, tire, ladder, jack)?",8
+37,"1: No repeated permutations, 0: Repeated permutations exist",4,Does the image show any repeated permutations?,5
+37,"1: No invalid permutations, 0: Invalid permutations exist",5,"Does the image show any invalid permutations, such as ladder not being in the third position or tire not before jack?",5
+38,"1: This permutation exists, 0: This permutation does not exist",1,"Does the image display a permutation where the toothbrush is in the first position, in the order (soap, toothbrush, towel)?",8
+38,"1: This permutation exists, 0: This permutation does not exist",2,"Does the image display a permutation where the toothbrush is in the second position, in the order (toothbrush, soap, towel)?",8
+38,"1: This permutation exists, 0: This permutation does not exist",3,"Does the image display a permutation where the toothbrush is in the second position, in the order (towel, toothbrush, soap)?",8
+38,"1: This permutation exists, 0: This permutation does not exist",4,"Does the image display a permutation where the toothbrush is in the first position, in the order (toothbrush, towel, soap)?",8
+38,"1: No repeated permutations, 0: There are repeated permutations",5,Does the image display any repeated permutation combinations?,5
+38,"1: No illegal permutations, 0: There are illegal permutations",6,"Does the image display any illegal permutation combinations, i.e., where the toothbrush is in the middle position?",5
+39,"1: The arrangement of juice box, juice box, soda can, soda can exists, 0: The arrangement does not exist",1,"Does the image display a permutation where 2 juice boxes and 2 soda cans are arranged in the order: juice box, juice box, soda can, soda can?",8
+39,"1: The arrangement of juice box, soda can, juice box, soda can exists, 0: The arrangement does not exist",2,"Does the image display a permutation where 2 juice boxes and 2 soda cans are arranged in the order: juice box, soda can, juice box, soda can?",8
+39,"1: The arrangement of juice box, soda can, soda can, juice box exists, 0: The arrangement does not exist",3,"Does the image display a permutation where 2 juice boxes and 2 soda cans are arranged in the order: juice box, soda can, soda can, juice box?",8
+39,"1: The arrangement of soda can, juice box, juice box, soda can exists, 0: The arrangement does not exist",4,"Does the image display a permutation where 2 juice boxes and 2 soda cans are arranged in the order: soda can, juice box, juice box, soda can?",8
+39,"1: The arrangement of soda can, juice box, soda can, juice box exists, 0: The arrangement does not exist",5,"Does the image display a permutation where 2 juice boxes and 2 soda cans are arranged in the order: soda can, juice box, soda can, juice box?",8
+39,"1: The arrangement of soda can, soda can, juice box, juice box exists, 0: The arrangement does not exist",6,"Does the image display a permutation where 2 juice boxes and 2 soda cans are arranged in the order: soda can, soda can, juice box, juice box?",8
+39,"1: No repeated permutations exist, 0: Repeated permutations exist",7,Does the image display any repeated permutations?,5
+39,"1: No illegal permutations exist, 0: Illegal permutations exist",8,"Does the image display any illegal permutations, such as having more than 2 juice boxes or soda cans?",5
+40,"1: Exists, 0: Does not exist",1,"Does the image show an arrangement where plunger - shampoo - toilet paper, with the plunger in the first position, shampoo in the second position, and toilet paper in the third position?",8
+40,"1: Exists, 0: Does not exist",2,"Does the image show an arrangement where plunger - toilet paper - shampoo, with the plunger in the first position, toilet paper in the second position, and shampoo in the third position?",8
+40,"1: Exists, 0: Does not exist",3,"Does the image show an arrangement where shampoo - toilet paper - plunger, with shampoo in the first position, toilet paper in the second position, and plunger in the third position?",8
+40,"1: Exists, 0: Does not exist",4,"Does the image show an arrangement where toilet paper - shampoo - plunger, with toilet paper in the first position, shampoo in the second position, and plunger in the third position?",8
+40,"1: No duplicate arrangements, 0: Duplicate arrangements exist",5,Does the image show any duplicate arrangements?,5
+40,"1: No arrangements with plunger in the middle, 0: Arrangements with plunger in the middle exist",6,"Does the image show any invalid arrangements, specifically where the plunger is in the middle?",5
+41,"1: Exists as fire extinguisher - flashlight - first aid kit - fire alarm, 0: Does not exist",1,"Does the image display an arrangement where the fire extinguisher is first, the flashlight is in the second position, followed by the first aid kit, and the fire alarm is last?",8
+41,"1: Exists as fire extinguisher - flashlight - fire alarm - first aid kit, 0: Does not exist",2,"Does the image display an arrangement where the fire extinguisher is first, the flashlight is in the second position, followed by the fire alarm, and the first aid kit is last?",8
+41,"1: Exists as first aid kit - flashlight - fire extinguisher - fire alarm, 0: Does not exist",3,"Does the image display an arrangement where the first aid kit is first, the flashlight is in the second position, followed by the fire extinguisher, and the fire alarm is last?",8
+41,"1: Exists as first aid kit - flashlight - fire alarm - fire extinguisher, 0: Does not exist",4,"Does the image display an arrangement where the first aid kit is first, the flashlight is in the second position, followed by the fire alarm, and the fire extinguisher is last?",8
+41,"1: Exists as fire alarm - flashlight - fire extinguisher - first aid kit, 0: Does not exist",5,"Does the image display an arrangement where the fire alarm is first, the flashlight is in the second position, followed by the fire extinguisher, and the first aid kit is last?",8
+41,"1: Exists as fire alarm - flashlight - first aid kit - fire extinguisher, 0: Does not exist",6,"Does the image display an arrangement where the fire alarm is first, the flashlight is in the second position, followed by the first aid kit, and the fire extinguisher is last?",8
+41,"1: Does not exist (no duplicates), 0: Exists (duplicates present)",7,Does the image display any repeated arrangement or permutation?,5
+41,"1: Does not exist (flashlight in second position), 0: Exists (flashlight not in second position)",8,Does the image display any invalid arrangement where the flashlight is not in the second position?,5
+42,"1: The arrangement exists in the image, 0: The arrangement does not exist in the image",1,Does the image show an arrangement where the sequence is 'sponge - duster - spray bottle'?,8
+42,"1: The arrangement exists in the image, 0: The arrangement does not exist in the image",2,Does the image show an arrangement where the sequence is 'spray bottle - sponge - duster'?,8
+42,"1: The arrangement exists in the image, 0: The arrangement does not exist in the image",3,Does the image show an arrangement where the sequence is 'spray bottle - duster - sponge'?,8
+42,"1: The arrangement exists in the image, 0: The arrangement does not exist in the image",4,Does the image show an arrangement where the sequence is 'duster - sponge - spray bottle'?,8
+42,"1: No repeated arrangement, 0: There are repeated arrangements",5,Does the image show any repeated arrangement combination?,5
+42,"1: No invalid arrangement (i.e., spray bottle not in the middle), 0: Invalid arrangement exists (i.e., spray bottle in the middle)",6,"Does the image show any invalid arrangement combination, where the spray bottle is in the middle?",5
+43,"1: Yes, this arrangement exists in the image, 0: No, this arrangement does not exist in the image",1,"Does the image display an arrangement where two juice cartons are followed by two power plugs, in the order: juice carton - juice carton - power plug - power plug?",8
+43,"1: Yes, this arrangement exists in the image, 0: No, this arrangement does not exist in the image",2,"Does the image display an arrangement where one juice carton is followed by a power plug, then another juice carton followed by the second power plug, in the order: juice carton - power plug - juice carton - power plug?",8
+43,"1: Yes, this arrangement exists in the image, 0: No, this arrangement does not exist in the image",3,"Does the image display an arrangement where one juice carton is followed by two power plugs and then the second juice carton, in the order: juice carton - power plug - power plug - juice carton?",8
+43,"1: Yes, this arrangement exists in the image, 0: No, this arrangement does not exist in the image",4,"Does the image display an arrangement where two power plugs are followed by two juice cartons, in the order: power plug - juice carton - juice carton - power plug?",8
+43,"1: Yes, this arrangement exists in the image, 0: No, this arrangement does not exist in the image",5,"Does the image display an arrangement where a power plug is followed by a juice carton, then a power plug followed by the second juice carton, in the order: power plug - juice carton - power plug - juice carton?",8
+43,"1: Yes, this arrangement exists in the image, 0: No, this arrangement does not exist in the image",6,"Does the image display an arrangement where two power plugs are followed by two juice cartons, in the order: power plug - power plug - juice carton - juice carton?",8
+43,"1: No, there are no duplicate arrangements, 0: Yes, there are duplicate arrangements",7,Does the image display any duplicate arrangement of juice cartons and power plugs?,5
+43,"1: No, there are no illegal arrangements, 0: Yes, there are illegal arrangements",8,"Does the image display any illegal arrangement, such as having more than two juice cartons or more than two power plugs in a sequence?",5
+44,"1: The arrangement 'needle - thread spool - thimble' is present, 0: This arrangement is not present",1,"Does the image display a valid arrangement where the needle is followed by the thread spool, followed by the thimble?",8
+44,"1: The arrangement 'needle - thimble - thread spool' is present, 0: This arrangement is not present",2,"Does the image display a valid arrangement where the needle is followed by the thimble, followed by the thread spool?",8
+44,"1: The arrangement 'thimble - needle - thread spool' is present, 0: This arrangement is not present",3,"Does the image display a valid arrangement where the thimble is followed by the needle, followed by the thread spool?",8
+44,"1: No repeated arrangement, 0: There are repeated arrangements",4,Does the image show any repeated arrangement of the sewing items?,5
+44,"1: No invalid arrangement (thread spool before needle), 0: Invalid arrangement (thread spool before needle)",5,"Does the image display any invalid arrangement, where the thread spool comes before the needle?",5
+45,"1: The arrangement is present in the image, 0: The arrangement is not present in the image",1,"Does the image display an arrangement where the small box is placed first, followed by the basket, cooler, and bin in this exact order: 'small box - basket - cooler - bin'?",8
+45,"1: The arrangement is present in the image, 0: The arrangement is not present in the image",2,"Does the image display an arrangement where the small box is placed first, followed by the cooler, basket, and bin in this exact order: 'small box - cooler - basket - bin'?",8
+45,"1: No duplicate arrangements are present, 0: Duplicate arrangements are present",3,Does the image display any duplicate arrangements of storage containers?,5
+45,"1: No illegal arrangements are present, 0: Illegal arrangements are present",4,"Does the image display any illegal arrangement combinations, where the small box is not first or the bin is not last?",5
+46,"1: The combination (◼, ◼, ◼) exists, 0: The combination (◼, ◼, ◼) does not exist",1,"Does the image show a combination where all three switches are ON (◼, ◼, ◼)?",8
+46,"1: The combination (◼, ◼, ◻) exists, 0: The combination (◼, ◼, ◻) does not exist",2,"Does the image show a combination where Switch 1 and Switch 2 are ON, and Switch 3 is OFF (◼, ◼, ◻)?",8
+46,"1: The combination (◼, ◻, ◼) exists, 0: The combination (◼, ◻, ◼) does not exist",3,"Does the image show a combination where Switch 1 and Switch 3 are ON, and Switch 2 is OFF (◼, ◻, ◼)?",8
+46,"1: The combination (◼, ◻, ◻) exists, 0: The combination (◼, ◻, ◻) does not exist",4,"Does the image show a combination where Switch 1 is ON, and Switch 2 and Switch 3 are OFF (◼, ◻, ◻)?",8
+46,"1: The combination (◻, ◼, ◼) exists, 0: The combination (◻, ◼, ◼) does not exist",5,"Does the image show a combination where Switch 1 is OFF, and Switch 2 and Switch 3 are ON (◻, ◼, ◼)?",8
+46,"1: The combination (◻, ◼, ◻) exists, 0: The combination (◻, ◼, ◻) does not exist",6,"Does the image show a combination where Switch 1 and Switch 3 are OFF, and Switch 2 is ON (◻, ◼, ◻)?",8
+46,"1: The combination (◻, ◻, ◼) exists, 0: The combination (◻, ◻, ◼) does not exist",7,"Does the image show a combination where Switch 1 and Switch 2 are OFF, and Switch 3 is ON (◻, ◻, ◼)?",8
+46,"1: The combination (◻, ◻, ◻) exists, 0: The combination (◻, ◻, ◻) does not exist",8,"Does the image show a combination where all three switches are OFF (◻, ◻, ◻)?",8
+46,"1: No duplicate combinations exist, 0: Duplicate combinations exist",9,Does the image show any duplicate combinations?,5
+46,"1: No invalid combinations exist, 0: Invalid combinations exist",10,"Does the image show any invalid combinations, such as having more than 3 switches or incorrect symbols?",5
+47,"1: The arrangement (guitar, violin, drum, flute) is present, 0: The arrangement is not present",1,"Does the image display an arrangement where guitar and violin are adjacent, with the order: (guitar, violin, drum, flute)?",8
+47,"1: The arrangement (violin, guitar, drum, flute) is present, 0: The arrangement is not present",2,"Does the image display an arrangement where guitar and violin are adjacent, with the order: (violin, guitar, drum, flute)?",8
+47,"1: The arrangement (guitar, violin, flute, drum) is present, 0: The arrangement is not present",3,"Does the image display an arrangement where guitar and violin are adjacent, with the order: (guitar, violin, flute, drum)?",8
+47,"1: The arrangement (violin, guitar, flute, drum) is present, 0: The arrangement is not present",4,"Does the image display an arrangement where guitar and violin are adjacent, with the order: (violin, guitar, flute, drum)?",8
+47,"1: The arrangement (drum, guitar, violin, flute) is present, 0: The arrangement is not present",5,"Does the image display an arrangement where guitar and violin are adjacent, with the order: (drum, guitar, violin, flute)?",8
+47,"1: The arrangement (drum, violin, guitar, flute) is present, 0: The arrangement is not present",6,"Does the image display an arrangement where guitar and violin are adjacent, with the order: (drum, violin, guitar, flute)?",8
+47,"1: The arrangement (flute, guitar, violin, drum) is present, 0: The arrangement is not present",7,"Does the image display an arrangement where guitar and violin are adjacent, with the order: (flute, guitar, violin, drum)?",8
+47,"1: The arrangement (flute, violin, guitar, drum) is present, 0: The arrangement is not present",8,"Does the image display an arrangement where guitar and violin are adjacent, with the order: (flute, violin, guitar, drum)?",8
+47,"1: The arrangement (guitar, drum, violin, flute) is present, 0: The arrangement is not present",9,"Does the image display an arrangement where guitar and violin are adjacent, with the order: (guitar, drum, violin, flute)?",8
+47,"1: The arrangement (violin, drum, guitar, flute) is present, 0: The arrangement is not present",10,"Does the image display an arrangement where guitar and violin are adjacent, with the order: (violin, drum, guitar, flute)?",8
+47,"1: The arrangement (guitar, flute, violin, drum) is present, 0: The arrangement is not present",11,"Does the image display an arrangement where guitar and violin are adjacent, with the order: (guitar, flute, violin, drum)?",8
+47,"1: The arrangement (violin, flute, guitar, drum) is present, 0: The arrangement is not present",12,"Does the image display an arrangement where guitar and violin are adjacent, with the order: (violin, flute, guitar, drum)?",8
+47,"1: No repeated combinations, 0: Repeated combinations present",13,Does the image display any repeated arrangement combinations?,5
+47,"1: No invalid combinations, 0: Invalid combinations present",14,"Does the image display any invalid arrangement combinations, such as those where guitar and violin are not adjacent?",5
+48,"1: Yes, the remote control is placed first and the lightbulb second, 0: No, it is not arranged this way",1,Does the image show a permutation where the remote control is placed first and the lightbulb is placed second on the table?,8
+48,"1: Yes, the lightbulb is placed first and the remote control second, 0: No, it is not arranged this way",2,Does the image show a permutation where the lightbulb is placed first and the remote control is placed second on the table?,8
+48,"1: No, no repeated combinations are shown, 0: Yes, there are repeated combinations",3,Does the image show any repeated permutation combinations of the two objects?,5
+48,"1: No, no invalid combinations are shown, 0: Yes, there is an invalid arrangement",4,"Does the image show any invalid permutation combinations, such as objects placed in an illogical or impossible arrangement?",5
+49,"1: Yes, the arrangement is present. 0: No, the arrangement is not present.",1,"Does the image show an arrangement where the hammer is at the top, the wrench is to the left, and the tape measure is to the right?",8
+49,"1: Yes, the arrangement is present. 0: No, the arrangement is not present.",2,"Does the image show an arrangement where the hammer is at the top, the tape measure is to the left, and the wrench is to the right?",8
+49,"1: Yes, the arrangement is present. 0: No, the arrangement is not present.",3,"Does the image show an arrangement where the wrench is at the top, the hammer is to the left, and the tape measure is to the right?",8
+49,"1: Yes, the arrangement is present. 0: No, the arrangement is not present.",4,"Does the image show an arrangement where the wrench is at the top, the tape measure is to the left, and the hammer is to the right?",8
+49,"1: Yes, the arrangement is present. 0: No, the arrangement is not present.",5,"Does the image show an arrangement where the tape measure is at the top, the hammer is to the left, and the wrench is to the right?",8
+49,"1: Yes, the arrangement is present. 0: No, the arrangement is not present.",6,"Does the image show an arrangement where the tape measure is at the top, the wrench is to the left, and the hammer is to the right?",8
+49,1: No repeated arrangements. 0: Repeated arrangements exist.,7,Does the image show any repeated arrangements of the tools?,5
+49,1: No invalid arrangements. 0: Invalid arrangements exist.,8,"Does the image show any invalid arrangements of the tools, such as tools not placed at the vertices of the triangle or incorrect tool positions?",5
+50,"1: The combination of cupcake and macaron exists, 0: The combination does not exist",1,Does the image display a combination of cupcake and macaron placed together on the plate?,8
+50,"1: The combination of cupcake and tart exists, 0: The combination does not exist",2,Does the image display a combination of cupcake and tart placed together on the plate?,8
+50,"1: The combination of macaron and tart exists, 0: The combination does not exist",3,Does the image display a combination of macaron and tart placed together on the plate?,8
+50,"1: No duplicate combinations exist, 0: Duplicate combinations exist",4,Does the image show any duplicate combination of desserts?,5
+50,"1: No invalid combinations exist (e.g., a combination of more than two desserts), 0: Invalid combinations exist",5,Does the image show any invalid combinations of desserts?,5
+51,"1: Exists, 0: Does not exist",1,"Does the image show a pair of planets where Mars and Venus are together, with no specific order?",8
+51,"1: Exists, 0: Does not exist",2,"Does the image show a pair of planets where Mars and Earth are together, with no specific order?",8
+51,"1: Exists, 0: Does not exist",3,"Does the image show a pair of planets where Mars and Mercury are together, with no specific order?",8
+51,"1: Exists, 0: Does not exist",4,"Does the image show a pair of planets where Venus and Earth are together, with no specific order?",8
+51,"1: Exists, 0: Does not exist",5,"Does the image show a pair of planets where Venus and Mercury are together, with no specific order?",8
+51,"1: Exists, 0: Does not exist",6,"Does the image show a pair of planets where Earth and Mercury are together, with no specific order?",8
+51,"1: No repeated pairs, 0: There are repeated pairs",7,Does the image display any repeated pair combinations?,5
+51,"1: No illegal combinations, 0: Illegal combinations exist",8,"Does the image show any illegal pair combinations, for example, repeating the same planet more than once or mixing planets not in the provided set?",5
+52,"1: The sequence is present, 0: The sequence is not present",1,"Does the image show a sequence where the order is Ace, King, Queen, Jack?",8
+52,"1: The sequence is present, 0: The sequence is not present",2,"Does the image show a sequence where the order is Ace, King, Jack, Queen?",8
+52,"1: The sequence is present, 0: The sequence is not present",3,"Does the image show a sequence where the order is Ace, Queen, King, Jack?",8
+52,"1: The sequence is present, 0: The sequence is not present",4,"Does the image show a sequence where the order is Ace, Queen, Jack, King?",8
+52,"1: The sequence is present, 0: The sequence is not present",5,"Does the image show a sequence where the order is Ace, Jack, King, Queen?",8
+52,"1: The sequence is present, 0: The sequence is not present",6,"Does the image show a sequence where the order is Ace, Jack, Queen, King?",8
+52,"1: The sequence is present, 0: The sequence is not present",7,"Does the image show a sequence where the order is King, Ace, Queen, Jack?",8
+52,"1: The sequence is present, 0: The sequence is not present",8,"Does the image show a sequence where the order is King, Ace, Jack, Queen?",8
+52,"1: The sequence is present, 0: The sequence is not present",9,"Does the image show a sequence where the order is King, Queen, Ace, Jack?",8
+52,"1: The sequence is present, 0: The sequence is not present",10,"Does the image show a sequence where the order is King, Queen, Jack, Ace?",8
+52,"1: The sequence is present, 0: The sequence is not present",11,"Does the image show a sequence where the order is King, Jack, Ace, Queen?",8
+52,"1: The sequence is present, 0: The sequence is not present",12,"Does the image show a sequence where the order is King, Jack, Queen, Ace?",8
+52,"1: The sequence is present, 0: The sequence is not present",13,"Does the image show a sequence where the order is Queen, Ace, King, Jack?",8
+52,"1: The sequence is present, 0: The sequence is not present",14,"Does the image show a sequence where the order is Queen, Ace, Jack, King?",8
+52,"1: The sequence is present, 0: The sequence is not present",15,"Does the image show a sequence where the order is Queen, King, Ace, Jack?",8
+52,"1: The sequence is present, 0: The sequence is not present",16,"Does the image show a sequence where the order is Queen, King, Jack, Ace?",8
+52,"1: The sequence is present, 0: The sequence is not present",17,"Does the image show a sequence where the order is Queen, Jack, Ace, King?",8
+52,"1: The sequence is present, 0: The sequence is not present",18,"Does the image show a sequence where the order is Queen, Jack, King, Ace?",8
+52,"1: The sequence is present, 0: The sequence is not present",19,"Does the image show a sequence where the order is Jack, Ace, King, Queen?",8
+52,"1: The sequence is present, 0: The sequence is not present",20,"Does the image show a sequence where the order is Jack, Ace, Queen, King?",8
+52,"1: The sequence is present, 0: The sequence is not present",21,"Does the image show a sequence where the order is Jack, King, Ace, Queen?",8
+52,"1: The sequence is present, 0: The sequence is not present",22,"Does the image show a sequence where the order is Jack, King, Queen, Ace?",8
+52,"1: The sequence is present, 0: The sequence is not present",23,"Does the image show a sequence where the order is Jack, Queen, Ace, King?",8
+52,"1: The sequence is present, 0: The sequence is not present",24,"Does the image show a sequence where the order is Jack, Queen, King, Ace?",8
+52,"1: No repeated sequences, 0: Repeated sequences present",25,Does the image contain any repeated sequences of the same cards in the same order?,5
+52,"1: No invalid sequences, 0: Invalid sequences present",26,"Does the image show any invalid sequences, such as cards repeated or cards missing?",5
+53,"1: Exists, 0: Does not exist",1,Does the image show a combination where the water bottle and coffee mug appear together?,8
+53,"1: Exists, 0: Does not exist",2,Does the image show a combination where the water bottle and juice box appear together?,8
+53,"1: Exists, 0: Does not exist",3,Does the image show a combination where the coffee mug and juice box appear together?,8
+53,"1: No duplicates, 0: Duplicates exist",4,"Does the image display any duplicate pairings, such as multiple occurrences of the same combination?",5
+53,"1: No illegal pairings, 0: Illegal pairings exist",5,"Does the image show any illegal pairings, such as a combination of the same item twice (e.g., water bottle and water bottle)?",5
+54,"1: Yes, the scooter is above the tricycle, 0: No, the scooter is not above the tricycle",1,Does the image display an arrangement where the scooter is placed above the tricycle?,8
+54,"1: Yes, the tricycle is above the scooter, 0: No, the tricycle is not above the scooter",2,Does the image display an arrangement where the tricycle is placed above the scooter?,8
+54,"1: No repeated arrangements, 0: Repeated arrangements are present",3,Does the image show any repeated arrangement combinations?,5
+54,"1: No illegal arrangements, 0: Illegal arrangements are present",4,"Does the image display any illegal arrangement combinations, such as objects being stacked incorrectly?",5
+55,"1: Yes, this configuration is present in the image; 0: No, this configuration is not present in the image",1,"Does the image display a configuration where the material is wood, the style is modern, and the furniture type is a chair?",8
+55,"1: Yes, this configuration is present in the image; 0: No, this configuration is not present in the image",2,"Does the image display a configuration where the material is wood, the style is modern, and the furniture type is a table?",8
+55,"1: Yes, this configuration is present in the image; 0: No, this configuration is not present in the image",3,"Does the image display a configuration where the material is wood, the style is vintage, and the furniture type is a chair?",8
+55,"1: Yes, this configuration is present in the image; 0: No, this configuration is not present in the image",4,"Does the image display a configuration where the material is wood, the style is vintage, and the furniture type is a table?",8
+55,"1: Yes, this configuration is present in the image; 0: No, this configuration is not present in the image",5,"Does the image display a configuration where the material is metal, the style is modern, and the furniture type is a chair?",8
+55,"1: Yes, this configuration is present in the image; 0: No, this configuration is not present in the image",6,"Does the image display a configuration where the material is metal, the style is modern, and the furniture type is a table?",8
+55,"1: Yes, this configuration is present in the image; 0: No, this configuration is not present in the image",7,"Does the image display a configuration where the material is metal, the style is vintage, and the furniture type is a chair?",8
+55,"1: Yes, this configuration is present in the image; 0: No, this configuration is not present in the image",8,"Does the image display a configuration where the material is metal, the style is vintage, and the furniture type is a table?",8
+55,1: No duplicates are present; 0: There are duplicates in the image,9,"Does the image show any duplicate configurations (e.g., the same material, style, and furniture type appearing more than once)?",5
+55,1: No invalid combinations; 0: Invalid combinations are present in the image,10,"Does the image display any invalid combinations (e.g., mismatched material, style, or furniture type)?",5
+56,"1: Yes, the arrangement exists as specified. 0: No, the arrangement does not exist as specified.",1,Does the image display an arrangement where the sequence is: basketball - tennis racket - helmet - whistle?,8
+56,"1: Yes, the arrangement exists as specified. 0: No, the arrangement does not exist as specified.",2,Does the image display an arrangement where the sequence is: basketball - tennis racket - whistle - helmet?,8
+56,"1: Yes, the arrangement exists as specified. 0: No, the arrangement does not exist as specified.",3,Does the image display an arrangement where the sequence is: basketball - helmet - tennis racket - whistle?,8
+56,"1: Yes, the arrangement exists as specified. 0: No, the arrangement does not exist as specified.",4,Does the image display an arrangement where the sequence is: basketball - helmet - whistle - tennis racket?,8
+56,"1: Yes, the arrangement exists as specified. 0: No, the arrangement does not exist as specified.",5,Does the image display an arrangement where the sequence is: basketball - whistle - tennis racket - helmet?,8
+56,"1: Yes, the arrangement exists as specified. 0: No, the arrangement does not exist as specified.",6,Does the image display an arrangement where the sequence is: basketball - whistle - helmet - tennis racket?,8
+56,"1: Yes, the arrangement exists as specified. 0: No, the arrangement does not exist as specified.",7,Does the image display an arrangement where the sequence is: tennis racket - basketball - helmet - whistle?,8
+56,"1: Yes, the arrangement exists as specified. 0: No, the arrangement does not exist as specified.",8,Does the image display an arrangement where the sequence is: tennis racket - basketball - whistle - helmet?,8
+56,"1: Yes, the arrangement exists as specified. 0: No, the arrangement does not exist as specified.",9,Does the image display an arrangement where the sequence is: tennis racket - helmet - basketball - whistle?,8
+56,"1: Yes, the arrangement exists as specified. 0: No, the arrangement does not exist as specified.",10,Does the image display an arrangement where the sequence is: tennis racket - helmet - whistle - basketball?,8
+56,"1: Yes, the arrangement exists as specified. 0: No, the arrangement does not exist as specified.",11,Does the image display an arrangement where the sequence is: tennis racket - whistle - basketball - helmet?,8
+56,"1: Yes, the arrangement exists as specified. 0: No, the arrangement does not exist as specified.",12,Does the image display an arrangement where the sequence is: tennis racket - whistle - helmet - basketball?,8
+56,"1: Yes, the arrangement exists as specified. 0: No, the arrangement does not exist as specified.",13,Does the image display an arrangement where the sequence is: helmet - basketball - tennis racket - whistle?,8
+56,"1: Yes, the arrangement exists as specified. 0: No, the arrangement does not exist as specified.",14,Does the image display an arrangement where the sequence is: helmet - basketball - whistle - tennis racket?,8
+56,"1: Yes, the arrangement exists as specified. 0: No, the arrangement does not exist as specified.",15,Does the image display an arrangement where the sequence is: helmet - tennis racket - basketball - whistle?,8
+56,"1: Yes, the arrangement exists as specified. 0: No, the arrangement does not exist as specified.",16,Does the image display an arrangement where the sequence is: helmet - tennis racket - whistle - basketball?,8
+56,"1: Yes, the arrangement exists as specified. 0: No, the arrangement does not exist as specified.",17,Does the image display an arrangement where the sequence is: helmet - whistle - basketball - tennis racket?,8
+56,"1: Yes, the arrangement exists as specified. 0: No, the arrangement does not exist as specified.",18,Does the image display an arrangement where the sequence is: helmet - whistle - tennis racket - basketball?,8
+56,"1: Yes, the arrangement exists as specified. 0: No, the arrangement does not exist as specified.",19,Does the image display an arrangement where the sequence is: whistle - basketball - tennis racket - helmet?,8
+56,"1: Yes, the arrangement exists as specified. 0: No, the arrangement does not exist as specified.",20,Does the image display an arrangement where the sequence is: whistle - basketball - helmet - tennis racket?,8
+56,"1: Yes, the arrangement exists as specified. 0: No, the arrangement does not exist as specified.",21,Does the image display an arrangement where the sequence is: whistle - tennis racket - basketball - helmet?,8
+56,"1: Yes, the arrangement exists as specified. 0: No, the arrangement does not exist as specified.",22,Does the image display an arrangement where the sequence is: whistle - tennis racket - helmet - basketball?,8
+56,"1: Yes, the arrangement exists as specified. 0: No, the arrangement does not exist as specified.",23,Does the image display an arrangement where the sequence is: whistle - helmet - basketball - tennis racket?,8
+56,"1: Yes, the arrangement exists as specified. 0: No, the arrangement does not exist as specified.",24,Does the image display an arrangement where the sequence is: whistle - helmet - tennis racket - basketball?,8
+56,"1: No repeated arrangements are shown. 0: Yes, there are repeated arrangements.",25,Does the image show any repeated arrangement or identical permutation multiple times?,5
+56,"1: No invalid permutations are shown. 0: Yes, there are invalid permutations shown.",26,"Does the image show any invalid permutations, such as an arrangement that doesn't involve all four items?",5
+57,"1: The combination of tent, sleeping bag, and lantern is shown, 0: The combination is not shown",1,"Does the image show a combination of tent, sleeping bag, and lantern, in any order?",8
+57,"1: The combination of tent, sleeping bag, and backpack is shown, 0: The combination is not shown",2,"Does the image show a combination of tent, sleeping bag, and backpack, in any order?",8
+57,"1: The combination of tent, lantern, and backpack is shown, 0: The combination is not shown",3,"Does the image show a combination of tent, lantern, and backpack, in any order?",8
+57,"1: The combination of sleeping bag, lantern, and backpack is shown, 0: The combination is not shown",4,"Does the image show a combination of sleeping bag, lantern, and backpack, in any order?",8
+57,"1: No repeated combinations are shown, 0: Repeated combinations are shown",5,Does the image display any repeated combinations of the 3 items?,5
+57,"1: No invalid combinations are shown, 0: Invalid combinations are shown",6,Does the image display any invalid combinations (combinations that do not contain exactly three items or contain extra items)?,5
+58,"1: The arrangement exists, 0: The arrangement does not exist",1,Does the image show an arrangement where the flowers are arranged in the sequence Rose → Tulip → Daisy (clockwise)?,8
+58,"1: The arrangement exists, 0: The arrangement does not exist",2,Does the image show an arrangement where the flowers are arranged in the sequence Rose → Daisy → Tulip (clockwise)?,8
+58,"1: No repeated arrangements, 0: Repeated arrangements exist",3,Does the image show any repeated arrangements of flowers?,5
+58,"1: No invalid arrangements, 0: Invalid arrangements exist",4,"Does the image show any invalid arrangements, such as those that break the distinct circular arrangement rule (i.e., rotations of the same arrangement)?",5
+59,"1: The arrangement is present in the image, 0: The arrangement is not present in the image",1,"Does the image show an arrangement where the first row is [X, O] and the second row is [O, O]?",8
+59,"1: The arrangement is present in the image, 0: The arrangement is not present in the image",2,"Does the image show an arrangement where the first row is [O, X] and the second row is [O, O]?",8
+59,"1: The arrangement is present in the image, 0: The arrangement is not present in the image",3,"Does the image show an arrangement where the first row is [O, O] and the second row is [X, O]?",8
+59,"1: The arrangement is present in the image, 0: The arrangement is not present in the image",4,"Does the image show an arrangement where the first row is [O, O] and the second row is [O, X]?",8
+59,"1: No repeated arrangements are present, 0: Repeated arrangements are present",5,Does the image show any repeated arrangement combinations?,5
+59,"1: No illegal combinations are present, 0: Illegal combinations are present",6,"Does the image show any illegal arrangement combinations, such as more than one 'X' or an empty cell in place of 'X'?",5
+60,"1: Exists, 0: Does not exist",1,"Does the image display a group consisting of a pencil case, ruler, and eraser?",8
+60,"1: Exists, 0: Does not exist",2,"Does the image display a group consisting of a pencil case, ruler, and notebook?",8
+60,"1: Exists, 0: Does not exist",3,"Does the image display a group consisting of a pencil case, eraser, and notebook?",8
+60,"1: Exists, 0: Does not exist",4,"Does the image display a group consisting of a ruler, eraser, and notebook?",8
+60,"1: No duplicates, 0: Duplicates exist",5,Does the image show any duplicate groupings?,5
+60,"1: No invalid groups, 0: Invalid groups exist",6,"Does the image show any invalid groupings (such as more or fewer than three items, or items outside the allowed set)?",5
+61,"1: The arrangement exists, 0: The arrangement does not exist",1,Does the image show an arrangement where the order is 'corner - edge - center - border'?,8
+61,"1: The arrangement exists, 0: The arrangement does not exist",2,Does the image show an arrangement where the order is 'corner - edge - border - center'?,8
+61,"1: The arrangement exists, 0: The arrangement does not exist",3,Does the image show an arrangement where the order is 'corner - center - edge - border'?,8
+61,"1: The arrangement exists, 0: The arrangement does not exist",4,Does the image show an arrangement where the order is 'corner - center - border - edge'?,8
+61,"1: The arrangement exists, 0: The arrangement does not exist",5,Does the image show an arrangement where the order is 'corner - border - edge - center'?,8
+61,"1: The arrangement exists, 0: The arrangement does not exist",6,Does the image show an arrangement where the order is 'corner - border - center - edge'?,8
+61,"1: No repeated arrangements, 0: Repeated arrangements exist",7,Does the image show a repeated arrangement?,5
+61,"1: No invalid arrangement, 0: Invalid arrangement exists",8,"Does the image show an invalid arrangement, such as 'corner' not being at the beginning or an impossible sequence?",5
+62,"1: Exists, 0: Does not exist",1,Does the image show a configuration where the fire extinguisher is on top and the first aid kit is below?,8
+62,"1: Exists, 0: Does not exist",2,Does the image show a configuration where the first aid kit is on top and the fire extinguisher is below?,8
+62,"1: Does not exist, 0: Exists",3,Does the image show any repeated arrangement of stacking?,5
+62,"1: Does not exist, 0: Exists",4,"Does the image show any illegal arrangement, such as a non-vertical stacking or a mix-up of the items?",5
+63,"1: The arrangement exists as 'needle - thread - scissors - thimble', 0: The arrangement does not exist",1,"Does the image display an arrangement where 'needle' is first, followed by 'thread', 'scissors', and 'thimble' in this exact order?",8
+63,"1: The arrangement exists as 'needle - thread - thimble - scissors', 0: The arrangement does not exist",2,"Does the image display an arrangement where 'needle' is first, followed by 'thread', 'thimble', and 'scissors' in this exact order?",8
+63,"1: The arrangement exists as 'needle - scissors - thread - thimble', 0: The arrangement does not exist",3,"Does the image display an arrangement where 'needle' is first, followed by 'scissors', 'thread', and 'thimble' in this exact order?",8
+63,"1: The arrangement exists as 'needle - scissors - thimble - thread', 0: The arrangement does not exist",4,"Does the image display an arrangement where 'needle' is first, followed by 'scissors', 'thimble', and 'thread' in this exact order?",8
+63,"1: The arrangement exists as 'needle - thimble - thread - scissors', 0: The arrangement does not exist",5,"Does the image display an arrangement where 'needle' is first, followed by 'thimble', 'thread', and 'scissors' in this exact order?",8
+63,"1: The arrangement exists as 'needle - thimble - scissors - thread', 0: The arrangement does not exist",6,"Does the image display an arrangement where 'needle' is first, followed by 'thimble', 'scissors', and 'thread' in this exact order?",8
+63,"1: No duplicate arrangements exist, 0: Duplicate arrangements exist",7,"Does the image display duplicate arrangements, meaning the same arrangement appears more than once?",5
+63,"1: No illegal arrangements exist, 0: Illegal arrangements exist",8,"Does the image display any illegal arrangements, meaning an arrangement where 'needle' is not first or any invalid permutation of the tools?",5
+64,"1: The arrangement exists in the image, 0: The arrangement does not exist in the image",1,"Does the image show an arrangement where the order is 'tent, lantern, backpack, stove'?",8
+64,"1: The arrangement exists in the image, 0: The arrangement does not exist in the image",2,"Does the image show an arrangement where the order is 'tent, lantern, stove, backpack'?",8
+64,"1: The arrangement exists in the image, 0: The arrangement does not exist in the image",3,"Does the image show an arrangement where the order is 'tent, backpack, lantern, stove'?",8
+64,"1: The arrangement exists in the image, 0: The arrangement does not exist in the image",4,"Does the image show an arrangement where the order is 'tent, backpack, stove, lantern'?",8
+64,"1: The arrangement exists in the image, 0: The arrangement does not exist in the image",5,"Does the image show an arrangement where the order is 'tent, stove, lantern, backpack'?",8
+64,"1: The arrangement exists in the image, 0: The arrangement does not exist in the image",6,"Does the image show an arrangement where the order is 'tent, stove, backpack, lantern'?",8
+64,"1: No repeated arrangements, 0: There are repeated arrangements",7,"Does the image show any repeated circular arrangement (e.g., identical rotations of the same combination)?",5
+64,"1: No invalid arrangements, 0: There are invalid arrangements",8,"Does the image show any invalid circular arrangement (e.g., items placed in non-circular or inconsistent arrangements)?",5
+65,"1: The sequence '000' is present, 0: The sequence '000' is not present",1,Does the image display the binary sequence '000'?,8
+65,"1: The sequence '001' is present, 0: The sequence '001' is not present",2,Does the image display the binary sequence '001'?,8
+65,"1: The sequence '010' is present, 0: The sequence '010' is not present",3,Does the image display the binary sequence '010'?,8
+65,"1: The sequence '011' is present, 0: The sequence '011' is not present",4,Does the image display the binary sequence '011'?,8
+65,"1: The sequence '100' is present, 0: The sequence '100' is not present",5,Does the image display the binary sequence '100'?,8
+65,"1: The sequence '101' is present, 0: The sequence '101' is not present",6,Does the image display the binary sequence '101'?,8
+65,"1: The sequence '110' is present, 0: The sequence '110' is not present",7,Does the image display the binary sequence '110'?,8
+65,"1: The sequence '111' is present, 0: The sequence '111' is not present",8,Does the image display the binary sequence '111'?,8
+65,"1: No repeated sequences, 0: There are repeated sequences",9,Does the image show any repeated binary sequences?,5
+65,"1: No invalid sequences, 0: There are invalid sequences",10,"Does the image display any invalid binary sequences, such as sequences longer than 3 digits or containing digits other than 0 or 1?",5
+66,"1: Exists, 0: Does not exist",1,"Does the image show an arrangement where two wooden blocks come first, followed by two star-shaped signs?",8
+66,"1: Exists, 0: Does not exist",2,"Does the image show an arrangement where a wooden block, followed by a star-shaped sign, then another wooden block, and finally another star-shaped sign appear?",8
+66,"1: Exists, 0: Does not exist",3,"Does the image show an arrangement where a wooden block, followed by two star-shaped signs, and another wooden block appear?",8
+66,"1: Exists, 0: Does not exist",4,"Does the image show an arrangement where two star-shaped signs come first, followed by two wooden blocks?",8
+66,"1: Exists, 0: Does not exist",5,"Does the image show an arrangement where a star-shaped sign, followed by a wooden block, then another star-shaped sign, and finally the last wooden block appear?",8
+66,"1: Exists, 0: Does not exist",6,"Does the image show an arrangement where two star-shaped signs come first, followed by two wooden blocks?",8
+66,"1: Does not exist, 0: Exists",7,Does the image show any duplicate arrangement combinations?,5
+66,"1: Does not exist, 0: Exists",8,"Does the image show any illegal arrangement combinations, i.e., combinations where more than two wooden blocks or star-shaped signs are placed together?",5
+67,"1: Exists Ivory Cello in the image, 0: Does not exist Ivory Cello in the image",1,Does the image display a combination where a Cello is made of Ivory?,8
+67,"1: Exists Brass Cello in the image, 0: Does not exist Brass Cello in the image",2,Does the image display a combination where a Cello is made of Brass?,8
+67,"1: Exists Ivory Saxophone in the image, 0: Does not exist Ivory Saxophone in the image",3,Does the image display a combination where a Saxophone is made of Ivory?,8
+67,"1: Exists Brass Saxophone in the image, 0: Does not exist Brass Saxophone in the image",4,Does the image display a combination where a Saxophone is made of Brass?,8
+67,"1: No repeated combinations, 0: Contains repeated combinations",5,Does the image display any repeated combinations of musical instruments and materials?,5
+67,"1: No invalid combinations, 0: Contains invalid combinations",6,"Does the image display any invalid combinations (e.g., a non-existent material or instrument)?",5
+68,"1: The arrangement 'Caution → Stop → Yield' exists, 0: The arrangement 'Caution → Stop → Yield' does not exist",1,Does the image display an arrangement where the order of the construction signs is 'Caution → Stop → Yield'?,8
+68,"1: The arrangement 'Caution → Yield → Stop' exists, 0: The arrangement 'Caution → Yield → Stop' does not exist",2,Does the image display an arrangement where the order of the construction signs is 'Caution → Yield → Stop'?,8
+68,"1: The arrangement 'Stop → Caution → Yield' exists, 0: The arrangement 'Stop → Caution → Yield' does not exist",3,Does the image display an arrangement where the order of the construction signs is 'Stop → Caution → Yield'?,8
+68,"1: The arrangement 'Stop → Yield → Caution' exists, 0: The arrangement 'Stop → Yield → Caution' does not exist",4,Does the image display an arrangement where the order of the construction signs is 'Stop → Yield → Caution'?,8
+68,"1: The arrangement 'Yield → Caution → Stop' exists, 0: The arrangement 'Yield → Caution → Stop' does not exist",5,Does the image display an arrangement where the order of the construction signs is 'Yield → Caution → Stop'?,8
+68,"1: The arrangement 'Yield → Stop → Caution' exists, 0: The arrangement 'Yield → Stop → Caution' does not exist",6,Does the image display an arrangement where the order of the construction signs is 'Yield → Stop → Caution'?,8
+68,"1: No duplicate arrangements exist, 0: Duplicate arrangements exist",7,Does the image show any duplicate arrangements of construction signs?,5
+68,"1: No illegal arrangements exist, 0: Illegal arrangements exist",8,"Does the image display any illegal arrangement of construction signs (e.g., signs out of order or with incorrect repetitions)?",5
+69,"1: Exists, 0: Does not exist",1,"Does the image display a permutation where the order is: Basketball, Football, Tennis Racket, Baseball Bat?",8
+69,"1: Exists, 0: Does not exist",2,"Does the image display a permutation where the order is: Basketball, Football, Baseball Bat, Tennis Racket?",8
+69,"1: Exists, 0: Does not exist",3,"Does the image display a permutation where the order is: Basketball, Tennis Racket, Football, Baseball Bat?",8
+69,"1: Exists, 0: Does not exist",4,"Does the image display a permutation where the order is: Basketball, Tennis Racket, Baseball Bat, Football?",8
+69,"1: Exists, 0: Does not exist",5,"Does the image display a permutation where the order is: Basketball, Baseball Bat, Football, Tennis Racket?",8
+69,"1: Exists, 0: Does not exist",6,"Does the image display a permutation where the order is: Basketball, Baseball Bat, Tennis Racket, Football?",8
+69,"1: Exists, 0: Does not exist",7,"Does the image display a permutation where the order is: Football, Basketball, Tennis Racket, Baseball Bat?",8
+69,"1: Exists, 0: Does not exist",8,"Does the image display a permutation where the order is: Football, Basketball, Baseball Bat, Tennis Racket?",8
+69,"1: Exists, 0: Does not exist",9,"Does the image display a permutation where the order is: Football, Tennis Racket, Basketball, Baseball Bat?",8
+69,"1: Exists, 0: Does not exist",10,"Does the image display a permutation where the order is: Football, Tennis Racket, Baseball Bat, Basketball?",8
+69,"1: Exists, 0: Does not exist",11,"Does the image display a permutation where the order is: Football, Baseball Bat, Basketball, Tennis Racket?",8
+69,"1: Exists, 0: Does not exist",12,"Does the image display a permutation where the order is: Football, Baseball Bat, Tennis Racket, Basketball?",8
+69,"1: Exists, 0: Does not exist",13,"Does the image display a permutation where the order is: Tennis Racket, Basketball, Football, Baseball Bat?",8
+69,"1: Exists, 0: Does not exist",14,"Does the image display a permutation where the order is: Tennis Racket, Basketball, Baseball Bat, Football?",8
+69,"1: Exists, 0: Does not exist",15,"Does the image display a permutation where the order is: Tennis Racket, Football, Basketball, Baseball Bat?",8
+69,"1: Exists, 0: Does not exist",16,"Does the image display a permutation where the order is: Tennis Racket, Football, Baseball Bat, Basketball?",8
+69,"1: Exists, 0: Does not exist",17,"Does the image display a permutation where the order is: Tennis Racket, Baseball Bat, Basketball, Football?",8
+69,"1: Exists, 0: Does not exist",18,"Does the image display a permutation where the order is: Tennis Racket, Baseball Bat, Football, Basketball?",8
+69,"1: Exists, 0: Does not exist",19,"Does the image display a permutation where the order is: Baseball Bat, Basketball, Football, Tennis Racket?",8
+69,"1: Exists, 0: Does not exist",20,"Does the image display a permutation where the order is: Baseball Bat, Basketball, Tennis Racket, Football?",8
+69,"1: Exists, 0: Does not exist",21,"Does the image display a permutation where the order is: Baseball Bat, Football, Basketball, Tennis Racket?",8
+69,"1: Exists, 0: Does not exist",22,"Does the image display a permutation where the order is: Baseball Bat, Football, Tennis Racket, Basketball?",8
+69,"1: Exists, 0: Does not exist",23,"Does the image display a permutation where the order is: Baseball Bat, Tennis Racket, Basketball, Football?",8
+69,"1: Exists, 0: Does not exist",24,"Does the image display a permutation where the order is: Baseball Bat, Tennis Racket, Football, Basketball?",8
+69,"1: Does not exist, 0: Exists",25,Does the image display any repeated permutation combinations?,5
+69,"1: Does not exist, 0: Exists",26,"Does the image display any invalid permutation combinations, such as incorrect equipment or overlapping items?",5
+70,"1: Present, 0: Not Present",1,Does the image display the arrangement Diamond → Ruby → Emerald → Sapphire?,8
+70,"1: Present, 0: Not Present",2,Does the image display the arrangement Diamond → Ruby → Sapphire → Emerald?,8
+70,"1: Present, 0: Not Present",3,Does the image display the arrangement Diamond → Emerald → Ruby → Sapphire?,8
+70,"1: Present, 0: Not Present",4,Does the image display the arrangement Diamond → Emerald → Sapphire → Ruby?,8
+70,"1: Present, 0: Not Present",5,Does the image display the arrangement Diamond → Sapphire → Ruby → Emerald?,8
+70,"1: Present, 0: Not Present",6,Does the image display the arrangement Diamond → Sapphire → Emerald → Ruby?,8
+70,"1: Present, 0: Not Present",7,Does the image display the arrangement Ruby → Diamond → Emerald → Sapphire?,8
+70,"1: Present, 0: Not Present",8,Does the image display the arrangement Ruby → Diamond → Sapphire → Emerald?,8
+70,"1: Present, 0: Not Present",9,Does the image display the arrangement Ruby → Emerald → Diamond → Sapphire?,8
+70,"1: Present, 0: Not Present",10,Does the image display the arrangement Ruby → Emerald → Sapphire → Diamond?,8
+70,"1: Present, 0: Not Present",11,Does the image display the arrangement Ruby → Sapphire → Diamond → Emerald?,8
+70,"1: Present, 0: Not Present",12,Does the image display the arrangement Ruby → Sapphire → Emerald → Diamond?,8
+70,"1: Present, 0: Not Present",13,Does the image display the arrangement Emerald → Diamond → Ruby → Sapphire?,8
+70,"1: Present, 0: Not Present",14,Does the image display the arrangement Emerald → Diamond → Sapphire → Ruby?,8
+70,"1: Present, 0: Not Present",15,Does the image display the arrangement Emerald → Ruby → Diamond → Sapphire?,8
+70,"1: Present, 0: Not Present",16,Does the image display the arrangement Emerald → Ruby → Sapphire → Diamond?,8
+70,"1: Present, 0: Not Present",17,Does the image display the arrangement Emerald → Sapphire → Diamond → Ruby?,8
+70,"1: Present, 0: Not Present",18,Does the image display the arrangement Emerald → Sapphire → Ruby → Diamond?,8
+70,"1: Present, 0: Not Present",19,Does the image display the arrangement Sapphire → Diamond → Ruby → Emerald?,8
+70,"1: Present, 0: Not Present",20,Does the image display the arrangement Sapphire → Diamond → Emerald → Ruby?,8
+70,"1: Present, 0: Not Present",21,Does the image display the arrangement Sapphire → Ruby → Diamond → Emerald?,8
+70,"1: Present, 0: Not Present",22,Does the image display the arrangement Sapphire → Ruby → Emerald → Diamond?,8
+70,"1: Present, 0: Not Present",23,Does the image display the arrangement Sapphire → Emerald → Diamond → Ruby?,8
+70,"1: Present, 0: Not Present",24,Does the image display the arrangement Sapphire → Emerald → Ruby → Diamond?,8
+70,"1: No duplicates, 0: Duplicates present",25,Does the image display any duplicate permutations?,5
+70,"1: No invalid permutations, 0: Invalid permutations present",26,"Does the image display any invalid permutations, meaning the order does not follow the legal clockwise arrangement?",5
+71,"1: The order Trowel | Watering Can | Pruning Shears is present in the image, 0: The order Trowel | Watering Can | Pruning Shears is absent in the image.",1,"Does the image show a permutation where Trowel, Watering Can, and Pruning Shears appear in the order: Trowel | Watering Can | Pruning Shears?",8
+71,"1: The order Trowel | Pruning Shears | Watering Can is present in the image, 0: The order Trowel | Pruning Shears | Watering Can is absent in the image.",2,"Does the image show a permutation where Trowel, Watering Can, and Pruning Shears appear in the order: Trowel | Pruning Shears | Watering Can?",8
+71,"1: The order Watering Can | Trowel | Pruning Shears is present in the image, 0: The order Watering Can | Trowel | Pruning Shears is absent in the image.",3,"Does the image show a permutation where Trowel, Watering Can, and Pruning Shears appear in the order: Watering Can | Trowel | Pruning Shears?",8
+71,"1: The order Watering Can | Pruning Shears | Trowel is present in the image, 0: The order Watering Can | Pruning Shears | Trowel is absent in the image.",4,"Does the image show a permutation where Trowel, Watering Can, and Pruning Shears appear in the order: Watering Can | Pruning Shears | Trowel?",8
+71,"1: The order Pruning Shears | Trowel | Watering Can is present in the image, 0: The order Pruning Shears | Trowel | Watering Can is absent in the image.",5,"Does the image show a permutation where Trowel, Watering Can, and Pruning Shears appear in the order: Pruning Shears | Trowel | Watering Can?",8
+71,"1: The order Pruning Shears | Watering Can | Trowel is present in the image, 0: The order Pruning Shears | Watering Can | Trowel is absent in the image.",6,"Does the image show a permutation where Trowel, Watering Can, and Pruning Shears appear in the order: Pruning Shears | Watering Can | Trowel?",8
+71,"1: No repeated permutations are present in the image, 0: Repeated permutations are present in the image.",7,"Does the image show any repeated permutations (e.g., the same order appearing more than once)?",5
+71,"1: No invalid permutations are present in the image, 0: Invalid permutations are present in the image.",8,"Does the image show any invalid permutations (e.g., an incorrect number of tools or incorrect ordering)?",5
+72,"1: Yes, the order is displayed correctly as 'Whisk, Spatula, Ladle'. 0: No, the order does not match or is missing.",1,"Does the image display a permutation where the order of the utensils is 'Whisk, Spatula, Ladle'?",8
+72,"1: Yes, the order is displayed correctly as 'Whisk, Ladle, Spatula'. 0: No, the order does not match or is missing.",2,"Does the image display a permutation where the order of the utensils is 'Whisk, Ladle, Spatula'?",8
+72,"1: Yes, the order is displayed correctly as 'Spatula, Whisk, Ladle'. 0: No, the order does not match or is missing.",3,"Does the image display a permutation where the order of the utensils is 'Spatula, Whisk, Ladle'?",8
+72,"1: Yes, the order is displayed correctly as 'Spatula, Ladle, Whisk'. 0: No, the order does not match or is missing.",4,"Does the image display a permutation where the order of the utensils is 'Spatula, Ladle, Whisk'?",8
+72,"1: Yes, the order is displayed correctly as 'Ladle, Whisk, Spatula'. 0: No, the order does not match or is missing.",5,"Does the image display a permutation where the order of the utensils is 'Ladle, Whisk, Spatula'?",8
+72,"1: Yes, the order is displayed correctly as 'Ladle, Spatula, Whisk'. 0: No, the order does not match or is missing.",6,"Does the image display a permutation where the order of the utensils is 'Ladle, Spatula, Whisk'?",8
+72,"1: No, there are no repeated permutation combinations. 0: Yes, there is a repeated permutation combination.",7,"Does the image show any repeated permutation combinations (i.e., the same order repeated more than once)?",5
+72,"1: No, there are no invalid permutations. 0: Yes, there is an invalid permutation.",8,"Does the image show any invalid permutation combinations (i.e., an arrangement that is not one of the six listed permutations)?",5
+73,"1: Yes, the permutation exists, 0: No, the permutation does not exist",1,"Does the image show a permutation where Rose is first, followed by Tulip, Daisy, and Lily?",8
+73,"1: Yes, the permutation exists, 0: No, the permutation does not exist",2,"Does the image show a permutation where Lily is first, followed by Rose, Daisy, and Tulip?",8
+73,"1: Yes, the permutation exists, 0: No, the permutation does not exist",3,"Does the image show a permutation where Daisy is first, followed by Tulip, Lily, and Rose?",8
+73,"1: Yes, the permutation exists, 0: No, the permutation does not exist",4,"Does the image show a permutation where Tulip is first, followed by Lily, Daisy, and Rose?",8
+73,"1: Yes, the permutation exists, 0: No, the permutation does not exist",5,"Does the image show a permutation where Tulip is first, followed by Daisy, Rose, and Lily?",8
+73,"1: Yes, the permutation exists, 0: No, the permutation does not exist",6,"Does the image show a permutation where Lily is first, followed by Daisy, Tulip, and Rose?",8
+73,"1: Yes, the permutation exists, 0: No, the permutation does not exist",7,"Does the image show a permutation where Rose is first, followed by Daisy, Tulip, and Lily?",8
+73,"1: Yes, the permutation exists, 0: No, the permutation does not exist",8,"Does the image show a permutation where Lily is first, followed by Tulip, Rose, and Daisy?",8
+73,"1: Yes, the permutation exists, 0: No, the permutation does not exist",9,"Does the image show a permutation where Tulip is first, followed by Rose, Lily, and Daisy?",8
+73,"1: Yes, the permutation exists, 0: No, the permutation does not exist",10,"Does the image show a permutation where Daisy is first, followed by Rose, Tulip, and Lily?",8
+73,"1: Yes, the permutation exists, 0: No, the permutation does not exist",11,"Does the image show a permutation where Rose is first, followed by Lily, Tulip, and Daisy?",8
+73,"1: Yes, the permutation exists, 0: No, the permutation does not exist",12,"Does the image show a permutation where Lily is first, followed by Daisy, Rose, and Tulip?",8
+73,"1: No repeated permutations, 0: Yes, repeated permutations exist",13,Does the image display any repeated permutations?,5
+73,"1: No invalid permutations, 0: Yes, invalid permutations exist",14,"Does the image display any invalid permutations, such as out-of-order flowers or non-existent flower types?",5
+74,"1: Exists in the image, 0: Does not exist in the image",1,Does the image display an arrangement where the order is Fork (top-left) → Spoon → Knife (bottom-right)?,8
+74,"1: Exists in the image, 0: Does not exist in the image",2,Does the image display an arrangement where the order is Fork → Knife → Spoon?,8
+74,"1: Exists in the image, 0: Does not exist in the image",3,Does the image display an arrangement where the order is Spoon → Fork → Knife?,8
+74,"1: Exists in the image, 0: Does not exist in the image",4,Does the image display an arrangement where the order is Spoon → Knife → Fork?,8
+74,"1: Exists in the image, 0: Does not exist in the image",5,Does the image display an arrangement where the order is Knife → Fork → Spoon?,8
+74,"1: Exists in the image, 0: Does not exist in the image",6,Does the image display an arrangement where the order is Knife → Spoon → Fork?,8
+74,"1: No repeated arrangements, 0: Repeated arrangements exist",7,Does the image display any repeated arrangement of utensils?,5
+74,"1: No invalid arrangements, 0: Invalid arrangements exist",8,"Does the image display any invalid arrangement, where utensils are not arranged diagonally or out of the specified order?",5
+75,"1: The arrangement is present in the image, 0: The arrangement is not present",1,Does the image show a permutation where the order is Pawn | Knight | Bishop | Rook?,8
+75,"1: The arrangement is present in the image, 0: The arrangement is not present",2,Does the image show a permutation where the order is Rook | Bishop | Pawn | Knight?,8
+75,"1: The arrangement is present in the image, 0: The arrangement is not present",3,Does the image show a permutation where the order is Knight | Rook | Pawn | Bishop?,8
+75,"1: The arrangement is present in the image, 0: The arrangement is not present",4,Does the image show a permutation where the order is Bishop | Rook | Knight | Pawn?,8
+75,"1: The arrangement is present in the image, 0: The arrangement is not present",5,Does the image show a permutation where the order is Knight | Bishop | Rook | Pawn?,8
+75,"1: The arrangement is present in the image, 0: The arrangement is not present",6,Does the image show a permutation where the order is Pawn | Rook | Bishop | Knight?,8
+75,"1: No duplicate arrangements, 0: Duplicate arrangements present",7,Does the image contain any duplicate arrangements of the four pieces?,5
+75,"1: No invalid configurations, 0: Invalid configurations present",8,"Does the image contain any invalid configurations, such as repeated pieces or pieces placed incorrectly?",5
+75,"1: The arrangement is present in the image, 0: The arrangement is not present",9,Does the image show a permutation where the order is Bishop | Knight | Pawn | Rook?,8
+75,"1: The arrangement is present in the image, 0: The arrangement is not present",10,Does the image show a permutation where the order is Pawn | Bishop | Knight | Rook?,8
+75,"1: The arrangement is present in the image, 0: The arrangement is not present",11,Does the image show a permutation where the order is Rook | Knight | Pawn | Bishop?,8
+75,"1: The arrangement is present in the image, 0: The arrangement is not present",12,Does the image show a permutation where the order is Knight | Pawn | Rook | Bishop?,8
+76,"1: Exists in the image, 0: Does not exist in the image",1,Does the image show an arrangement where the vehicles are in the order: Car → Truck → Bicycle?,8
+76,"1: Exists in the image, 0: Does not exist in the image",2,Does the image show an arrangement where the vehicles are in the order: Car → Bicycle → Truck?,8
+76,"1: Exists in the image, 0: Does not exist in the image",3,Does the image show an arrangement where the vehicles are in the order: Truck → Car → Bicycle?,8
+76,"1: Exists in the image, 0: Does not exist in the image",4,Does the image show an arrangement where the vehicles are in the order: Truck → Bicycle → Car?,8
+76,"1: Exists in the image, 0: Does not exist in the image",5,Does the image show an arrangement where the vehicles are in the order: Bicycle → Car → Truck?,8
+76,"1: Exists in the image, 0: Does not exist in the image",6,Does the image show an arrangement where the vehicles are in the order: Bicycle → Truck → Car?,8
+76,"1: No repeated arrangements, 0: Repeated arrangements exist",7,Does the image contain any repeated arrangements of vehicles?,5
+76,"1: No illegal arrangement, 0: Illegal arrangement exists",8,Does the image contain any illegal arrangement of vehicles (such as an arrangement that does not follow the expected permutation pattern)?,5
+77,"1: Yes, the sequence exists. 0: No, the sequence does not exist.",1,"Does the image display a sequence where the arrangement is Rectangle, Rectangle, Circle, Circle, Circle?",8
+77,"1: Yes, the sequence exists. 0: No, the sequence does not exist.",2,"Does the image display a sequence where the arrangement is Rectangle, Circle, Rectangle, Circle, Circle?",8
+77,"1: Yes, the sequence exists. 0: No, the sequence does not exist.",3,"Does the image display a sequence where the arrangement is Rectangle, Circle, Circle, Rectangle, Circle?",8
+77,"1: Yes, the sequence exists. 0: No, the sequence does not exist.",4,"Does the image display a sequence where the arrangement is Rectangle, Circle, Circle, Circle, Rectangle?",8
+77,"1: Yes, the sequence exists. 0: No, the sequence does not exist.",5,"Does the image display a sequence where the arrangement is Circle, Rectangle, Rectangle, Circle, Circle?",8
+77,"1: Yes, the sequence exists. 0: No, the sequence does not exist.",6,"Does the image display a sequence where the arrangement is Circle, Rectangle, Circle, Rectangle, Circle?",8
+77,"1: Yes, the sequence exists. 0: No, the sequence does not exist.",7,"Does the image display a sequence where the arrangement is Circle, Rectangle, Circle, Circle, Rectangle?",8
+77,"1: Yes, the sequence exists. 0: No, the sequence does not exist.",8,"Does the image display a sequence where the arrangement is Circle, Circle, Rectangle, Rectangle, Circle?",8
+77,"1: Yes, the sequence exists. 0: No, the sequence does not exist.",9,"Does the image display a sequence where the arrangement is Circle, Circle, Rectangle, Circle, Rectangle?",8
+77,"1: Yes, the sequence exists. 0: No, the sequence does not exist.",10,"Does the image display a sequence where the arrangement is Circle, Circle, Circle, Rectangle, Rectangle?",8
+77,"1: No, there are no repeated sequences. 0: Yes, there are repeated sequences.",11,Does the image display any repeated arrangement sequences?,5
+77,"1: No, the arrangement is valid. 0: Yes, the arrangement is invalid.",12,"Does the image display any invalid arrangement sequences, such as having more than 3 circles or more than 2 rectangles?",5
+78,"1: The permutation 7755 exists in the image, 0: The permutation 7755 does not exist in the image.",1,"Does the image show a permutation where there are exactly two 7s and two 5s, with the order 7755?",8
+78,"1: The permutation 7575 exists in the image, 0: The permutation 7575 does not exist in the image.",2,"Does the image show a permutation where there are exactly two 7s and two 5s, with the order 7575?",8
+78,"1: The permutation 7557 exists in the image, 0: The permutation 7557 does not exist in the image.",3,"Does the image show a permutation where there are exactly two 7s and two 5s, with the order 7557?",8
+78,"1: The permutation 5775 exists in the image, 0: The permutation 5775 does not exist in the image.",4,"Does the image show a permutation where there are exactly two 7s and two 5s, with the order 5775?",8
+78,"1: The permutation 5757 exists in the image, 0: The permutation 5757 does not exist in the image.",5,"Does the image show a permutation where there are exactly two 7s and two 5s, with the order 5757?",8
+78,"1: The permutation 5577 exists in the image, 0: The permutation 5577 does not exist in the image.",6,"Does the image show a permutation where there are exactly two 7s and two 5s, with the order 5577?",8
+78,"1: No duplicate permutations exist in the image, 0: Duplicate permutations exist in the image.",7,"Does the image show any duplicate permutations, where the same arrangement of digits appears more than once?",5
+78,"1: No invalid permutations exist in the image, 0: Invalid permutations exist in the image.",8,"Does the image show any invalid permutations, where the digits are not exactly two 7s and two 5s?",5
+79,"1: Yes, it exists in the image, 0: No, it does not exist in the image",1,Does the image display a permutation where the order is Book | Toy Car | Spoon | Spoon?,8
+79,"1: Yes, it exists in the image, 0: No, it does not exist in the image",2,Does the image display a permutation where the order is Book | Spoon | Toy Car | Spoon?,8
+79,"1: Yes, it exists in the image, 0: No, it does not exist in the image",3,Does the image display a permutation where the order is Book | Spoon | Spoon | Toy Car?,8
+79,"1: Yes, it exists in the image, 0: No, it does not exist in the image",4,Does the image display a permutation where the order is Toy Car | Book | Spoon | Spoon?,8
+79,"1: Yes, it exists in the image, 0: No, it does not exist in the image",5,Does the image display a permutation where the order is Toy Car | Spoon | Book | Spoon?,8
+79,"1: Yes, it exists in the image, 0: No, it does not exist in the image",6,Does the image display a permutation where the order is Toy Car | Spoon | Spoon | Book?,8
+79,"1: Yes, it exists in the image, 0: No, it does not exist in the image",7,Does the image display a permutation where the order is Spoon | Book | Toy Car | Spoon?,8
+79,"1: Yes, it exists in the image, 0: No, it does not exist in the image",8,Does the image display a permutation where the order is Spoon | Book | Spoon | Toy Car?,8
+79,"1: Yes, it exists in the image, 0: No, it does not exist in the image",9,Does the image display a permutation where the order is Spoon | Toy Car | Book | Spoon?,8
+79,"1: Yes, it exists in the image, 0: No, it does not exist in the image",10,Does the image display a permutation where the order is Spoon | Toy Car | Spoon | Book?,8
+79,"1: Yes, it exists in the image, 0: No, it does not exist in the image",11,Does the image display a permutation where the order is Spoon | Spoon | Book | Toy Car?,8
+79,"1: Yes, it exists in the image, 0: No, it does not exist in the image",12,Does the image display a permutation where the order is Spoon | Spoon | Toy Car | Book?,8
+79,"1: No duplicates, 0: Duplicates exist in the image",13,Does the image display any duplicate permutation combinations?,5
+79,"1: No invalid combinations, 0: Invalid combinations exist in the image",14,"Does the image display any invalid permutation combinations, such as incorrect objects or too many of one object?",5
+80,"1: Yes, the arrangement is present. 0: No, the arrangement is not present.",1,"Does the image show an arrangement where Cactus is not adjacent to Rose, in the order Fern | Cactus | Rose?",8
+80,"1: Yes, the arrangement is present. 0: No, the arrangement is not present.",2,"Does the image show an arrangement where Cactus is not adjacent to Rose, in the order Rose | Fern | Cactus?",8
+80,"1: Yes, the arrangement is present. 0: No, the arrangement is not present.",3,"Does the image show an arrangement where Cactus is not adjacent to Rose, in the order Cactus | Fern | Rose?",8
+80,"1: Yes, the arrangement is present. 0: No, the arrangement is not present.",4,"Does the image show an arrangement where Cactus is not adjacent to Rose, in the order Rose | Cactus | Fern?",8
+80,"1: No, there are no repeated arrangements. 0: Yes, there are repeated arrangements.",5,Does the image show any repeated arrangements?,5
+80,"1: No, there are no invalid arrangements. 0: Yes, there are invalid arrangements.",6,"Does the image show any invalid arrangements, where Cactus is adjacent to Rose (e.g., Cactus | Rose | Fern or Rose | Cactus | Fern)?",5
+81,"1: Yes, the arrangement is present in the image. 0: No, the arrangement is not present in the image.",1,"Does the image show an arrangement where there are three suitcases followed by a backpack in the order 'Suitcase, Suitcase, Suitcase, Backpack'?",8
+81,"1: Yes, the arrangement is present in the image. 0: No, the arrangement is not present in the image.",2,"Does the image show an arrangement where there are two suitcases, followed by a backpack and then another suitcase in the order 'Suitcase, Suitcase, Backpack, Suitcase'?",8
+81,"1: Yes, the arrangement is present in the image. 0: No, the arrangement is not present in the image.",3,"Does the image show an arrangement where a suitcase is placed first, followed by a backpack and then two suitcases in the order 'Suitcase, Backpack, Suitcase, Suitcase'?",8
+81,"1: Yes, the arrangement is present in the image. 0: No, the arrangement is not present in the image.",4,"Does the image show an arrangement where a backpack is placed first, followed by three suitcases in the order 'Backpack, Suitcase, Suitcase, Suitcase'?",8
+81,"1: No, there are no duplicate arrangements in the image. 0: Yes, there are duplicate arrangements in the image.",5,"Does the image show any repeated arrangement, i.e., any duplicate of the same permutation?",5
+81,"1: No, all arrangements are valid. 0: Yes, there is an illegal arrangement.",6,"Does the image show any illegal arrangement, i.e., an arrangement where the number of suitcases or backpacks does not match the expected count (3 suitcases and 1 backpack)?",5
+82,"1: Yes, the animals are arranged as Otter - Owl - Fox. 0: No, the arrangement does not match.",1,Does the image show a permutation where the animals are arranged as Otter - Owl - Fox?,8
+82,"1: Yes, the animals are arranged as Fox - Otter - Owl. 0: No, the arrangement does not match.",2,Does the image show a permutation where the animals are arranged as Fox - Otter - Owl?,8
+82,"1: Yes, the animals are arranged as Fox - Owl - Otter. 0: No, the arrangement does not match.",3,Does the image show a permutation where the animals are arranged as Fox - Owl - Otter?,8
+82,"1: Yes, the animals are arranged as Owl - Otter - Fox. 0: No, the arrangement does not match.",4,Does the image show a permutation where the animals are arranged as Owl - Otter - Fox?,8
+82,"1: No, there are no repeated permutations. 0: Yes, repeated permutations are present.",5,Does the image show any repeated permutations?,5
+82,"1: No, the image does not show invalid permutations. 0: Yes, an invalid permutation is present.",6,"Does the image show any invalid permutations, such as one where the fox is in the middle?",5
+83,"1: Yes, this arrangement exists; 0: No, this arrangement does not exist.",1,"Does the image show a specific arrangement where the sequence is Zebra, Kangaroo, Zebra, Kangaroo?",8
+83,"1: Yes, this arrangement exists; 0: No, this arrangement does not exist.",2,"Does the image show a specific arrangement where the sequence is Zebra, Kangaroo, Kangaroo, Zebra?",8
+83,"1: Yes, this arrangement exists; 0: No, this arrangement does not exist.",3,"Does the image show a specific arrangement where the sequence is Kangaroo, Zebra, Kangaroo, Zebra?",8
+83,1: No repeated combinations exist; 0: Repeated combinations exist.,4,Does the image display any repeated arrangement combinations?,5
+83,1: No invalid arrangements exist; 0: Invalid arrangements exist.,5,"Does the image display any invalid arrangement combinations, such as two zebras being adjacent?",5
+84,"1: Exists in the image, 0: Does not exist in the image",1,"Does the image display an arrangement where the order is Rabbit, Rabbit, Hedgehog, Hedgehog, Hedgehog?",8
+84,"1: Exists in the image, 0: Does not exist in the image",2,"Does the image display an arrangement where the order is Rabbit, Hedgehog, Rabbit, Hedgehog, Hedgehog?",8
+84,"1: Exists in the image, 0: Does not exist in the image",3,"Does the image display an arrangement where the order is Rabbit, Hedgehog, Hedgehog, Rabbit, Hedgehog?",8
+84,"1: Exists in the image, 0: Does not exist in the image",4,"Does the image display an arrangement where the order is Rabbit, Hedgehog, Hedgehog, Hedgehog, Rabbit?",8
+84,"1: Exists in the image, 0: Does not exist in the image",5,"Does the image display an arrangement where the order is Hedgehog, Rabbit, Rabbit, Hedgehog, Hedgehog?",8
+84,"1: Exists in the image, 0: Does not exist in the image",6,"Does the image display an arrangement where the order is Hedgehog, Rabbit, Hedgehog, Rabbit, Hedgehog?",8
+84,"1: Exists in the image, 0: Does not exist in the image",7,"Does the image display an arrangement where the order is Hedgehog, Rabbit, Hedgehog, Hedgehog, Rabbit?",8
+84,"1: Exists in the image, 0: Does not exist in the image",8,"Does the image display an arrangement where the order is Hedgehog, Hedgehog, Rabbit, Rabbit, Hedgehog?",8
+84,"1: Exists in the image, 0: Does not exist in the image",9,"Does the image display an arrangement where the order is Hedgehog, Hedgehog, Rabbit, Hedgehog, Rabbit?",8
+84,"1: Exists in the image, 0: Does not exist in the image",10,"Does the image display an arrangement where the order is Hedgehog, Hedgehog, Hedgehog, Rabbit, Rabbit?",8
+84,"1: No repeated arrangements, 0: There are repeated arrangements",11,Does the image display any repeated arrangement combinations?,5
+84,"1: No illegal combinations, 0: There are illegal combinations",12,"Does the image display any illegal arrangement combinations, such as having more than 2 rabbits or more than 3 hedgehogs?",5
+85,"1: Yes, the arrangement 'Bamboo - Fern - Orchid' is present, 0: No, the arrangement 'Bamboo - Fern - Orchid' is not present",1,"Does the image display an arrangement where Bamboo is not in the middle, with the order 'Bamboo - Fern - Orchid'?",8
+85,"1: Yes, the arrangement 'Bamboo - Orchid - Fern' is present, 0: No, the arrangement 'Bamboo - Orchid - Fern' is not present",2,"Does the image display an arrangement where Bamboo is not in the middle, with the order 'Bamboo - Orchid - Fern'?",8
+85,"1: No, there are no duplicate combinations, 0: Yes, there are duplicate combinations",3,Does the image show any duplicate arrangement combinations?,5
+85,"1: No, there are no invalid combinations, 0: Yes, there are invalid combinations where Bamboo is in the middle",4,"Does the image show any invalid arrangement combinations, such as Bamboo being in the middle?",5
+86,"1: Yes, the permutation 'Rose, Rose, Rose, Lily, Lily' is present, 0: No, the permutation is not present.",1,"Does the image show a permutation where the roses are grouped together, and the sequence is 'Rose, Rose, Rose, Lily, Lily'?",8
+86,"1: Yes, the permutation 'Lily, Rose, Rose, Rose, Lily' is present, 0: No, the permutation is not present.",2,"Does the image show a permutation where the roses are grouped together, and the sequence is 'Lily, Rose, Rose, Rose, Lily'?",8
+86,"1: Yes, the permutation 'Lily, Lily, Rose, Rose, Rose' is present, 0: No, the permutation is not present.",3,"Does the image show a permutation where the roses are grouped together, and the sequence is 'Lily, Lily, Rose, Rose, Rose'?",8
+86,"1: No, there are no duplicate permutations, 0: Yes, there are duplicate permutations.",4,"Does the image show any duplicate permutations, meaning the same arrangement of roses and lilies repeated more than once?",5
+86,"1: No, there are no illegal permutations, 0: Yes, there are illegal permutations.",5,"Does the image show any illegal permutations, meaning that the roses are not grouped together or the sequence contains more or fewer than 3 roses and 2 lilies?",5
+87,"1: Exists in the image, 0: Does not exist in the image",1,"Does the image display a permutation where Oak is first, followed by Maple, then Birch, and finally Pine, in that order?",8
+87,"1: Exists in the image, 0: Does not exist in the image",2,"Does the image display a permutation where Oak is first, followed by Birch, then Maple, and Pine last?",8
+87,"1: Exists in the image, 0: Does not exist in the image",3,"Does the image display a permutation where Oak is first, followed by Birch, then Pine, and Maple last?",8
+87,"1: Exists in the image, 0: Does not exist in the image",4,"Does the image display a permutation where Oak is first, followed by Pine, then Maple, and Birch last?",8
+87,"1: Exists in the image, 0: Does not exist in the image",5,"Does the image display a permutation where Oak is first, followed by Pine, then Birch, and Maple last?",8
+87,"1: Exists in the image, 0: Does not exist in the image",6,"Does the image display a permutation where Maple is first, followed by Oak, then Birch, and Pine last?",8
+87,"1: Exists in the image, 0: Does not exist in the image",7,"Does the image display a permutation where Maple is first, followed by Oak, then Pine, and Birch last?",8
+87,"1: Exists in the image, 0: Does not exist in the image",8,"Does the image display a permutation where Maple is first, followed by Birch, then Oak, and Pine last?",8
+87,"1: Exists in the image, 0: Does not exist in the image",9,"Does the image display a permutation where Maple is first, followed by Birch, then Pine, and Oak last?",8
+87,"1: Exists in the image, 0: Does not exist in the image",10,"Does the image display a permutation where Birch is first, followed by Oak, then Maple, and Pine last?",8
+87,"1: Exists in the image, 0: Does not exist in the image",11,"Does the image display a permutation where Birch is first, followed by Oak, then Pine, and Maple last?",8
+87,"1: Exists in the image, 0: Does not exist in the image",12,"Does the image display a permutation where Birch is first, followed by Maple, then Oak, and Pine last?",8
+87,"1: Does not exist, 0: Exists",13,Does the image display any repeated permutation combinations?,5
+87,"1: Does not exist, 0: Exists",14,Does the image display any invalid permutation combinations where Oak and Pine are adjacent?,5
+88,"1: The arrangement exists, 0: The arrangement does not exist",1,"Does the image display an arrangement where the sequence is 'Monstera, Fiddle Leaf Fig, Monstera, Fiddle Leaf Fig, Fiddle Leaf Fig'?",8
+88,"1: The arrangement exists, 0: The arrangement does not exist",2,"Does the image display an arrangement where the sequence is 'Monstera, Fiddle Leaf Fig, Fiddle Leaf Fig, Monstera, Fiddle Leaf Fig'?",8
+88,"1: The arrangement exists, 0: The arrangement does not exist",3,"Does the image display an arrangement where the sequence is 'Monstera, Fiddle Leaf Fig, Fiddle Leaf Fig, Fiddle Leaf Fig, Monstera'?",8
+88,"1: The arrangement exists, 0: The arrangement does not exist",4,"Does the image display an arrangement where the sequence is 'Fiddle Leaf Fig, Monstera, Monstera, Fiddle Leaf Fig, Fiddle Leaf Fig'?",8
+88,"1: The arrangement exists, 0: The arrangement does not exist",5,"Does the image display an arrangement where the sequence is 'Fiddle Leaf Fig, Monstera, Fiddle Leaf Fig, Monstera, Fiddle Leaf Fig'?",8
+88,"1: The arrangement exists, 0: The arrangement does not exist",6,"Does the image display an arrangement where the sequence is 'Fiddle Leaf Fig, Fiddle Leaf Fig, Monstera, Monstera, Fiddle Leaf Fig'?",8
+88,"1: There are no duplicates, 0: There are duplicates",7,Does the image display any duplicate arrangement combinations?,5
+88,"1: There are no invalid combinations, 0: There are invalid combinations",8,"Does the image display any invalid arrangement combinations (e.g., two Monsteras adjacent to each other)?",5
+89,"1: The sequence Ruby - Sapphire - Opal - Emerald - Amethyst exists in the image, 0: The sequence does not exist.",1,"Does the image display a sequence where Opal is always in the third position, and the order is Ruby - Sapphire - Opal - Emerald - Amethyst?",8
+89,"1: The sequence Ruby - Emerald - Opal - Sapphire - Amethyst exists in the image, 0: The sequence does not exist.",2,"Does the image display a sequence where Opal is always in the third position, and the order is Ruby - Emerald - Opal - Sapphire - Amethyst?",8
+89,"1: The sequence Ruby - Amethyst - Opal - Sapphire - Emerald exists in the image, 0: The sequence does not exist.",3,"Does the image display a sequence where Opal is always in the third position, and the order is Ruby - Amethyst - Opal - Sapphire - Emerald?",8
+89,"1: The sequence Sapphire - Ruby - Opal - Emerald - Amethyst exists in the image, 0: The sequence does not exist.",4,"Does the image display a sequence where Opal is always in the third position, and the order is Sapphire - Ruby - Opal - Emerald - Amethyst?",8
+89,"1: The sequence Sapphire - Emerald - Opal - Ruby - Amethyst exists in the image, 0: The sequence does not exist.",5,"Does the image display a sequence where Opal is always in the third position, and the order is Sapphire - Emerald - Opal - Ruby - Amethyst?",8
+89,"1: The sequence Sapphire - Amethyst - Opal - Ruby - Emerald exists in the image, 0: The sequence does not exist.",6,"Does the image display a sequence where Opal is always in the third position, and the order is Sapphire - Amethyst - Opal - Ruby - Emerald?",8
+89,"1: The sequence Emerald - Ruby - Opal - Sapphire - Amethyst exists in the image, 0: The sequence does not exist.",7,"Does the image display a sequence where Opal is always in the third position, and the order is Emerald - Ruby - Opal - Sapphire - Amethyst?",8
+89,"1: The sequence Emerald - Sapphire - Opal - Ruby - Amethyst exists in the image, 0: The sequence does not exist.",8,"Does the image display a sequence where Opal is always in the third position, and the order is Emerald - Sapphire - Opal - Ruby - Amethyst?",8
+89,"1: The sequence Emerald - Amethyst - Opal - Ruby - Sapphire exists in the image, 0: The sequence does not exist.",9,"Does the image display a sequence where Opal is always in the third position, and the order is Emerald - Amethyst - Opal - Ruby - Sapphire?",8
+89,"1: The sequence Amethyst - Ruby - Opal - Sapphire - Emerald exists in the image, 0: The sequence does not exist.",10,"Does the image display a sequence where Opal is always in the third position, and the order is Amethyst - Ruby - Opal - Sapphire - Emerald?",8
+89,"1: The sequence Amethyst - Sapphire - Opal - Ruby - Emerald exists in the image, 0: The sequence does not exist.",11,"Does the image display a sequence where Opal is always in the third position, and the order is Amethyst - Sapphire - Opal - Ruby - Emerald?",8
+89,"1: The sequence Amethyst - Emerald - Opal - Ruby - Sapphire exists in the image, 0: The sequence does not exist.",12,"Does the image display a sequence where Opal is always in the third position, and the order is Amethyst - Emerald - Opal - Ruby - Sapphire?",8
+89,"1: There are no repeated sequences in the image, 0: There are repeated sequences in the image.",13,Does the image display any repeated sequence combinations?,5
+89,"1: There are no invalid permutations in the image, 0: There are invalid permutations in the image.",14,"Does the image display any invalid permutations (i.e., any sequence where Opal is not in the third position or the order of gemstones is incorrect)?",5
+90,"1: The arrangement 'Canvas, Canvas, Sculpture, Sculpture, Canvas' exists in the image, 0: The arrangement is missing or incorrect.",1,"Does the image show an arrangement where the first and last positions are canvases, and sculptures are in the middle, arranged as 'Canvas, Canvas, Sculpture, Sculpture, Canvas'?",8
+90,"1: The alternating arrangement 'Canvas, Sculpture, Canvas, Sculpture, Canvas' exists in the image, 0: The alternating pattern is missing or incorrect.",2,"Does the image show an arrangement where canvases and sculptures alternate, starting and ending with a canvas, arranged as 'Canvas, Sculpture, Canvas, Sculpture, Canvas'?",8
+90,"1: The arrangement 'Canvas, Sculpture, Sculpture, Canvas, Canvas' exists in the image, 0: The arrangement is missing or incorrect.",3,"Does the image show an arrangement where the first and last positions are canvases, and sculptures are placed next to each other in the middle, arranged as 'Canvas, Sculpture, Sculpture, Canvas, Canvas'?",8
+90,"1: No repeated arrangement or pattern exists, 0: A repeated arrangement or pattern is present.",4,Does the image show any repeated arrangement or pattern involving canvases and sculptures?,5
+90,"1: No illegal arrangement exists, 0: An illegal arrangement is present.",5,"Does the image show any illegal arrangement of canvases and sculptures, such as placing sculptures at the first or last position, which violates the rule of having the first and last positions as canvases?",5
+91,"1: The permutation is present in the image, 0: The permutation is not present in the image",1,"Does the image display a permutation where Oak, Birch, Pine, and Maple are arranged in the order: Oak - Birch - Pine - Maple?",8
+91,"1: The permutation is present in the image, 0: The permutation is not present in the image",2,"Does the image display a permutation where Oak, Birch, Pine, and Maple are arranged in the order: Birch - Oak - Pine - Maple?",8
+91,"1: The permutation is present in the image, 0: The permutation is not present in the image",3,"Does the image display a permutation where Oak, Birch, Pine, and Maple are arranged in the order: Pine - Oak - Birch - Maple?",8
+91,"1: The permutation is present in the image, 0: The permutation is not present in the image",4,"Does the image display a permutation where Oak, Birch, Pine, and Maple are arranged in the order: Pine - Birch - Oak - Maple?",8
+91,"1: The permutation is present in the image, 0: The permutation is not present in the image",5,"Does the image display a permutation where Oak, Birch, Pine, and Maple are arranged in the order: Maple - Birch - Oak - Pine?",8
+91,"1: The permutation is present in the image, 0: The permutation is not present in the image",6,"Does the image display a permutation where Oak, Birch, Pine, and Maple are arranged in the order: Maple - Pine - Birch - Oak?",8
+91,"1: The permutation is present in the image, 0: The permutation is not present in the image",7,"Does the image display a permutation where Oak, Birch, Pine, and Maple are arranged in the order: Birch - Pine - Oak - Maple?",8
+91,"1: The permutation is present in the image, 0: The permutation is not present in the image",8,"Does the image display a permutation where Oak, Birch, Pine, and Maple are arranged in the order: Maple - Pine - Oak - Birch?",8
+91,"1: The permutation is present in the image, 0: The permutation is not present in the image",9,"Does the image display a permutation where Oak, Birch, Pine, and Maple are arranged in the order: Birch - Maple - Pine - Oak?",8
+91,"1: The permutation is present in the image, 0: The permutation is not present in the image",10,"Does the image display a permutation where Oak, Birch, Pine, and Maple are arranged in the order: Pine - Birch - Oak - Maple?",8
+91,"1: The permutation is present in the image, 0: The permutation is not present in the image",11,"Does the image display a permutation where Oak, Birch, Pine, and Maple are arranged in the order: Pine - Oak - Birch - Maple?",8
+91,"1: The permutation is present in the image, 0: The permutation is not present in the image",12,"Does the image display a permutation where Oak, Birch, Pine, and Maple are arranged in the order: Birch - Pine - Maple - Oak?",8
+91,"1: No repeated permutations, 0: There are repeated permutations",13,"Does the image display any repeated permutations of Oak, Birch, Pine, and Maple?",5
+91,"1: No invalid permutations, 0: There are invalid permutations",14,"Does the image display any invalid permutations, where Oak and Maple are adjacent?",5
+92,"1: The arrangement is present, 0: The arrangement is not present",1,"Does the image display an arrangement where the 3 cacti are grouped together, with the order being: Cactus, Cactus, Cactus, Succulent, Succulent?",8
+92,"1: The arrangement is present, 0: The arrangement is not present",2,"Does the image display an arrangement where the 3 cacti are grouped together, with the order being: Succulent, Cactus, Cactus, Cactus, Succulent?",8
+92,"1: The arrangement is present, 0: The arrangement is not present",3,"Does the image display an arrangement where the 3 cacti are grouped together, with the order being: Succulent, Succulent, Cactus, Cactus, Cactus?",8
+92,"1: No repeated arrangements, 0: Repeated arrangements exist",4,"Does the image show any repeated arrangement combinations, such as the same sequence of succulents and cacti appearing more than once?",5
+92,"1: No invalid arrangements, 0: Invalid arrangements exist",5,"Does the image display any invalid arrangement combinations, such as not grouping all 3 cacti together or violating the required order of succulents and cacti?",5
+93,"1: Yes, the sequence exists. 0: No, the sequence does not exist.",1,"Does the image show a permutation where Fiction appears first, followed by Non-Fiction, Mystery, and then Biography?",8
+93,"1: Yes, the sequence exists. 0: No, the sequence does not exist.",2,"Does the image show a permutation where Fiction appears first, followed by Non-Fiction, Biography, and then Mystery?",8
+93,"1: Yes, the sequence exists. 0: No, the sequence does not exist.",3,"Does the image show a permutation where Biography appears first, followed by Fiction, Non-Fiction, and then Mystery?",8
+93,"1: Yes, the sequence exists. 0: No, the sequence does not exist.",4,"Does the image show a permutation where Fiction appears first, followed by Biography, Non-Fiction, and then Mystery?",8
+93,"1: Yes, the sequence exists. 0: No, the sequence does not exist.",5,"Does the image show a permutation where Mystery appears first, followed by Non-Fiction, Fiction, and then Biography?",8
+93,"1: Yes, the sequence exists. 0: No, the sequence does not exist.",6,"Does the image show a permutation where Mystery appears first, followed by Non-Fiction, Biography, and then Fiction?",8
+93,"1: Yes, the sequence exists. 0: No, the sequence does not exist.",7,"Does the image show a permutation where Biography appears first, followed by Mystery, Non-Fiction, and then Fiction?",8
+93,"1: Yes, the sequence exists. 0: No, the sequence does not exist.",8,"Does the image show a permutation where Mystery appears first, followed by Biography, Non-Fiction, and then Fiction?",8
+93,1: No repeated permutations. 0: Repeated permutations exist.,9,Does the image show any repeated permutations of the same book order?,5
+93,1: No invalid permutations. 0: Invalid permutations exist.,10,Does the image show any invalid permutations where Non-Fiction is not between Fiction and Mystery?,5
+94,"1: The arrangement exists in the image, 0: The arrangement does not exist in the image",1,"Does the image show an arrangement where Shelf1 contains Cactus and Fern, and Shelf2 contains Ivy and Orchid?",8
+94,"1: The arrangement exists in the image, 0: The arrangement does not exist in the image",2,"Does the image show an arrangement where Shelf1 contains Cactus and Ivy, and Shelf2 contains Fern and Orchid?",8
+94,"1: The arrangement exists in the image, 0: The arrangement does not exist in the image",3,"Does the image show an arrangement where Shelf1 contains Cactus and Orchid, and Shelf2 contains Fern and Ivy?",8
+94,"1: The arrangement exists in the image, 0: The arrangement does not exist in the image",4,"Does the image show an arrangement where Shelf1 contains Fern and Ivy, and Shelf2 contains Cactus and Orchid?",8
+94,"1: The arrangement exists in the image, 0: The arrangement does not exist in the image",5,"Does the image show an arrangement where Shelf1 contains Fern and Orchid, and Shelf2 contains Cactus and Ivy?",8
+94,"1: The arrangement exists in the image, 0: The arrangement does not exist in the image",6,"Does the image show an arrangement where Shelf1 contains Ivy and Orchid, and Shelf2 contains Cactus and Fern?",8
+94,"1: No duplicate combinations are shown, 0: Duplicate combinations are shown",7,"Does the image display any duplicate arrangement combinations (i.e., repeated combinations of plants on shelves)?",5
+94,"1: No invalid combinations are shown, 0: Invalid combinations are shown",8,"Does the image show any invalid arrangement combinations (i.e., a shelf containing more or fewer than two plants)?",5
+95,"1: Present, 0: Not present",1,"Does the image display a valid arrangement where Shiitake is never in the middle, and the order is Agaric - Oyster - Shiitake?",8
+95,"1: Present, 0: Not present",2,"Does the image display a valid arrangement where Shiitake is never in the middle, and the order is Oyster - Agaric - Shiitake?",8
+95,"1: No repeated combinations, 0: Repeated combinations exist",3,Does the image display any repeated arrangement combinations?,5
+95,"1: No invalid arrangements, 0: Invalid arrangements exist",4,"Does the image display any invalid arrangement combinations, meaning Shiitake is in the middle?",5
+96,"1: Exists, 0: Does not exist",1,Does the image show an arrangement where the 3 red stars (★) are followed by the blue diamond (◆)?,8
+96,"1: Exists, 0: Does not exist",2,"Does the image show an arrangement where 2 red stars (★) are followed by the blue diamond (◆), and then 1 red star (★)?",8
+96,"1: Exists, 0: Does not exist",3,"Does the image show an arrangement where 1 red star (★) is followed by the blue diamond (◆), and then 2 red stars (★)?",8
+96,"1: Exists, 0: Does not exist",4,Does the image show an arrangement where the blue diamond (◆) is followed by 3 red stars (★)?,8
+96,"1: Does not exist, 0: Exists",5,Does the image display any repeated arrangement of the same combination of red stars (★) and the blue diamond (◆)?,5
+96,"1: Does not exist, 0: Exists",6,Does the image show any invalid arrangement where the number of red stars (★) or the blue diamond (◆) is incorrect?,5
+97,"1: Exists as shown in the question, 0: Does not exist as shown in the question",1,"Does the image display a valid arrangement where Eagle is first and Parrot is last, with the order being Eagle - Falcon - Hawk - Owl - Parrot?",8
+97,"1: Exists as shown in the question, 0: Does not exist as shown in the question",2,"Does the image display a valid arrangement where Eagle is first and Parrot is last, with the order being Eagle - Falcon - Owl - Hawk - Parrot?",8
+97,"1: Exists as shown in the question, 0: Does not exist as shown in the question",3,"Does the image display a valid arrangement where Eagle is first and Parrot is last, with the order being Eagle - Hawk - Falcon - Owl - Parrot?",8
+97,"1: Exists as shown in the question, 0: Does not exist as shown in the question",4,"Does the image display a valid arrangement where Eagle is first and Parrot is last, with the order being Eagle - Hawk - Owl - Falcon - Parrot?",8
+97,"1: Exists as shown in the question, 0: Does not exist as shown in the question",5,"Does the image display a valid arrangement where Eagle is first and Parrot is last, with the order being Eagle - Owl - Falcon - Hawk - Parrot?",8
+97,"1: Exists as shown in the question, 0: Does not exist as shown in the question",6,"Does the image display a valid arrangement where Eagle is first and Parrot is last, with the order being Eagle - Owl - Hawk - Falcon - Parrot?",8
+97,"1: No repeated arrangement, 0: Contains repeated arrangement",7,Does the image display any repeated arrangement or permutation?,5
+97,"1: No invalid arrangement, 0: Contains invalid arrangement",8,"Does the image display any invalid arrangement, where Eagle is not first or Parrot is not last?",5
+98,"1: The sequence 'Chanterelle - Morel - Shiitake - Portobello' is present, 0: The sequence is not present.",1,Does the image show the sequence 'Chanterelle - Morel - Shiitake - Portobello'?,8
+98,"1: The sequence 'Chanterelle - Shiitake - Morel - Portobello' is present, 0: The sequence is not present.",2,Does the image show the sequence 'Chanterelle - Shiitake - Morel - Portobello'?,8
+98,"1: The sequence 'Chanterelle - Shiitake - Portobello - Morel' is present, 0: The sequence is not present.",3,Does the image show the sequence 'Chanterelle - Shiitake - Portobello - Morel'?,8
+98,"1: The sequence 'Chanterelle - Portobello - Morel - Shiitake' is present, 0: The sequence is not present.",4,Does the image show the sequence 'Chanterelle - Portobello - Morel - Shiitake'?,8
+98,"1: The sequence 'Shiitake - Chanterelle - Morel - Portobello' is present, 0: The sequence is not present.",5,Does the image show the sequence 'Shiitake - Chanterelle - Morel - Portobello'?,8
+98,"1: The sequence 'Shiitake - Chanterelle - Portobello - Morel' is present, 0: The sequence is not present.",6,Does the image show the sequence 'Shiitake - Chanterelle - Portobello - Morel'?,8
+98,"1: The sequence 'Shiitake - Portobello - Chanterelle - Morel' is present, 0: The sequence is not present.",7,Does the image show the sequence 'Shiitake - Portobello - Chanterelle - Morel'?,8
+98,"1: The sequence 'Portobello - Chanterelle - Morel - Shiitake' is present, 0: The sequence is not present.",8,Does the image show the sequence 'Portobello - Chanterelle - Morel - Shiitake'?,8
+98,"1: The sequence 'Portobello - Chanterelle - Shiitake - Morel' is present, 0: The sequence is not present.",9,Does the image show the sequence 'Portobello - Chanterelle - Shiitake - Morel'?,8
+98,"1: The sequence 'Portobello - Shiitake - Chanterelle - Morel' is present, 0: The sequence is not present.",10,Does the image show the sequence 'Portobello - Shiitake - Chanterelle - Morel'?,8
+98,"1: The sequence 'Chanterelle - Morel - Portobello - Shiitake' is present, 0: The sequence is not present.",11,Does the image show the sequence 'Chanterelle - Morel - Portobello - Shiitake'?,8
+98,"1: The sequence 'Chanterelle - Shiitake - Portobello - Morel' is present, 0: The sequence is not present.",12,Does the image show the sequence 'Chanterelle - Shiitake - Portobello - Morel'?,8
+98,"1: No duplicate sequences are present, 0: Duplicate sequences are present.",13,Does the image show any duplicate sequence combinations?,5
+98,"1: No invalid sequences are present, 0: Invalid sequences are present.",14,Does the image show any invalid sequence combinations (where Chanterelle does not precede Morel)?,5
+99,"1: Exists, 0: Does not exist",1,"Does the image display an arrangement where Fusilli and Penne are adjacent, and the order is 'Fusilli - Penne - Farfalle - Linguine'?",8
+99,"1: Exists, 0: Does not exist",2,"Does the image display an arrangement where Fusilli and Penne are adjacent, and the order is 'Penne - Fusilli - Farfalle - Linguine'?",8
+99,"1: Exists, 0: Does not exist",3,"Does the image display an arrangement where Fusilli and Penne are adjacent, and the order is 'Fusilli - Penne - Linguine - Farfalle'?",8
+99,"1: Exists, 0: Does not exist",4,"Does the image display an arrangement where Fusilli and Penne are adjacent, and the order is 'Penne - Fusilli - Linguine - Farfalle'?",8
+99,"1: Exists, 0: Does not exist",5,"Does the image display an arrangement where Fusilli and Penne are adjacent, and the order is 'Farfalle - Fusilli - Penne - Linguine'?",8
+99,"1: Exists, 0: Does not exist",6,"Does the image display an arrangement where Fusilli and Penne are adjacent, and the order is 'Farfalle - Penne - Fusilli - Linguine'?",8
+99,"1: Exists, 0: Does not exist",7,"Does the image display an arrangement where Fusilli and Penne are adjacent, and the order is 'Linguine - Fusilli - Penne - Farfalle'?",8
+99,"1: Exists, 0: Does not exist",8,"Does the image display an arrangement where Fusilli and Penne are adjacent, and the order is 'Linguine - Penne - Fusilli - Farfalle'?",8
+99,"1: No duplicates, 0: Duplicates exist",9,Does the image show any duplicate arrangement?,5
+99,"1: No invalid arrangements, 0: Invalid arrangement exists",10,"Does the image show any invalid arrangement, where Farfalle is last or Fusilli and Penne are not adjacent?",5
+100,"1: Exists as described, 0: Does not exist",1,"Does the image display a valid arrangement where the Queen is not in the first or last position, and the Bishop and Knight are adjacent? The order is King-Bishop-Knight-Queen-Rook.",8
+100,"1: Exists as described, 0: Does not exist",2,"Does the image display a valid arrangement where the Queen is not in the first or last position, and the Bishop and Knight are adjacent? The order is Rook-Bishop-Knight-Queen-King.",8
+100,"1: Exists as described, 0: Does not exist",3,"Does the image display a valid arrangement where the Queen is not in the first or last position, and the Bishop and Knight are adjacent? The order is King-Knight-Bishop-Queen-Rook.",8
+100,"1: Exists as described, 0: Does not exist",4,"Does the image display a valid arrangement where the Queen is not in the first or last position, and the Bishop and Knight are adjacent? The order is Rook-Knight-Bishop-Queen-King.",8
+100,"1: Exists as described, 0: Does not exist",5,"Does the image display a valid arrangement where the Queen is not in the first or last position, and the Bishop and Knight are adjacent? The order is Queen-Bishop-Knight-King-Rook.",8
+100,"1: Exists as described, 0: Does not exist",6,"Does the image display a valid arrangement where the Queen is not in the first or last position, and the Bishop and Knight are adjacent? The order is Queen-Knight-Bishop-King-Rook.",8
+100,"1: Exists as described, 0: Does not exist",7,"Does the image display a valid arrangement where the Queen is not in the first or last position, and the Bishop and Knight are adjacent? The order is King-Queen-Bishop-Knight-Rook.",8
+100,"1: Exists as described, 0: Does not exist",8,"Does the image display a valid arrangement where the Queen is not in the first or last position, and the Bishop and Knight are adjacent? The order is Rook-Queen-Bishop-Knight-King.",8
+100,"1: Exists as described, 0: Does not exist",9,"Does the image display a valid arrangement where the Queen is not in the first or last position, and the Bishop and Knight are adjacent? The order is King-Queen-Knight-Bishop-Rook.",8
+100,"1: Exists as described, 0: Does not exist",10,"Does the image display a valid arrangement where the Queen is not in the first or last position, and the Bishop and Knight are adjacent? The order is Rook-Queen-Knight-Bishop-King.",8
+100,"1: No duplicate arrangements, 0: Duplicate arrangements exist",11,Does the image display any duplicate arrangement of the chess pieces?,5
+100,"1: No invalid arrangements, 0: Invalid arrangements exist",12,"Does the image display any invalid arrangement, such as the Queen being in the first or last position, or the Bishop and Knight not being adjacent?",5

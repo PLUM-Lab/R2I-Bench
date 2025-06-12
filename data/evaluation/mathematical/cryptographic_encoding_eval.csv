@@ -1,0 +1,718 @@
+source_id,evaluation_criteria,id,question,weight
+1,"1: Exists, 0: Does not exist",1,"Does the image display the encoding for '!', which is 21 in hexadecimal?",8
+1,"1: Exists, 0: Does not exist",2,"Does the image display the encoding for '@', which is 40 in hexadecimal?",8
+1,"1: Exists, 0: Does not exist",3,"Does the image display the encoding for '#', which is 23 in hexadecimal?",8
+1,"1: No invalid encoding, 0: Invalid encoding exists",4,"Does the image show any invalid encoding situation, such as incorrect or out-of-range hexadecimal values?",5
+2,"1: The encoding for 'C' (Q2F0) is clearly visible, 0: The encoding for 'C' is not visible",1,"Does the image display the encoding for the character 'C', which is Q2F0?",8
+2,"1: The encoding for 'T' (VG8) is clearly visible, 0: The encoding for 'T' is not visible",2,"Does the image display the encoding for the character 'T', which is VG8?",8
+2,"1: The encoding for 'A' (QWQ) is clearly visible, 0: The encoding for 'A' is not visible",3,"Does the image display the encoding for the character 'A', which is QWQ?",8
+2,"1: No invalid encoding is present, 0: Invalid encoding is present",4,Does the image display any invalid encoding or encoding errors (such as incorrect Base64 representation)?,5
+3,"1: The encoding for 'T' (54) is displayed correctly, 0: The encoding for 'T' (54) is not displayed or incorrect.",1,Does the image display the encoding for the letter 'T' with the hexadecimal value 54?,8
+3,"1: The encoding for 'E' (65) is displayed correctly, 0: The encoding for 'E' (65) is not displayed or incorrect.",2,Does the image display the encoding for the letter 'E' with the hexadecimal value 65?,8
+3,"1: The encoding for 'X' (78) is displayed correctly, 0: The encoding for 'X' (78) is not displayed or incorrect.",3,Does the image display the encoding for the letter 'X' with the hexadecimal value 78?,8
+3,"1: The encoding for 'T' (74) is displayed correctly, 0: The encoding for 'T' (74) is not displayed or incorrect.",4,Does the image display the encoding for the letter 'T' (second occurrence) with the hexadecimal value 74?,8
+3,"1: No invalid encoding is displayed, 0: An invalid encoding is displayed.",5,"Does the image display any invalid encoding, such as a hexadecimal value that doesn't correspond to a valid UTF-8 character?",5
+4,"1: The encoding of 'S' as 'W' is present in the image, 0: The encoding of 'S' as 'W' is not present in the image",1,Does the image display the encoding for the letter 'S' replaced with 'W'?,8
+4,"1: The encoding of 'E' as 'H' is present in the image, 0: The encoding of 'E' as 'H' is not present in the image",2,Does the image display the encoding for the letter 'E' replaced with 'H'?,8
+4,"1: The encoding of 'C' as 'F' is present in the image, 0: The encoding of 'C' as 'F' is not present in the image",3,Does the image display the encoding for the letter 'C' replaced with 'F'?,8
+4,"1: The encoding of 'R' as 'U' is present in the image, 0: The encoding of 'R' as 'U' is not present in the image",4,Does the image display the encoding for the letter 'R' replaced with 'U'?,8
+4,"1: The second occurrence of 'E' is encoded as 'H', 0: The second occurrence of 'E' is not encoded as 'H'",5,Does the image display the encoding for the letter 'E' replaced with 'H' (second occurrence)?,8
+4,"1: The encoding of 'T' as 'W' is present in the image, 0: The encoding of 'T' as 'W' is not present in the image",6,Does the image display the encoding for the letter 'T' replaced with 'W'?,8
+4,"1: No illegal encoding is present, 0: Illegal encoding is present",7,"Does the image show any illegal encoding, where a letter from 'SECRET' has been replaced by a letter not following the rule of shifting by 3 positions?",5
+5,"1: The encoding 0047 is clearly visible in the image, 0: The encoding 0047 is not visible in the image.",1,"Does the image display the encoding for 'G', which is 0047 in hexadecimal?",8
+5,"1: The encoding 006F is clearly visible in the image, 0: The encoding 006F is not visible in the image.",2,"Does the image display the encoding for 'o', which is 006F in hexadecimal?",8
+5,"1: The encoding 0064 is clearly visible in the image, 0: The encoding 0064 is not visible in the image.",3,"Does the image display the encoding for 'd', which is 0064 in hexadecimal?",8
+5,"1: The encoding 0020 (space) is clearly visible in the image, 0: The encoding 0020 (space) is not visible in the image.",4,"Does the image display the encoding for 'space', which is 0020 in hexadecimal?",8
+5,"1: The encoding 004D is clearly visible in the image, 0: The encoding 004D is not visible in the image.",5,"Does the image display the encoding for 'M', which is 004D in hexadecimal?",8
+5,"1: The encoding 0072 is clearly visible in the image, 0: The encoding 0072 is not visible in the image.",6,"Does the image display the encoding for 'r', which is 0072 in hexadecimal?",8
+5,"1: The encoding 006E is clearly visible in the image, 0: The encoding 006E is not visible in the image.",7,"Does the image display the encoding for 'n', which is 006E in hexadecimal?",8
+5,"1: The encoding 0069 is clearly visible in the image, 0: The encoding 0069 is not visible in the image.",8,"Does the image display the encoding for 'i', which is 0069 in hexadecimal?",8
+5,"1: The encoding 0067 is clearly visible in the image, 0: The encoding 0067 is not visible in the image.",9,"Does the image display the encoding for 'g', which is 0067 in hexadecimal?",8
+5,"1: The encoding 0021 is clearly visible in the image, 0: The encoding 0021 is not visible in the image.",10,"Does the image display the encoding for '!', which is 0021 in hexadecimal?",8
+5,"1: No invalid encodings are present in the image, 0: An invalid encoding is present in the image.",11,"Does the image display any invalid encoding, such as incorrect or unrecognized hexadecimal values?",5
+6,"1: The base64 encoding 'SU1BR0U=' exists in the image, 0: The base64 encoding 'SU1BR0U=' does not exist in the image.",1,"Does the image display a base64 encoding of the word 'IMAGE', which is 'SU1BR0U='?",8
+6,"1: The image does not include any invalid base64 encoding, 0: The image includes invalid base64 encoding.",2,"Does the image include any invalid base64 encoding (e.g., containing characters outside the base64 range, such as symbols or spaces)?",5
+7,"1: Yes, 'E' is encoded to 'F', 0: No, 'E' is not encoded to 'F'",1,Does the image show an encoding where the letter 'E' from 'ENCODE' is transformed into 'F' using the key 'K'?,8
+7,"1: Yes, 'N' is encoded to 'V', 0: No, 'N' is not encoded to 'V'",2,Does the image show an encoding where the letter 'N' from 'ENCODE' is transformed into 'V' using the key 'E'?,8
+7,"1: Yes, 'C' is encoded to 'Q', 0: No, 'C' is not encoded to 'Q'",3,Does the image show an encoding where the letter 'C' from 'ENCODE' is transformed into 'Q' using the key 'Y'?,8
+7,"1: Yes, 'O' is encoded to 'X', 0: No, 'O' is not encoded to 'X'",4,Does the image show an encoding where the letter 'O' from 'ENCODE' is transformed into 'X' using the key 'K'?,8
+7,"1: Yes, 'D' is encoded to 'O', 0: No, 'D' is not encoded to 'O'",5,Does the image show an encoding where the letter 'D' from 'ENCODE' is transformed into 'O' using the key 'E'?,8
+7,"1: Yes, 'E' is encoded to 'J', 0: No, 'E' is not encoded to 'J'",6,Does the image show an encoding where the letter 'E' from 'ENCODE' is transformed into 'J' using the key 'Y'?,8
+7,"1: No illegal encoding, the transformation is correct, 0: Yes, an illegal encoding or mismatch is shown",7,"Does the image display an illegal encoding, such as a mismatch between the plaintext 'ENCODE' and the ciphertext 'FVQXOJ'?",5
+7,"1: Yes, the key 'KEY' is visibly used in the encoding process, 0: No, the key 'KEY' is not clearly applied",8,Does the image clearly indicate the use of the key 'KEY' applied to each letter of 'ENCODE' in a step-by-step manner?,5
+8,"1: The encoding '0100' is present in the image, 0: The encoding '0100' is not present in the image",1,"Does the image show an encoding for the digit '1' in Excess-3 code, which is '0100'?",8
+8,"1: The encoding '0110' is present in the image, 0: The encoding '0110' is not present in the image",2,"Does the image show an encoding for the digit '3' in Excess-3 code, which is '0110'?",8
+8,"1: The encoding '1000' is present in the image, 0: The encoding '1000' is not present in the image",3,"Does the image show an encoding for the digit '5' in Excess-3 code, which is '1000'?",8
+8,"1: No invalid encoding is present in the image, 0: An invalid encoding is present in the image",4,"Does the image show any invalid encoding, such as a representation that does not follow the Excess-3 encoding format?",5
+9,"1: E: 45 exists, 0: E: 45 does not exist",1,Does the image display an encoding with the content E: 45?,8
+9,"1: N: 4E exists, 0: N: 4E does not exist",2,Does the image display an encoding with the content N: 4E?,8
+9,"1: C: 43 exists, 0: C: 43 does not exist",3,Does the image display an encoding with the content C: 43?,8
+9,"1: R: 52 exists, 0: R: 52 does not exist",4,Does the image display an encoding with the content R: 52?,8
+9,"1: Y: 59 exists, 0: Y: 59 does not exist",5,Does the image display an encoding with the content Y: 59?,8
+9,"1: P: 50 exists, 0: P: 50 does not exist",6,Does the image display an encoding with the content P: 50?,8
+9,"1: T: 54 exists, 0: T: 54 does not exist",7,Does the image display an encoding with the content T: 54?,8
+9,"1: No invalid encoding exists, 0: Invalid encoding exists",8,"Does the image display any invalid encoding, i.e., containing non-valid hexadecimal values?",5
+10,"1: Exists, 0: Does not exist",1,Does the image display an encoding where the first letter 'P' is transformed to 'R'?,8
+10,"1: Exists, 0: Does not exist",2,Does the image display an encoding where the second letter 'A' is transformed to 'B'?,8
+10,"1: Exists, 0: Does not exist",3,Does the image display an encoding where the third letter 'S' is transformed to 'T'?,8
+10,"1: Exists, 0: Does not exist",4,Does the image display an encoding where the fourth letter 'S' is transformed to 'T'?,8
+10,"1: Exists, 0: Does not exist",5,Does the image display an encoding where the fifth letter 'W' is transformed to 'X'?,8
+10,"1: Exists, 0: Does not exist",6,Does the image display an encoding where the sixth letter 'O' is transformed to 'W'?,8
+10,"1: Exists, 0: Does not exist",7,Does the image display an encoding where the seventh letter 'R' is transformed to 'U'?,8
+10,"1: Exists, 0: Does not exist",8,Does the image display an encoding where the eighth letter 'D' is transformed to 'V'?,8
+10,"1: Does not exist, 0: Exists",9,"Does the image display any illegal encoding, i.e., a letter transformed to something other than the expected result based on Caesar cipher rules?",5
+11,"1: The image shows the encoding U+006F for 'o', 0: The encoding for 'o' is not displayed or incorrect",1,"Does the image display the Unicode encoding for 'o', which is U+006F?",8
+11,"1: The image shows the encoding U+0062 for 'b', 0: The encoding for 'b' is not displayed or incorrect",2,"Does the image display the Unicode encoding for 'b', which is U+0062?",8
+11,"1: The image shows the encoding U+0073 for 's', 0: The encoding for 's' is not displayed or incorrect",3,"Does the image display the Unicode encoding for 's', which is U+0073?",8
+11,"1: The image shows the encoding U+0063 for 'c', 0: The encoding for 'c' is not displayed or incorrect",4,"Does the image display the Unicode encoding for 'c', which is U+0063?",8
+11,"1: The image shows the encoding U+0075 for 'u', 0: The encoding for 'u' is not displayed or incorrect",5,"Does the image display the Unicode encoding for 'u', which is U+0075?",8
+11,"1: The image shows the encoding U+0072 for 'r', 0: The encoding for 'r' is not displayed or incorrect",6,"Does the image display the Unicode encoding for 'r', which is U+0072?",8
+11,"1: The image shows the encoding U+0065 for 'e', 0: The encoding for 'e' is not displayed or incorrect",7,"Does the image display the Unicode encoding for 'e', which is U+0065?",8
+11,"1: The image does not show any invalid encoding or out-of-order characters, 0: The image displays invalid encoding or incorrect characters",8,"Does the image contain any invalid encoding representations, such as characters that are not properly encoded or appear out of order?",5
+12,"1: The encoding U+1F989 (owl emoji) is present, 0: The encoding U+1F989 is not present",1,Does the image display the encoding U+1F989 (owl emoji)?,8
+12,"1: The encoding U+1F989 is repeated three times, 0: The encoding U+1F989 is not repeated three times",2,Does the image display the encoding U+1F989 repeated exactly three times?,8
+12,"1: Only the encoding U+1F989 is displayed, 0: Other Unicode characters or symbols are also displayed",3,"Does the image display only U+1F989 as the content, without any other Unicode characters or symbols?",8
+12,"1: No incorrect or invalid encoding is present, 0: An incorrect or invalid encoding is present",4,"Does the image show any incorrect or invalid encoding, such as an unrelated or unsupported Unicode character?",5
+13,"1: The character 'U' is present in the image, 0: The character 'U' is not present in the image",1,"Does the image display the correct first character of the encoded word, which should be 'U'?",8
+13,"1: The character 'A' is present in the image, 0: The character 'A' is not present in the image",2,"Does the image display the correct second character of the encoded word, which should be 'A'?",8
+13,"1: The character 'C' is present in the image, 0: The character 'C' is not present in the image",3,"Does the image display the correct third character of the encoded word, which should be 'C'?",8
+13,"1: The character 'Q' is present in the image, 0: The character 'Q' is not present in the image",4,"Does the image display the correct fourth character of the encoded word, which should be 'Q'?",8
+13,"1: The character 'L' is present in the image, 0: The character 'L' is not present in the image",5,"Does the image display the correct fifth character of the encoded word, which should be 'L'?",8
+13,"1: The character 'F' is present in the image, 0: The character 'F' is not present in the image",6,"Does the image display the correct sixth character of the encoded word, which should be 'F'?",8
+13,"1: There are no characters outside of 'UACQLF', 0: There are characters outside of 'UACQLF'",7,"Does the image contain any characters that are not part of the expected encoded output, i.e., anything other than 'UACQLF'?",5
+13,"1: The cipher is correctly displayed with no errors, 0: The cipher is not correctly displayed or there are misalignments",8,"Does the image represent the Vigenère cipher encryption correctly, without any errors or misalignments?",5
+14,"1: The encoding U+0043 is present in the image, 0: The encoding U+0043 is not present in the image.",1,Does the image display the hexadecimal representation of the letter 'C' (U+0043) in UTF-16 encoding?,8
+14,"1: The encoding U+0052 is present in the image, 0: The encoding U+0052 is not present in the image.",2,Does the image display the hexadecimal representation of the letter 'R' (U+0052) in UTF-16 encoding?,8
+14,"1: The encoding U+0059 is present in the image, 0: The encoding U+0059 is not present in the image.",3,Does the image display the hexadecimal representation of the letter 'Y' (U+0059) in UTF-16 encoding?,8
+14,"1: The encoding U+0054 is present in the image, 0: The encoding U+0054 is not present in the image.",4,Does the image display the hexadecimal representation of the letter 'T' (U+0054) in UTF-16 encoding?,8
+14,"1: The encoding U+0050 is present in the image, 0: The encoding U+0050 is not present in the image.",5,Does the image display the hexadecimal representation of the letter 'P' (U+0050) in UTF-16 encoding?,5
+14,"1: No invalid encodings are shown, 0: One or more invalid encodings are displayed.",6,Does the image avoid displaying any invalid or unexpected encodings?,5
+14,"1: All expected encodings are displayed correctly and aligned, 0: Errors or misalignments are present.",7,"Does the image represent all expected encodings correctly, without any errors or misalignments?",5
+15,"1: The image shows 'S' as the result of a Caesar cipher shift of 2 from 'R', 0: The image does not show 'S'.",1,Does the image display an encoding of 'S' as part of the Caesar cipher shift of 2 from 'R'?,8
+15,"1: The image shows 'F' as the result of a Caesar cipher shift of 2 from 'E', 0: The image does not show 'F'.",2,Does the image display an encoding of 'F' as part of the Caesar cipher shift of 2 from 'E'?,8
+15,"1: The image shows 'H' as the result of a Caesar cipher shift of 2 from 'A', 0: The image does not show 'H'.",3,Does the image display an encoding of 'H' as part of the Caesar cipher shift of 2 from 'A'?,8
+15,"1: The image shows 'P' as the result of a Caesar cipher shift of 2 from 'O', 0: The image does not show 'P'.",4,Does the image display an encoding of 'P' as part of the Caesar cipher shift of 2 from 'O'?,8
+15,"1: The image shows 'S' as the result of a Caesar cipher shift of 2 from 'N', 0: The image does not show 'S'.",5,Does the image display an encoding of 'S' as part of the Caesar cipher shift of 2 from 'N'?,8
+15,"1: The image shows 'U' as the result of a Caesar cipher shift of 2 from 'S', 0: The image does not show 'U'.",6,Does the image display an encoding of 'U' as part of the Caesar cipher shift of 2 from 'S'?,8
+15,"1: No illegal encoding is displayed, 0: The image shows an illegal encoding.",7,"Does the image display any illegal encoding, such as a letter being shifted incorrectly or out of the alphabet's range?",5
+15,"1: The image correctly displays 'SFHPSU' as the result of the Caesar cipher shift, 0: The image has errors or misalignments.",8,"Does the image represent the word 'SFHPSU' correctly, without any errors or misalignments?",5
+16,"1: Yes, the encoding 01010001 is displayed correctly, 0: No, the encoding 01010001 is not displayed correctly",1,"Does the image display the binary encoding for 'Q' correctly, which is 01010001?",8
+16,"1: Yes, the encoding 01010101 is displayed correctly, 0: No, the encoding 01010101 is not displayed correctly",2,"Does the image display the binary encoding for 'U' correctly, which is 01010101?",8
+16,"1: Yes, the encoding 01001001 is displayed correctly, 0: No, the encoding 01001001 is not displayed correctly",3,"Does the image display the binary encoding for 'I' correctly, which is 01001001?",8
+16,"1: Yes, the encoding 01010010 is displayed correctly, 0: No, the encoding 01010010 is not displayed correctly",4,"Does the image display the binary encoding for 'R' correctly, which is 01010010?",8
+16,"1: Yes, the encoding 01001011 is displayed correctly, 0: No, the encoding 01001011 is not displayed correctly",5,"Does the image display the binary encoding for 'K' correctly, which is 01001011?",8
+16,"1: No, the image does not show any illegitimate encoding, 0: Yes, the image shows illegitimate encoding",6,"Does the image show any illegitimate encoding, such as non-binary characters or errors in the binary string?",5
+16,"1: Yes, the image correctly represents the full binary encoding without any errors or misalignments, 0: No, the image contains errors or misalignments",7,"Does the image represent the full binary encoding of 'QUIRK' correctly, without any errors or misalignments?",5
+17,"1: The encoding U+0056 is displayed correctly for the letter 'V', 0: The encoding U+0056 is not displayed or incorrect.",1,Does the image show the encoding U+0056 for the letter 'V'?,8
+17,"1: The encoding U+0069 is displayed correctly for the letter 'I', 0: The encoding U+0069 is not displayed or incorrect.",2,Does the image show the encoding U+0069 for the letter 'I'?,8
+17,"1: The encoding U+0072 is displayed correctly for the letter 'R', 0: The encoding U+0072 is not displayed or incorrect.",3,Does the image show the encoding U+0072 for the letter 'R'?,8
+17,"1: The encoding U+0075 is displayed correctly for the letter 'U', 0: The encoding U+0075 is not displayed or incorrect.",4,Does the image show the encoding U+0075 for the letter 'U'?,8
+17,"1: The encoding U+0073 is displayed correctly for the letter 'S', 0: The encoding U+0073 is not displayed or incorrect.",5,Does the image show the encoding U+0073 for the letter 'S'?,8
+17,"1: No invalid encoding or non-hexadecimal characters are shown, 0: There is invalid encoding or non-hexadecimal characters in the image.",6,"Does the image show any invalid encoding, such as U+XXXX or non-hexadecimal characters?",5
+17,"1: The encoding is correct, in the right order, and aligned properly, 0: There are errors or misalignments in the encoding or order.",7,"Does the image represent the word 'VIRUS' with the correct Unicode encoding in the correct order, without any errors or misalignments?",5
+18,"1: Exists, 0: Does not exist",1,"Does the image display an encoding of the word 'DIALOGUE' using the ROT13 cipher, resulting in 'QNVYBTLH'?",8
+18,"1: Exists, 0: Does not exist",2,Does the image display the exact transformation of 'DIALOGUE' into 'QNVYBTLH' using the ROT13 cipher without errors?,8
+18,"1: No errors, 0: Errors exist",3,"Does the image display any incorrect encoding, such as any errors in the ROT13 transformation process?",5
+18,"1: Correct, 0: Error present",4,"Does the image represent the ROT13 cipher transformation correctly, without any misalignments or inaccuracies?",5
+19,"1: The encoding U+004F is clearly visible and corresponds to the character 'O'., 0: The encoding U+004F is absent or incorrect.",1,"Does the image display the encoding U+004F, which corresponds to the Unicode character 'O'?",8
+19,"1: The encoding U+0050 is clearly visible and corresponds to the character 'P'., 0: The encoding U+0050 is absent or incorrect.",2,"Does the image display the encoding U+0050, which corresponds to the Unicode character 'P'?",8
+19,"1: The encoding U+0049 is clearly visible and corresponds to the character 'I'., 0: The encoding U+0049 is absent or incorrect.",3,"Does the image display the encoding U+0049, which corresponds to the Unicode character 'I'?",8
+19,"1: The encoding U+004E is clearly visible and corresponds to the character 'N'., 0: The encoding U+004E is absent or incorrect.",4,"Does the image display the encoding U+004E, which corresponds to the Unicode character 'N'?",8
+19,"1: The encoding U+0049 is clearly visible and corresponds to the character 'I'., 0: The encoding U+0049 is absent or incorrect.",5,"Does the image display the encoding U+0049 (second occurrence), corresponding to the Unicode character 'I'?",8
+19,"1: The encoding U+004F is clearly visible and corresponds to the character 'O'., 0: The encoding U+004F is absent or incorrect.",6,"Does the image display the encoding U+004F (second occurrence), corresponding to the Unicode character 'O'?",8
+19,"1: The encoding U+004E is clearly visible and corresponds to the character 'N'., 0: The encoding U+004E is absent or incorrect.",7,"Does the image display the encoding U+004E (second occurrence), corresponding to the Unicode character 'N'?",5
+19,"1: There are no illegal encodings present., 0: There is at least one illegal encoding present.",8,Does the image contain any illegal encodings that do not correspond to the UTF-8 representation of the word 'OPINION'?,5
+19,"1: The word 'OPINION' is displayed correctly with no errors., 0: There are errors, misalignments, or inconsistencies in the display.",9,"Does the image represent the word 'OPINION' correctly, without any errors or misalignments in the displayed encodings?",5
+20,"1: The encoding 01001010 is correctly displayed, 0: The encoding 01001010 is not shown or incorrect",1,Does the image show the binary encoding for 'J' as 01001010?,8
+20,"1: The encoding 01001111 is correctly displayed, 0: The encoding 01001111 is not shown or incorrect",2,Does the image show the binary encoding for 'O' as 01001111?,8
+20,"1: The encoding 01010101 is correctly displayed, 0: The encoding 01010101 is not shown or incorrect",3,Does the image show the binary encoding for 'U' as 01010101?,8
+20,"1: The encoding 01010010 is correctly displayed, 0: The encoding 01010010 is not shown or incorrect",4,Does the image show the binary encoding for 'R' as 01010010?,8
+20,"1: The encoding 01001110 is correctly displayed, 0: The encoding 01001110 is not shown or incorrect",5,Does the image show the binary encoding for 'N' as 01001110?,8
+20,"1: The encoding 01000101 is correctly displayed, 0: The encoding 01000101 is not shown or incorrect",6,Does the image show the binary encoding for 'E' as 01000101?,8
+20,"1: The encoding 01011001 is correctly displayed, 0: The encoding 01011001 is not shown or incorrect",7,Does the image show the binary encoding for 'Y' as 01011001?,8
+20,"1: The encoding 00100000 is correctly displayed, 0: The encoding 00100000 is not shown or incorrect",8,Does the image show the binary encoding for the space character as 00100000?,8
+20,"1: The encoding 01010100 is correctly displayed, 0: The encoding 01010100 is not shown or incorrect",9,Does the image show the binary encoding for 'T' as 01010100?,8
+20,"1: The encoding 01001001 is correctly displayed, 0: The encoding 01001001 is not shown or incorrect",10,Does the image show the binary encoding for 'I' as 01001001?,8
+20,"1: The encoding 01001101 is correctly displayed, 0: The encoding 01001101 is not shown or incorrect",11,Does the image show the binary encoding for 'M' as 01001101?,8
+20,"1: The encoding 01000101 is correctly displayed again, 0: The encoding 01000101 is not shown or incorrect for the second time",12,Does the image show the binary encoding for 'E' as 01000101 correctly for the second time?,8
+20,"1: No illegal encodings are displayed, 0: Illegal encodings are shown",13,"Does the image display any illegal encoding, such as binary patterns not corresponding to any valid ASCII characters?",5
+20,"1: The entire phrase is correctly displayed without errors, 0: There are errors or misalignments in the displayed binary encoding",14,"Does the image represent the entire phrase 'JOURNEY TIME' correctly, without any errors or misalignments?",5
+21,"1: Yes, 'Y' is correctly displayed, 0: No, 'Y' is missing or incorrect",1,Does the image display the encoding 'Y' as the result of encrypting 'B' using the key 'C'?,8
+21,"1: Yes, 'L' is correctly displayed, 0: No, 'L' is missing or incorrect",2,Does the image display the encoding 'L' as the result of encrypting 'R' using the key 'L'?,8
+21,"1: Yes, 'L' is correctly displayed, 0: No, 'L' is missing or incorrect",3,Does the image display the encoding 'L' as the result of encrypting 'E' using the key 'I'?,8
+21,"1: Yes, 'K' is correctly displayed, 0: No, 'K' is missing or incorrect",4,Does the image display the encoding 'K' as the result of encrypting 'E' using the key 'M'?,8
+21,"1: Yes, 'G' is correctly displayed, 0: No, 'G' is missing or incorrect",5,Does the image display the encoding 'G' as the result of encrypting 'Z' using the key 'A'?,8
+21,"1: Yes, 'R' is correctly displayed, 0: No, 'R' is missing or incorrect",6,Does the image display the encoding 'R' as the result of encrypting 'E' using the key 'T'?,8
+21,"1: No illegal encoding, 0: Illegal encoding present",7,Does the image contain any illegal encodings (such as symbols or incorrect characters like numbers or punctuation)?,5
+21,"1: Correct and accurate encryption, 0: Errors or misalignments present",8,"Does the image represent the full Vigenère cipher encryption of 'BREEZE' as 'YLLKGR' correctly, without any errors or misalignments?",5
+22,"1: The encoding '...' for 'S' is present in the image, 0: The encoding '...' for 'S' is not present.",1,"Does the image show the encoding for 'S' in Morse code, which is '...'?",8
+22,"1: The encoding '---' for 'O' is present in the image, 0: The encoding '---' for 'O' is not present.",2,"Does the image show the encoding for 'O' in Morse code, which is '---'?",8
+22,"1: There is no illegal or incorrect encoding (like unrecognized symbols or incorrect sequence), 0: There is an illegal or incorrect encoding.",3,"Does the image show any illegal or incorrect Morse code encoding, such as an invalid sequence of dots or dashes?",5
+22,"1: The full Morse code for 'SOS' is displayed correctly as '... --- ...', 0: There is an error in representing the full encryption.",4,"Does the image represent the complete Morse code encryption of 'SOS' correctly, as '... --- ...'?",5
+23,"1: Exists the encoding '....' for the letter 'H', 0: Does not exist the encoding '....' for the letter 'H'",1,"Does the image show the Morse code encoding for the letter 'H', which is '....'?",8
+23,"1: Exists the encoding '.' for the letter 'E', 0: Does not exist the encoding '.' for the letter 'E'",2,"Does the image show the Morse code encoding for the letter 'E', which is '.'?",8
+23,"1: Exists the encoding '.-..' for the letter 'L', 0: Does not exist the encoding '.-..' for the letter 'L'",3,"Does the image show the Morse code encoding for the first 'L', which is '.-..'?",8
+23,"1: Exists the encoding '.--.' for the letter 'P', 0: Does not exist the encoding '.--.' for the letter 'P'",4,"Does the image show the Morse code encoding for the letter 'P', which is '.--.'?",8
+23,"1: No incorrect encoding (dots or dashes), 0: Incorrect encoding (extra or missing dots/dashes)",5,"Does the image contain any incorrect Morse code encodings, such as extra or missing dots or dashes for any letter?",5
+23,"1: Correct alignment, no misalignment or errors, 0: Misalignment or errors in encoding placement",6,Does the image show the Morse code for 'HELP' correctly aligned and displayed in a clear and consistent manner without misalignment?,5
+24,"1: The encoding for 'B' (66) is displayed correctly, 0: The encoding for 'B' (66) is not displayed.",1,Does the image display the encoding for the letter 'B' with the decimal value 66?,8
+24,"1: The encoding for 'Y' (89) is displayed correctly, 0: The encoding for 'Y' (89) is not displayed.",2,Does the image display the encoding for the letter 'Y' with the decimal value 89?,8
+24,"1: The encoding for 'T' (84) is displayed correctly, 0: The encoding for 'T' (84) is not displayed.",3,Does the image display the encoding for the letter 'T' with the decimal value 84?,8
+24,"1: The encoding for 'E' (69) is displayed correctly, 0: The encoding for 'E' (69) is not displayed.",4,Does the image display the encoding for the letter 'E' with the decimal value 69?,8
+24,"1: No incorrect encodings exist, 0: Incorrect encodings are present.",5,Does the image display any incorrect encoding values that do not correspond to valid ASCII decimal representations for 'BYTE'?,5
+24,"1: All encodings are correctly displayed with no errors or misalignments, 0: There are errors or misalignments in the displayed encodings.",6,"Does the image represent the ASCII encoding values for 'BYTE' correctly, without any errors or misalignments?",5
+25,"1: The entity '&lt;' is correctly displayed, 0: The entity '&lt;' is not displayed or incorrect.",1,"Does the image display the HTML entity encoding for '<', which is '&lt;'?",8
+25,"1: The entity '&gt;' is correctly displayed, 0: The entity '&gt;' is not displayed or incorrect.",2,"Does the image display the HTML entity encoding for '>', which is '&gt;'?",8
+25,"1: The entity '&amp;' is correctly displayed, 0: The entity '&amp;' is not displayed or incorrect.",3,"Does the image display the HTML entity encoding for '&', which is '&amp;'?",8
+25,"1: There are no incorrect or malformed entities, 0: There is at least one incorrect or malformed entity.",4,"Does the image show any incorrect or malformed HTML entities for the characters '<', '>', or '&'?",5
+25,"1: The entities are displayed correctly, 0: There are errors or misalignments in displaying the entities.",5,"Does the image represent the HTML entities '&lt;', '&gt;', and '&amp;' correctly, without any errors or misalignments?",5
+26,"1: The encoding correctly shows 'B' in Rail 1, 0: 'B' is missing or in the wrong rail",1,"Does the image display an encoding of 'B' in Rail 1, corresponding to the first character of 'BOUTIQUE'?",8
+26,"1: The encoding correctly shows 'O' in Rail 2, 0: 'O' is missing or in the wrong rail",2,"Does the image display an encoding of 'O' in Rail 2, corresponding to the second character of 'BOUTIQUE'?",8
+26,"1: The encoding correctly shows 'T' in Rail 3, 0: 'T' is missing or in the wrong rail",3,"Does the image display an encoding of 'T' in Rail 3, corresponding to the third character of 'BOUTIQUE'?",8
+26,"1: The encoding correctly shows 'I' in Rail 2, 0: 'I' is missing or in the wrong rail",4,"Does the image display an encoding of 'I' in Rail 2, corresponding to the fifth character of 'BOUTIQUE'?",8
+26,"1: The encoding correctly shows 'Q' in Rail 3, 0: 'Q' is missing or in the wrong rail",5,"Does the image display an encoding of 'Q' in Rail 3, corresponding to the seventh character of 'BOUTIQUE'?",5
+26,"1: The final output is 'BOTEIQUUI' with no errors, 0: The final output is incorrect or incomplete",6,Does the image display the correct final output of 'BOTEIQUUI' based on the Rail Fence cipher with 3 rails?,5
+26,"1: No illegal encoding, all characters are correctly placed, 0: There are errors in encoding or placement",7,"Does the image show any illegal encoding situations, such as characters being placed incorrectly or missing altogether?",5
+26,"1: The encoding is correct and aligned properly, 0: There is a misalignment or encoding error",8,Does the image represent the encoding of 'BOUTIQUE' with 3 rails without any errors or misalignments?,5
+27,"1: The encoding 'B' is present for the letter 'L', 0: The encoding 'B' is absent or incorrect",1,"Does the image show the Vigenère cipher encoding for the letter 'L', which should be 'B' based on the encryption method?",8
+27,"1: The encoding 'N' is present for the letter 'A', 0: The encoding 'N' is absent or incorrect",2,"Does the image show the Vigenère cipher encoding for the letter 'A', which should be 'N' based on the encryption method?",8
+27,"1: The encoding 'X' is present for the letter 'N', 0: The encoding 'X' is absent or incorrect",3,"Does the image show the Vigenère cipher encoding for the letter 'N', which should be 'X' based on the encryption method?",8
+27,"1: The encoding 'J' is present for the letter 'T', 0: The encoding 'J' is absent or incorrect",4,"Does the image show the Vigenère cipher encoding for the letter 'T', which should be 'J' based on the encryption method?",8
+27,"1: The encoding 'Y' is present for the letter 'E', 0: The encoding 'Y' is absent or incorrect",5,"Does the image show the Vigenère cipher encoding for the letter 'E', which should be 'Y' based on the encryption method?",8
+27,"1: The encoding 'M' is present for the letter 'R', 0: The encoding 'M' is absent or incorrect",6,"Does the image show the Vigenère cipher encoding for the letter 'R', which should be 'M' based on the encryption method?",8
+27,"1: The encoding 'N' is present for the letter 'N', 0: The encoding 'N' is absent or incorrect",7,"Does the image show the Vigenère cipher encoding for the letter 'N', which should be 'N' again, based on the encryption method?",8
+27,"1: There are no errors, all encodings are correct, 0: There are errors, one or more encodings are incorrect",8,"Does the image show any encoding errors, such as letters that do not match the expected output of the Vigenère cipher?",5
+27,"1: The encryption is complete and aligned correctly, 0: The encryption is incomplete or misaligned",9,"Does the image accurately represent the full Vigenère cipher encryption of the word 'LANTERN' using the key 'MAP', without any letters missing or misaligned?",5
+28,"1: The encoding of 'Q' as 'B' is present, 0: The encoding of 'Q' as 'B' is not present",1,Does the image show the encoding of 'Q' as 'B'?,8
+28,"1: The encoding of 'U' as 'V' is present, 0: The encoding of 'U' as 'V' is not present",2,Does the image show the encoding of 'U' as 'V'?,8
+28,"1: The encoding of 'I' as 'L' is present, 0: The encoding of 'I' as 'L' is not present",3,Does the image show the encoding of 'I' as 'L'?,8
+28,"1: The encoding of 'C' as 'P' is present, 0: The encoding of 'C' as 'P' is not present",4,Does the image show the encoding of 'C' as 'P'?,8
+28,"1: The encoding of 'K' as 'A' is present, 0: The encoding of 'K' as 'A' is not present",5,Does the image show the encoding of 'K' as 'A'?,8
+28,"1: There is no invalid encoding, 0: There is an invalid encoding",6,"Does the image show any invalid encoding, such as 'Q' being encoded as something other than 'B'?",5
+28,"1: The encryption is represented correctly, 0: There is an error in the representation",7,"Does the image correctly represent the Caesar cipher encryption of 'QUICK' with a shift of 7, without any errors or misalignments?",5
+29,"1: The encoding for 'O' is correctly shown as 4F, 0: The encoding for 'O' is not 4F",1,Does the image display the encoding for the character 'O' as 4F?,8
+29,"1: The encoding for 'C' is correctly shown as 43, 0: The encoding for 'C' is not 43",2,Does the image display the encoding for the character 'C' as 43?,8
+29,"1: The encoding for 'E' is correctly shown as 45, 0: The encoding for 'E' is not 45",3,Does the image display the encoding for the character 'E' as 45?,8
+29,"1: The encoding for 'A' is correctly shown as 41, 0: The encoding for 'A' is not 41",4,Does the image display the encoding for the character 'A' as 41?,8
+29,"1: The encoding for 'N' is correctly shown as 4E, 0: The encoding for 'N' is not 4E",5,Does the image display the encoding for the character 'N' as 4E?,8
+29,"1: There are no invalid encodings or mismatches, 0: Invalid encoding or mismatches are present",6,"Does the image display any invalid encoding or mismatch, such as showing non-UTF-8 or incorrect hexadecimal representations?",5
+29,"1: The sequence is displayed correctly, 0: There are errors or misalignments in the sequence",7,"Does the image represent the hexadecimal sequence of 'OCEAN' correctly, without any errors or misalignments?",5
+30,"1: 'M' is transformed into 'Z', 0: 'M' is not transformed into 'Z'",1,Does the image show the letter 'M' being correctly encoded as 'Z' in the ROT13 transformation?,8
+30,"1: 'Y' is transformed into 'F', 0: 'Y' is not transformed into 'F'",2,Does the image show the letter 'Y' being correctly encoded as 'F' in the ROT13 transformation?,8
+30,"1: 'S' is transformed into 'L', 0: 'S' is not transformed into 'L'",3,Does the image show the letter 'S' being correctly encoded as 'L' in the ROT13 transformation?,8
+30,"1: 'T' is transformed into 'G', 0: 'T' is not transformed into 'G'",4,Does the image show the letter 'T' being correctly encoded as 'G' in the ROT13 transformation?,8
+30,"1: 'E' is transformed into 'R', 0: 'E' is not transformed into 'R'",5,Does the image show the letter 'E' being correctly encoded as 'R' in the ROT13 transformation?,8
+30,"1: 'R' is transformed into 'E', 0: 'R' is not transformed into 'E'",6,Does the image show the letter 'R' being correctly encoded as 'E' in the ROT13 transformation?,8
+30,"1: 'Y' is transformed into 'L', 0: 'Y' is not transformed into 'L'",7,Does the image show the letter 'Y' being correctly encoded as 'L' in the ROT13 transformation?,8
+30,"1: The full transformation of 'MYSTERY' to 'ZFLGERL' is accurate and complete, 0: There is an error or missing transformation in the process",8,Does the image show the complete encoding of the word 'MYSTERY' as 'ZFLGERL' without any mistakes or missing transformations?,5
+31,"1: The encoding '%20' is visible correctly, 0: The encoding '%20' is not present or incorrect.",1,Does the image show the URL encoding '%20' for the space character?,8
+31,"1: The encoding '%21' is visible correctly, 0: The encoding '%21' is not present or incorrect.",2,Does the image show the URL encoding '%21' for the exclamation mark ('!') character?,8
+31,"1: No invalid encoding is present, 0: There is an invalid encoding present (e.g., characters like '%2X').",3,"Does the image show any invalid URL encoding (for example, incorrect or unexpected characters)?",5
+31,"1: The phrase is represented correctly with no errors, 0: There is an error, misalignment, or incorrect representation in the image.",4,Does the image represent the full phrase 'Decode%20this%21' correctly without any errors or misalignments?,5
+32,"1: The binary encoding 01000011 is present in the image, 0: The binary encoding 01000011 is not present in the image.",1,Does the image show the binary encoding for the letter 'C' as 01000011?,8
+32,"1: No invalid binary encodings (extra or incorrect bits), 0: Invalid or erroneous binary encodings are present.",3,"Does the image include any invalid or erroneous binary encodings (e.g., extra bits or incorrect binary digits)?",5
+32,"1: The binary encoding is aligned correctly with no distortions or errors, 0: There are misalignments or distortions in the binary representation.",4,Does the image represent the binary encoding 01000011 without any misalignment or distortion?,5
+33,"1: The encoding for 'V' (86) is present, 0: The encoding for 'V' (86) is not present",1,Does the image show the encoding for the letter 'V' with ASCII value 86?,8
+33,"1: The encoding for 'I' (73) is present, 0: The encoding for 'I' (73) is not present",2,Does the image show the encoding for the letter 'I' with ASCII value 73?,8
+33,"1: The encoding for 'O' (79) is present, 0: The encoding for 'O' (79) is not present",3,Does the image show the encoding for the letter 'O' with ASCII value 79?,8
+33,"1: The encoding for 'L' (76) is present, 0: The encoding for 'L' (76) is not present",4,Does the image show the encoding for the letter 'L' with ASCII value 76?,8
+33,"1: The encoding for 'E' (69) is present, 0: The encoding for 'E' (69) is not present",5,Does the image show the encoding for the letter 'E' with ASCII value 69?,8
+33,"1: The encoding for 'T' (84) is present, 0: The encoding for 'T' (84) is not present",6,Does the image show the encoding for the letter 'T' with ASCII value 84?,8
+33,"1: No invalid encodings are present, 0: Invalid encodings are present",7,Does the image display any invalid encoding values that do not correspond to any letter in the word 'VIOLET'?,5
+33,"1: The image represents the correct ASCII values without errors, 0: The image has errors or misalignments",8,Does the image represent the correct ASCII values for each letter without errors or misalignments?,5
+34,"1: The encoding for 'P' is correctly shown as 'K', 0: The encoding for 'P' is not shown as 'K'",1,Does the image display the encoding for the letter 'P' as 'K'?,8
+34,"1: The encoding for 'l' is correctly shown as 'R', 0: The encoding for 'l' is not shown as 'R'",2,Does the image display the encoding for the letter 'l' as 'R'?,8
+34,"1: The encoding for 'u' is correctly shown as 'S', 0: The encoding for 'u' is not shown as 'S'",3,Does the image display the encoding for the letter 'u' as 'S'?,8
+34,"1: The encoding for 't' is correctly shown as 'X', 0: The encoding for 't' is not shown as 'X'",4,Does the image display the encoding for the letter 't' as 'X'?,8
+34,"1: The encoding for 'o' is correctly shown as 'G', 0: The encoding for 'o' is not shown as 'G'",5,Does the image display the encoding for the letter 'o' as 'G'?,8
+34,"1: The encoding for '5' is correctly shown, 0: The encoding for '5' is incorrect",6,Does the image display the encoding for the digit '5' correctly as '5'?,5
+34,"1: The encoding for '2' is correctly shown, 0: The encoding for '2' is incorrect",7,Does the image display the encoding for the digit '2' correctly as '2'?,5
+34,"1: No invalid Base32 characters are present, 0: Invalid Base32 characters are present",8,Does the image display any invalid or incorrect Base32 characters in the encoding?,5
+34,"1: The Base32 encoding 'KRSXG5D2' is shown correctly, 0: There are errors or misalignments in the encoding",9,Does the image represent the Base32 encoding of 'Pluto' as 'KRSXG5D2' without any errors or misalignments?,5
+35,"1: The result '00' is clearly shown in hexadecimal format, 0: The result is not visible or incorrect",1,Does the image display an encoding that represents the XOR result of 'A' with key 'A' (in hexadecimal)?,8
+35,"1: No invalid encoding or erroneous characters are shown, 0: Invalid encoding or characters are present",3,"Does the image show any invalid encoding, such as incorrect hexadecimal representation or non-existent characters?",5
+35,"1: The result is accurate and aligned with expected encoding, 0: There are errors or misalignments in the representation",4,"Does the image represent the XOR result of 'A' and 'A' (in hexadecimal) correctly, without any errors or misalignments?",5
+36,"1: The encoding '%20' for space is displayed correctly, 0: The encoding '%20' for space is not displayed correctly",1,Does the image display the URL encoding for space (' ') as '%20'?,8
+36,"1: The encoding '%21' for exclamation mark is displayed correctly, 0: The encoding '%21' for exclamation mark is not displayed correctly",2,Does the image display the URL encoding for the exclamation mark ('!') as '%21'?,8
+36,"1: No incorrect or illegal encodings present, 0: Incorrect or illegal encodings present",3,"Does the image contain any incorrect or illegal encodings, such as '%21' incorrectly representing a different character?",5
+36,"1: The URL encoding is represented correctly without errors or misalignments, 0: There are errors or misalignments in the representation",4,"Does the image represent the URL encoding of 'Eclipse Vision!' correctly, without any errors or misalignments?",5
+37,"1: The encoding 17 for 'Q' is correctly displayed in the image, 0: The encoding 17 for 'Q' is not displayed or is incorrect.",1,Does the image show the encoding for the letter 'Q' as 17?,8
+37,"1: The encoding 21 for 'U' is correctly displayed in the image, 0: The encoding 21 for 'U' is not displayed or is incorrect.",2,Does the image show the encoding for the letter 'U' as 21?,8
+37,"1: The encoding 9 for 'I' is correctly displayed in the image, 0: The encoding 9 for 'I' is not displayed or is incorrect.",3,Does the image show the encoding for the letter 'I' as 9?,8
+37,"1: The encoding 26 for 'Z' is correctly displayed in the image, 0: The encoding 26 for 'Z' is not displayed or is incorrect.",4,Does the image show the encoding for the letter 'Z' as 26?,8
+37,"1: No invalid encodings or out-of-range values are shown, 0: There are invalid encodings or out-of-range values shown.",5,"Does the image show any encoding values that are outside the range of 1 to 26, or any invalid encodings?",5
+37,"1: The cipher is displayed correctly and without errors, 0: There are errors or misalignments in the cipher representation.",6,"Does the image represent the A1Z26 cipher correctly, without any errors or misalignments in the encoding sequence for the word 'QUIZ'?",5
+38,"1: The encoding for 'V' is 'E', 0: The encoding for 'V' is not 'E'",1,Does the image display the encoding for 'V' as 'E'?,8
+38,"1: The encoding for 'E' is 'F', 0: The encoding for 'E' is not 'F'",2,Does the image display the encoding for 'E' as 'F'?,8
+38,"1: The encoding for 'C' is 'G', 0: The encoding for 'C' is not 'G'",3,Does the image display the encoding for 'C' as 'G'?,8
+38,"1: The encoding for 'T' is 'C', 0: The encoding for 'T' is not 'C'",4,Does the image display the encoding for 'T' as 'C'?,8
+38,"1: The encoding for 'O' is 'I', 0: The encoding for 'O' is not 'I'",5,Does the image display the encoding for 'O' as 'I'?,8
+38,"1: The encoding for 'R' is 'W', 0: The encoding for 'R' is not 'W'",6,Does the image display the encoding for 'R' as 'W'?,8
+38,"1: No invalid encodings present, 0: Invalid encodings present",7,"Does the image show any invalid encodings, such as letters that don't follow the Atbash cipher rules?",5
+38,"1: The image shows 'EFGCIW' correctly, 0: There are errors or misalignments in the encryption",8,Does the image represent the word 'VECTOR' correctly encrypted as 'EFGCIW' without any errors or misalignments?,5
+39,"1: The encoding 01000110 is present, 0: The encoding 01000110 is not present",1,"Does the image show the ASCII encoding of 'F' in binary, which is 01000110?",8
+39,"1: The encoding 01001001 is present, 0: The encoding 01001001 is not present",2,"Does the image show the ASCII encoding of 'I' in binary, which is 01001001?",8
+39,"1: The encoding 01010010 is present, 0: The encoding 01010010 is not present",3,"Does the image show the ASCII encoding of 'R' in binary, which is 01010010?",8
+39,"1: The encoding 01000101 is present, 0: The encoding 01000101 is not present",4,"Does the image show the ASCII encoding of 'E' in binary, which is 01000101?",8
+39,"1: There is no illegal encoding, 0: There is an illegal encoding",5,"Does the image display any illegal or incorrect encoding, such as non-binary values or misalignment?",5
+39,"1: The binary encoding is correct with no errors, 0: There is an error or misalignment in the encoding",6,"Does the image represent the binary string for 'FIRE' correctly, without any errors or misalignments in the encoding?",5
+40,"1: The encoding 'RGVjb2RlIG1l' exists in the image, 0: The encoding 'RGVjb2RlIG1l' does not exist in the image",1,Does the image display a Base64 encoding with the content 'RGVjb2RlIG1l'?,8
+40,"1: The encoding is correctly formatted, 0: The encoding contains extra characters or spaces",2,Is the encoding 'RGVjb2RlIG1l' correctly formatted (no extra characters or spaces)?,8
+40,"1: Only the encoding 'RGVjb2RlIG1l' is shown, 0: The image contains unrelated content alongside the encoding",3,Does the image display the encoding 'RGVjb2RlIG1l' without any additional unrelated content?,5
+40,"1: The encoding is correct and without errors, 0: There are errors or misalignments in the encoding representation",4,Does the image represent the Base64 encoding of 'Decode me' without any errors or misalignments?,5
+41,"1: The image correctly shows the encoding as '6', 0: The image does not show '6' as the encoded result.",1,"Does the image show the encoding of the digit '1' shifted by 5 positions, resulting in '6'?",8
+41,"1: The image correctly shows the encoding as '3', 0: The image does not show '3' as the encoded result.",2,"Does the image show the encoding of the digit '8' shifted by 5 positions, resulting in '3'?",8
+41,"1: The image correctly shows the encoding as '8', 0: The image does not show '8' as the encoded result.",3,"Does the image show the encoding of the digit '3' shifted by 5 positions, resulting in '8'?",8
+41,"1: The image correctly shows the encoding as '2', 0: The image does not show '2' as the encoded result.",4,"Does the image show the encoding of the digit '7' shifted by 5 positions, resulting in '2'?",8
+41,"1: The image does not display any invalid encoding, 0: The image displays an invalid encoding.",5,"Does the image display an invalid encoding, such as shifting a digit incorrectly (e.g., '1' to '7')?",5
+41,"1: The image accurately represents the cipher with no errors, 0: The image shows errors or misalignments in the encoding.",6,"Does the image represent the ROT5 cipher encoding without any errors or misalignments (e.g., correctly showing the digits '6', '3', '8', '2')?",5
+42,"1: The encoding for 'G' is correctly displayed as 'T', 0: The encoding for 'G' is not displayed or incorrect.",1,Does the image display an encoding for 'G' that is correctly transformed to 'T'?,8
+42,"1: The encoding for 'A' is correctly displayed as 'Z', 0: The encoding for 'A' is not displayed or incorrect.",2,Does the image display an encoding for 'A' that is correctly transformed to 'Z'?,8
+42,"1: The encoding for 'D' is correctly displayed as 'W', 0: The encoding for 'D' is not displayed or incorrect.",3,Does the image display an encoding for 'D' that is correctly transformed to 'W'?,8
+42,"1: The second encoding for 'G' is correctly displayed as 'T', 0: The second encoding for 'G' is not displayed or incorrect.",4,Does the image display an encoding for 'G' that is correctly transformed to 'T' (again)?,8
+42,"1: The encoding for 'E' is correctly displayed as 'V', 0: The encoding for 'E' is not displayed or incorrect.",5,Does the image display an encoding for 'E' that is correctly transformed to 'V'?,8
+42,"1: The encoding for 'T' is correctly displayed as 'G', 0: The encoding for 'T' is not displayed or incorrect.",6,Does the image display an encoding for 'T' that is correctly transformed to 'G'?,8
+42,"1: No invalid encoding is displayed, 0: An invalid encoding is displayed.",7,"Does the image show any invalid encoding, such as a substitution that does not follow the Atbash cipher rules?",5
+42,"1: The encryption is represented correctly with no errors or misalignments, 0: There are errors or misalignments in the representation.",8,"Does the image represent the Atbash cipher encryption of the word 'GADGET' correctly, without any errors or misalignments?",5
+43,"1: 'Y' is correctly shown at the first position, 0: 'Y' is missing or in the wrong position",1,Does the image display the encoding for the letter 'Y' at the first position?,8
+43,"1: 'R' is correctly shown at the second position, 0: 'R' is missing or in the wrong position",2,Does the image display the encoding for the letter 'R' at the second position?,8
+43,"1: 'E' is correctly shown at the third position, 0: 'E' is missing or in the wrong position",3,Does the image display the encoding for the letter 'E' at the third position?,8
+43,"1: 'T' is correctly shown at the fourth position, 0: 'T' is missing or in the wrong position",4,Does the image display the encoding for the letter 'T' at the fourth position?,8
+43,"1: 'S' is correctly shown at the fifth position, 0: 'S' is missing or in the wrong position",5,Does the image display the encoding for the letter 'S' at the fifth position?,8
+43,"1: 'Y' is correctly shown at the sixth position, 0: 'Y' is missing or in the wrong position",6,Does the image display the encoding for the letter 'Y' at the sixth position?,8
+43,"1: 'M' is correctly shown at the seventh position, 0: 'M' is missing or in the wrong position",7,Does the image display the encoding for the letter 'M' at the seventh position?,8
+43,"1: No extra characters are shown, 0: There are extra or incorrect characters",8,Does the image show any encoding that is not part of the expected sequence 'YRETSYM'?,5
+43,"1: The image is fully aligned with 'YRETSYM', 0: There are errors or misalignments",9,Does the image correctly represent the entire reversed string without errors or misalignments?,5
+44,"1: The encoding 'c3b7e4f2' is present, 0: The encoding 'c3b7e4f2' is absent",1,Does the image display the encoding 'c3b7e4f2'?,8
+44,"1: The encoding '2555a442' is present, 0: The encoding '2555a442' is absent",2,Does the image display the encoding '2555a442'?,8
+44,"1: The encoding '5b7b7d96' is present, 0: The encoding '5b7b7d96' is absent",3,Does the image display the encoding '5b7b7d96'?,8
+44,"1: The encoding 'f0e960fe' is present, 0: The encoding 'f0e960fe' is absent",4,Does the image display the encoding 'f0e960fe'?,8
+44,"1: The encoding '574b1b11' is present, 0: The encoding '574b1b11' is absent",5,Does the image display the encoding '574b1b11'?,8
+44,"1: The encoding '8d207810' is present, 0: The encoding '8d207810' is absent",6,Does the image display the encoding '8d207810'?,8
+44,"1: The encoding '8f2ba622' is present, 0: The encoding '8f2ba622' is absent",7,Does the image display the encoding '8f2ba622'?,8
+44,"1: The encoding 'f3897e42' is present, 0: The encoding 'f3897e42' is absent",8,Does the image display the encoding 'f3897e42'?,8
+44,"1: No invalid encoding, 0: Invalid encoding present",9,"Does the image show any invalid encoding, such as misplaced characters or incorrect representations of the hash?",5
+44,"1: The entire hash is correct and displayed without error, 0: There are errors or misalignments in the hash",10,"Does the image represent the entire SHA-256 hash of the string 'puzzle' correctly, without any errors or misalignments?",5
+45,"1: Yes, the encoding 01010001 is shown, 0: No, the encoding is not shown",1,Does the image show the binary encoding for the letter 'Q' as 01010001?,8
+45,"1: Yes, the first bit is 0, 0: No, the first bit is not 0",2,Does the image correctly display the first bit of the binary encoding for the letter 'Q' as 0?,8
+45,"1: Yes, the second bit is 1, 0: No, the second bit is not 1",3,Does the image correctly display the second bit of the binary encoding for the letter 'Q' as 1?,8
+45,"1: Yes, the encoding is exactly 8 bits, 0: No, the encoding is not 8 bits",4,"Does the image show the binary encoding for the letter 'Q' as exactly 8 bits, not more or less?",8
+45,"1: No invalid encoding, 0: There is an invalid encoding",5,"Does the image contain any invalid encoding, such as bits that don't correspond to a valid ASCII representation of 'Q'?",5
+45,"1: Correct representation, 0: Error or misalignment present",6,"Does the image represent the binary encoding for the letter 'Q' correctly, without any errors or misalignments?",5
+46,"1: The octal encoding for 'K' (113) is clearly visible in the image, 0: The octal encoding for 'K' (113) is not visible or incorrect.",1,Does the image display the octal encoding for 'K' (113)?,8
+46,"1: The octal encoding for 'N' (110) is clearly visible in the image, 0: The octal encoding for 'N' (110) is not visible or incorrect.",2,Does the image display the octal encoding for 'N' (110)?,8
+46,"1: The octal encoding for 'I' (105) is clearly visible in the image, 0: The octal encoding for 'I' (105) is not visible or incorrect.",3,Does the image display the octal encoding for 'I' (105)?,8
+46,"1: The octal encoding for 'F' (106) is clearly visible in the image, 0: The octal encoding for 'F' (106) is not visible or incorrect.",4,Does the image display the octal encoding for 'F' (106)?,8
+46,"1: The octal encoding for 'E' (115) is clearly visible in the image, 0: The octal encoding for 'E' (115) is not visible or incorrect.",5,Does the image display the octal encoding for 'E' (115)?,8
+46,"1: There are no invalid encodings displayed, 0: Invalid encodings are displayed.",6,"Does the image display any encoding that is not part of the octal representation for 'KNIFE' (e.g., encoding outside 113, 110, 105, 106, 115)?",5
+46,"1: The encoding is accurate with no errors, 0: There are errors in the encoding (e.g., misaligned numbers, wrong octal values).",7,Does the image represent the octal encoding correctly without any misalignments or errors in the numbers?,5
+47,"1: The image correctly shows '&lt;CODE&gt;', 0: The image does not show '&lt;CODE&gt;'.",1,"Does the image display the HTML entity encoding of '<CODE>', which is '&lt;CODE&gt;'?",8
+47,"1: The image shows '&lt;' for the '<' symbol, 0: The image does not show '&lt;' for '<'.",2,Does the image include the entity encoding for the less-than symbol '<' as '&lt;'?,8
+47,"1: The image shows '&gt;' for the '>' symbol, 0: The image does not show '&gt;' for '>'.",3,Does the image display the entity encoding for the greater-than symbol '>' as '&gt;'?,5
+47,"1: The encoding appears correctly formatted with no extra or missing characters, 0: There is an error or misalignment in the encoding (e.g., missing characters or incorrect symbols).",4,Does the image display the correct formatting with no extra or missing characters in the HTML encoding?,5
+48,"1: The encoding 'DDBDVG' is present in the image, 0: The encoding 'DDBDVG' is not present.",1,Does the image display the encoding 'DDBDVG' correctly?,8
+48,"1: The encoding 'UIBO' is present in the image, 0: The encoding 'UIBO' is not present.",2,Does the image display the encoding 'UIBO' correctly?,8
+48,"1: No illegal or corrupted encoding is displayed, 0: Illegal or corrupted encoding is present.",3,Does the image display any illegal or corrupted encoding (such as any characters that are not valid in ASCII or typical printable characters)?,5
+48,"1: The encryption is correctly depicted, 0: There are errors or misalignments in the encryption depiction.",4,"Does the image represent the XOR encryption of 'BREEZE' with the key '9876' correctly, without any errors or misalignments?",5
+49,"1: The image displays 'E', 0: The image does not display 'E'",1,Does the image display the encoding 'E' as part of the encrypted word?,8
+49,"1: The image displays 'R', 0: The image does not display 'R'",2,Does the image display the encoding 'R' as part of the encrypted word?,8
+49,"1: The image displays 'P', 0: The image does not display 'P'",3,Does the image display the encoding 'P' as part of the encrypted word?,8
+49,"1: The image displays 'E' again, 0: The image does not display 'E' again",4,Does the image display the encoding 'E' (again) as part of the encrypted word?,8
+49,"1: The image displays 'K', 0: The image does not display 'K'",5,Does the image display the encoding 'K' as part of the encrypted word?,8
+49,"1: The image displays 'Q', 0: The image does not display 'Q'",6,Does the image display the encoding 'Q' as part of the encrypted word?,8
+49,"1: No illegal encoding is present, 0: Illegal encoding is present",7,"Does the image display any illegal encoding, such as characters outside of the expected 'ERPEKQ'?",5
+49,"1: The image correctly shows the sequence 'ERPEKQ', 0: There are errors or misalignments in the sequence",8,Does the image represent the correct encoding sequence ('ERPEKQ') without any errors or misalignments?,5
+50,"1: The encoding 'TElHVEggQU5EIERBUksi' is correctly shown in the image, 0: The encoding does not match.",1,"Does the image display the correct Base64 encoding of the phrase 'LIGHT AND DARK', specifically 'TElHVEggQU5EIERBUksi'?",8
+50,"1: The encoding is displayed exactly as 'TElHVEggQU5EIERBUksi', 0: There are any distortions or changes.",2,Does the image show the encoding 'TElHVEggQU5EIERBUksi' without any distortions or alterations?,8
+50,"1: No invalid encoding, 0: There is an invalid or incomplete encoding.",3,"Does the image avoid showing any invalid or malformed Base64 encoding, such as broken characters or incomplete sequences?",5
+50,"1: The encoding is presented clearly and accurately, 0: There is an error or misalignment in the representation.",4,"Does the image represent the Base64 encoding correctly, without errors or misalignments in the presentation?",5
+51,"1: The encoding '42' for 'B' is displayed, 0: The encoding '42' for 'B' is not displayed",1,Does the image show the encoding '42' for the character 'B' in UTF-8?,8
+51,"1: The encoding '52' for 'R' is displayed, 0: The encoding '52' for 'R' is not displayed",2,Does the image show the encoding '52' for the character 'R' in UTF-8?,8
+51,"1: The encoding '49' for 'I' is displayed, 0: The encoding '49' for 'I' is not displayed",3,Does the image show the encoding '49' for the character 'I' in UTF-8?,8
+51,"1: The encoding '44' for 'D' is displayed, 0: The encoding '44' for 'D' is not displayed",4,Does the image show the encoding '44' for the character 'D' in UTF-8?,8
+51,"1: The encoding '47' for 'G' is displayed, 0: The encoding '47' for 'G' is not displayed",5,Does the image show the encoding '47' for the character 'G' in UTF-8?,8
+51,"1: The encoding '45' for 'E' is displayed, 0: The encoding '45' for 'E' is not displayed",6,Does the image show the encoding '45' for the character 'E' in UTF-8?,8
+51,"1: No invalid encoding sequences are shown, 0: Invalid encoding sequences are present",7,"Does the image show any invalid encoding sequences (i.e., values outside the expected range for UTF-8)?",5
+51,"1: The full word is correctly represented with accurate encoding, 0: There are errors or misalignments in the representation",8,"Does the image represent the full word 'BRIDGE' with the correct hexadecimal encoding values for each character, without errors or misalignments?",5
+52,1: The encoding 'JVAQ' is correctly displayed; 0: 'JVAQ' is not displayed or is incorrect.,1,"Does the image display the encoding 'JVAQ' correctly, corresponding to the ROT13 transformation of 'WIND'?",8
+52,1: The encoding 'OERRMR' is correctly displayed; 0: 'OERRMR' is not displayed or is incorrect.,2,"Does the image display the encoding 'OERRMR' correctly, corresponding to the ROT13 transformation of 'BREEZE'?",8
+52,1: No invalid encoding is displayed; 0: Invalid encoding is displayed.,3,"Does the image avoid displaying any invalid encoding, such as 'ZHLQ' for 'WIND' or 'UHFHLZ' for 'BREEZE'?",5
+52,"1: The ROT13 encodings are correctly represented, with no errors; 0: There are errors or misalignments in the representation.",4,"Does the image represent the ROT13 encodings correctly, without any errors or misalignments, showing a direct and proper transformation of 'WIND, BREEZE'?",5
+53,"1: The encoding 'TWFuaWZlc3Q' is present, 0: 'TWFuaWZlc3Q' is not present.",1,Does the image display the encoding string 'TWFuaWZlc3Q' as part of the Base32 encoding for 'MANIFEST CREATION DREAM'?,8
+53,"1: The encoding 'Q3JlYXRpb24' is present, 0: 'Q3JlYXRpb24' is not present.",2,Does the image display the encoding string 'Q3JlYXRpb24' as part of the Base32 encoding for 'MANIFEST CREATION DREAM'?,8
+53,"1: The encoding 'gRHJlYW0=' is present, 0: 'gRHJlYW0=' is not present.",3,Does the image display the encoding string 'gRHJlYW0=' as part of the Base32 encoding for 'MANIFEST CREATION DREAM'?,8
+53,"1: The complete encoding 'TWFuaWZlc3QgQ3JlYXRpb24gRHJlYW0=' is displayed correctly, 0: The complete encoding is incomplete, broken, or altered.",4,Does the image display the complete encoding string 'TWFuaWZlc3QgQ3JlYXRpb24gRHJlYW0=' without breaks or changes?,8
+53,"1: No illegal characters or erroneous symbols are present, 0: There are illegal characters or erroneous symbols.",5,Does the image display any illegal characters or erroneous symbols within the Base32 encoding for 'MANIFEST CREATION DREAM'?,5
+53,"1: The encoding is correctly aligned, 0: The encoding has alignment issues or visual errors.",6,"Does the image display the correct alignment of the Base32 encoding string, ensuring all characters are properly placed without any misalignments?",5
+54,"1: The encoding '%3A' is present for ':', 0: The encoding '%3A' is missing or incorrect",1,"Does the image show the encoding for the colon ':' character, which should be '%3A'?",8
+54,"1: The encoding '%2F' is present for '/', 0: The encoding '%2F' is missing or incorrect",2,"Does the image show the encoding for the forward slash '/' character, which should be '%2F'?",8
+54,"1: The encoding '%3F' is present for '?', 0: The encoding '%3F' is missing or incorrect",3,"Does the image show the encoding for the question mark '?' character, which should be '%3F'?",8
+54,"1: The full encoded string 'ftp%3A%2F%2Farchive.org%2Fdata%3Fsearch' is present, 0: There is an error in the encoding, e.g., missing or incorrect characters",4,Does the image show the correct URL-encoded phrase for 'ftp://archive.org/data?search' without any extra characters or omissions?,5
+54,"1: The image shows a correct representation of URL encoding, 0: There is an error, such as misalignment or incorrect encoding of characters",5,"Does the image represent the URL encoding correctly, without any errors or misalignments?",5
+54,"1: No extra encoding is applied to letters or digits, 0: Unnecessary encoding has been applied to non-special characters",6,"Does the image correctly encode characters that should remain unchanged, like letters and digits (e.g., 'archive', 'org', 'data')?",5
+55,"1: The image correctly shows '01011010' as the binary representation for 'Z', 0: The binary code is incorrect or missing.",1,Does the image show the encoding '01011010' for the letter 'Z'?,8
+55,"1: No illegal encoding patterns present (valid ASCII representation), 0: The image shows illegal or invalid encoding.",3,"Does the image display any illegal encoding patterns, such as binary numbers that do not correspond to valid ASCII representations?",5
+55,"1: The sequence is represented accurately with no distortion, 0: There is misalignment, distortion, or other errors in the representation.",4,Does the image correctly represent the binary sequence '01011010' without any distortion or misalignment?,5
+56,"1: Exists as '58', 0: Does not exist or is incorrect",1,Does the image display the ASCII hexadecimal encoding '58' for the character 'X'?,8
+56,"1: Exists as '45', 0: Does not exist or is incorrect",2,Does the image display the ASCII hexadecimal encoding '45' for the character 'E'?,8
+56,"1: Exists as '4E', 0: Does not exist or is incorrect",3,Does the image display the ASCII hexadecimal encoding '4E' for the character 'N'?,8
+56,"1: Exists as '4F', 0: Does not exist or is incorrect",4,Does the image display the ASCII hexadecimal encoding '4F' for the character 'O'?,8
+56,"1: Exists as '4E', 0: Does not exist or is incorrect",5,Does the image display the ASCII hexadecimal encoding '4E' again for the second 'N'?,8
+56,"1: No illegal encoding found, 0: Illegal encoding is present",6,Does the image show any illegal or incorrect encoding for any character in the message?,5
+56,"1: No misalignment or error, 0: Misalignment or error present",7,"Does the image correctly represent the entire sequence '58 45 4E 4F 4E' in order, without misalignment or errors?",5
+57,"1: The encoding for 'H' (01001000) is present in the image, 0: The encoding for 'H' is not present.",1,"Does the image display the encoding for the letter 'H', which is 01001000?",8
+57,"1: The encoding for 'O' (01001111) is present in the image, 0: The encoding for 'O' is not present.",2,"Does the image display the encoding for the letter 'O', which is 01001111?",8
+57,"1: The encoding for 'R' (01010010) is present in the image, 0: The encoding for 'R' is not present.",3,"Does the image display the encoding for the letter 'R', which is 01010010?",8
+57,"1: The encoding for 'I' (01001001) is present in the image, 0: The encoding for 'I' is not present.",4,"Does the image display the encoding for the letter 'I', which is 01001001?",8
+57,"1: The encoding for 'Z' (01011010) is present in the image, 0: The encoding for 'Z' is not present.",5,"Does the image display the encoding for the letter 'Z', which is 01011010?",8
+57,"1: The encoding for 'O' (01001111) is present in the image again, 0: The encoding for 'O' is missing.",6,"Does the image display the encoding for the letter 'O' again, which is 01001111?",8
+57,"1: The encoding for 'N' (01001110) is present in the image, 0: The encoding for 'N' is not present.",7,"Does the image display the encoding for the letter 'N', which is 01001110?",8
+57,"1: No illegal encoding is present, 0: An illegal encoding is present.",8,"Does the image display any illegal encoding, i.e., an encoding that does not correspond to a valid ASCII character?",5
+57,"1: The image correctly represents the word 'HORIZON' with all encodings in proper alignment, 0: The image contains errors or misalignments.",9,Does the image represent the word 'HORIZON' correctly with all encodings without errors or misalignments?,5
+58,"1: The image correctly shows 'D' as the encoded letter for 'B', 0: The image shows something other than 'D' for 'B'",1,Does the image display the encoding 'D' for the first letter of 'BREEZE' after applying the Caesar cipher with a shift of 2?,8
+58,"1: The image correctly shows 'T' as the encoded letter for 'R', 0: The image shows something other than 'T' for 'R'",2,Does the image display the encoding 'T' for the second letter of 'BREEZE' after applying the Caesar cipher with a shift of 2?,8
+58,"1: The image correctly shows 'G' as the encoded letter for 'E', 0: The image shows something other than 'G' for 'E'",3,Does the image display the encoding 'G' for the third letter of 'BREEZE' after applying the Caesar cipher with a shift of 2?,8
+58,"1: The image correctly shows 'G' as the encoded letter for 'E', 0: The image shows something other than 'G' for 'E'",4,Does the image display the encoding 'G' for the fourth letter of 'BREEZE' after applying the Caesar cipher with a shift of 2?,8
+58,"1: The image correctly shows 'A' as the encoded letter for 'Z', 0: The image shows something other than 'A' for 'Z'",5,Does the image display the encoding 'A' for the fifth letter of 'BREEZE' after applying the Caesar cipher with a shift of 2?,8
+58,"1: The image correctly shows 'G' as the encoded letter for 'E', 0: The image shows something other than 'G' for 'E'",6,Does the image display the encoding 'G' for the sixth letter of 'BREEZE' after applying the Caesar cipher with a shift of 2?,8
+58,"1: The image does not depict any illegal encoding or errors, 0: The image contains illegal encoding or errors",7,"Does the image depict any illegal encoding or errors, such as incorrect shifting or missing characters?",5
+58,"1: The image shows the full encrypted word 'DTGGAG' correctly, 0: The image shows any distortion or misalignment of the encrypted word",8,Does the image represent the entire encrypted word 'DTGGAG' without any distortion or misalignment?,5
+59,"1: The encoding 'UXVpek=' is clearly visible in the image, 0: The encoding is not visible or is incorrect.",1,Does the image show the Base64 encoding of the message 'QUIZ' as 'UXVpek='?,8
+59,"1: The encoding is split properly, with space between 'UXV' and 'pek=', 0: The encoding is not split correctly or lacks proper spacing.",2,"Does the image display each part of the Base64 encoding (i.e. 'UXV', 'pek=', with proper spacing between them)?",8
+59,"1: No illegal or malformed encoding sequences are present, 0: The encoding sequence is malformed or contains illegal characters.",3,"Does the image display any illegal or malformed Base64 encoding sequences, such as invalid characters or incorrect padding?",5
+59,"1: The Base64 encoding is accurate, well-formed, and properly aligned, 0: There are errors or misalignments in the encoding.",4,"Does the image represent the Base64 encoding of 'QUIZ' correctly, without any errors or misalignments?",5
+60,"1: The encoding 01000111 for 'G' is present, 0: The encoding 01000111 for 'G' is not present",1,Does the image display the binary encoding for 'G' as 01000111?,8
+60,"1: The encoding 01100001 for 'A' is present, 0: The encoding 01100001 for 'A' is not present",2,Does the image display the binary encoding for 'A' as 01100001?,8
+60,"1: The encoding 01100100 for 'D' is present, 0: The encoding 01100100 for 'D' is not present",3,Does the image display the binary encoding for 'D' as 01100100?,8
+60,"1: The encoding 01000111 for 'G' is correctly repeated, 0: The encoding 01000111 for 'G' is not correctly repeated",4,Does the image display the binary encoding for 'G' again as 01000111?,8
+60,"1: The encoding 01100101 for 'E' is present, 0: The encoding 01100101 for 'E' is not present",5,Does the image display the binary encoding for 'E' as 01100101?,8
+60,"1: The encoding 01110100 for 'T' is present, 0: The encoding 01110100 for 'T' is not present",6,Does the image display the binary encoding for 'T' as 01110100?,8
+60,"1: No incorrect or misaligned encodings are present, 0: There are errors or misalignments in the encodings",7,Does the image display any incorrect or misaligned encoding for the letters in 'GADGET'?,5
+60,"1: The representation is complete and accurate without any extra or missing characters, 0: There are extra or missing characters in the representation",8,Does the image represent the binary encoding for 'GADGET' without any extra or missing characters?,5
+61,"1: The encoding of 'FOURTH' with 'LIME' results in 'U' as the first character, 0: The encoding does not result in 'U'",1,Does the image depict a Vigenère cipher encryption of the word 'FOURTH' using the key 'LIME' resulting in the first character 'U'?,8
+61,"1: The encoding of 'FOURTH' with 'LIME' results in 'Q' as the second character, 0: The encoding does not result in 'Q'",2,Does the image depict a Vigenère cipher encryption of the word 'FOURTH' using the key 'LIME' resulting in the second character 'Q'?,8
+61,"1: The encoding of 'FOURTH' with 'LIME' results in 'J' as the third character, 0: The encoding does not result in 'J'",3,Does the image depict a Vigenère cipher encryption of the word 'FOURTH' using the key 'LIME' resulting in the third character 'J'?,8
+61,"1: The encoding of 'FOURTH' with 'LIME' results in 'Y' as the fourth character, 0: The encoding does not result in 'Y'",4,Does the image depict a Vigenère cipher encryption of the word 'FOURTH' using the key 'LIME' resulting in the fourth character 'Y'?,8
+61,"1: The encoding of 'FOURTH' with 'LIME' results in 'K' as the fifth character, 0: The encoding does not result in 'K'",5,Does the image depict a Vigenère cipher encryption of the word 'FOURTH' using the key 'LIME' resulting in the fifth character 'K'?,8
+61,"1: The encoding of 'FOURTH' with 'LIME' results in 'Z' as the sixth character, 0: The encoding does not result in 'Z'",6,Does the image depict a Vigenère cipher encryption of the word 'FOURTH' using the key 'LIME' resulting in the sixth character 'Z'?,8
+61,"1: No illegal characters (e.g., non-alphabetical symbols, numbers), 0: There are illegal characters in the encoding",7,"Does the image show any illegal encoding errors, such as characters outside the expected alphabet (A-Z)?",5
+61,"1: The encryption process is correctly represented, 0: The encryption process contains errors or misalignments",8,Does the image represent the correct Vigenère cipher encryption process for the word 'FOURTH' using the key 'LIME' without any errors or misalignments in the ciphered text?,5
+62,"1: The encoding 0053 is present for 'S', 0: The encoding 0053 is not present for 'S'",1,"Does the image show the correct encoding for 'S', which should be 0053?",8
+62,"1: The encoding 0054 is present for 'T', 0: The encoding 0054 is not present for 'T'",2,"Does the image show the correct encoding for 'T', which should be 0054?",8
+62,"1: The encoding 004F is present for 'O', 0: The encoding 004F is not present for 'O'",3,"Does the image show the correct encoding for 'O', which should be 004F?",8
+62,"1: The encoding 0052 is present for 'R', 0: The encoding 0052 is not present for 'R'",4,"Does the image show the correct encoding for 'R', which should be 0052?",8
+62,"1: The encoding 004D is present for 'M', 0: The encoding 004D is not present for 'M'",5,"Does the image show the correct encoding for 'M', which should be 004D?",8
+62,"1: No invalid encoding present, 0: Invalid encoding is present",6,Does the image show any invalid encoding such as encoding that does not match the valid UTF-16 hex values?,5
+62,"1: No errors or misalignments, 0: There are errors or misalignments",7,"Does the image represent the encodings correctly, without any errors or misalignments in the displayed hexadecimal values?",5
+63,"1: The image correctly shows 'ZBHG', 0: The image does not show 'ZBHG'",1,Does the image show the ROT13-encoded version of the word 'MOUNT' correctly as 'ZBHG'?,8
+63,"1: No invalid encoding (e.g., non-ROT13 transformation), 0: Invalid encoding is present",3,"Does the image show any incorrect or invalid encoding, such as using non-ROT13 transformations?",5
+63,"1: The word 'ZBHG' is correctly presented without errors, 0: The word 'ZBHG' has any errors such as misalignment or illegibility",4,"Does the image represent the word 'ZBHG' with no distortions or errors in presentation, such as misalignment or poor legibility?",5
+64,"1: The encoding '\u0052' is displayed for 'R', 0: The encoding '\u0052' is not displayed for 'R'",1,Does the image show the encoding for the letter 'R' as '\u0052'?,8
+64,"1: The encoding '\u0041' is displayed for 'A', 0: The encoding '\u0041' is not displayed for 'A'",2,Does the image show the encoding for the letter 'A' as '\u0041'?,8
+64,"1: The encoding '\u0043' is displayed for 'C', 0: The encoding '\u0043' is not displayed for 'C'",3,Does the image show the encoding for the letter 'C' as '\u0043'?,8
+64,"1: The encoding '\u0045' is displayed for 'E', 0: The encoding '\u0045' is not displayed for 'E'",4,Does the image show the encoding for the letter 'E' as '\u0045'?,8
+64,"1: All encodings are separated by spaces as specified, 0: The encodings are not properly separated by spaces",5,"Does the image show all encodings for 'R', 'A', 'C', 'E' properly separated by spaces as specified?",5
+64,"1: No illegal encoding or non-escaped characters are present, 0: Illegal encoding or non-escaped characters are present",6,Does the image display any illegal encoding situations or non-escaped characters?,5
+64,"1: The message 'RACE' is correctly displayed with proper formatting, 0: There is an error or misalignment in the encoding format",7,"Does the image display the message 'RACE' correctly, without any errors or misalignments in the encoding format?",5
+65,"1: The encoding 'E: 45' is clearly visible in the image, 0: 'E: 45' is not visible or is incorrect.",1,Does the image display the hexadecimal encoding for the letter 'E' as 45?,8
+65,"1: The encoding 'X: 58' is clearly visible in the image, 0: 'X: 58' is not visible or is incorrect.",2,Does the image display the hexadecimal encoding for the letter 'X' as 58?,8
+65,"1: The encoding 'P: 50' is clearly visible in the image, 0: 'P: 50' is not visible or is incorrect.",3,Does the image display the hexadecimal encoding for the letter 'P' as 50?,8
+65,"1: The encoding 'E: 45' is clearly visible in the image, 0: 'E: 45' is not visible or is incorrect.",4,Does the image display the hexadecimal encoding for the second 'E' as 45?,8
+65,"1: The encoding 'R: 52' is clearly visible in the image, 0: 'R: 52' is not visible or is incorrect.",5,Does the image display the hexadecimal encoding for the letter 'R' as 52?,8
+65,"1: The encoding 'T: 54' is clearly visible in the image, 0: 'T: 54' is not visible or is incorrect.",6,Does the image display the hexadecimal encoding for the letter 'T' as 54?,8
+65,"1: No invalid encodings (e.g., 'E: 44' or 'X: 59') are present in the image, 0: Invalid encodings are visible in the image.",7,"Does the image display any invalid hexadecimal encoding, such as 'E: 44' or 'X: 59'?",5
+65,"1: The encodings are correctly displayed without errors or misalignments, 0: There are errors or misalignments in the placement of the encodings.",8,"Does the image represent the hexadecimal values of 'EXPERT' without any errors or misalignments? For example, are the encodings placed correctly and in order?",5
+66,"1: The encoding 01000101 for 'E' is correctly shown, 0: The encoding for 'E' is incorrect or not shown",1,Does the image display the encoding for the letter 'E' as 01000101?,8
+66,"1: The encoding 01001110 for 'N' is correctly shown, 0: The encoding for 'N' is incorrect or not shown",2,Does the image display the encoding for the letter 'N' as 01001110?,8
+66,"1: The encoding 01000011 for 'C' is correctly shown, 0: The encoding for 'C' is incorrect or not shown",3,Does the image display the encoding for the letter 'C' as 01000011?,8
+66,"1: The encoding 01010010 for 'R' is correctly shown, 0: The encoding for 'R' is incorrect or not shown",4,Does the image display the encoding for the letter 'R' as 01010010?,8
+66,"1: The encoding 01011001 for 'Y' is correctly shown, 0: The encoding for 'Y' is incorrect or not shown",5,Does the image display the encoding for the letter 'Y' as 01011001?,8
+66,"1: The encoding 01010000 for 'P' is correctly shown, 0: The encoding for 'P' is incorrect or not shown",6,Does the image display the encoding for the letter 'P' as 01010000?,8
+66,"1: The encoding 01010100 for 'T' is correctly shown, 0: The encoding for 'T' is incorrect or not shown",7,Does the image display the encoding for the letter 'T' as 01010100?,8
+66,"1: No encoding error or extra characters are shown, 0: There is an encoding error or extra characters",8,"Does the image show any encoding error, such as incorrect binary sequences or extra characters?",5
+66,"1: All encodings are correctly represented without errors or misalignments, 0: Some encodings are misaligned or incorrect",9,"Does the image represent all the encodings for the word 'ENCRYPT' correctly, without any misalignments or missing bits?",5
+67,"1: The encoding '/_/\' for 'A' exists, 0: The encoding '/_/\' for 'A' does not exist",1,Does the image display the encoding for the letter 'A' as '/_/\'?,8
+67,"1: The encoding '^_^' for 'S' exists, 0: The encoding '^_^' for 'S' does not exist",2,Does the image display the encoding for the letter 'S' as '^_^'?,8
+67,"1: The encoding '/_/\' for 'C' exists, 0: The encoding '/_/\' for 'C' does not exist",3,Does the image display the encoding for the letter 'C' as '/_/\'?,8
+67,"1: The encoding '/_\' for 'I' exists, 0: The encoding '/_\' for 'I' does not exist",4,Does the image display the encoding for the letter 'I' as '/_\'?,8
+67,"1: No incorrect encoding exists, 0: An incorrect encoding exists",5,"Does the image display any incorrect encoding, such as missing or misaligned elements, for any of the letters?",5
+67,"1: The word 'ASCII' is correctly represented, 0: The word 'ASCII' has errors or misalignments",6,"Does the image represent the entire word 'ASCII' correctly, without any errors or misalignments?",5
+68,"1: The letter 'M' is shifted correctly to 'P', 0: The letter 'M' is not shifted correctly to 'P'.",1,Does the image show the letter 'M' from 'MYSTIFY' being correctly shifted to 'P'?,1
+68,"1: The letter 'Y' is shifted correctly to 'B', 0: The letter 'Y' is not shifted correctly to 'B'.",2,Does the image show the letter 'Y' from 'MYSTIFY' being correctly shifted to 'B'?,1
+68,"1: The letter 'S' is shifted correctly to 'W', 0: The letter 'S' is not shifted correctly to 'W'.",3,Does the image show the letter 'S' from 'MYSTIFY' being correctly shifted to 'W'?,1
+68,"1: The letter 'T' is shifted correctly to 'V', 0: The letter 'T' is not shifted correctly to 'V'.",4,Does the image show the letter 'T' from 'MYSTIFY' being correctly shifted to 'V'?,1
+68,"1: The letter 'I' is shifted correctly to 'U', 0: The letter 'I' is not shifted correctly to 'U'.",5,Does the image show the letter 'I' from 'MYSTIFY' being correctly shifted to 'U'?,1
+68,"1: The letter 'F' is shifted correctly to 'B', 0: The letter 'F' is not shifted correctly to 'B'.",6,Does the image show the letter 'F' from 'MYSTIFY' being correctly shifted to 'B'?,1
+68,"1: The letter 'Y' is shifted correctly to 'U', 0: The letter 'Y' is not shifted correctly to 'U'.",7,Does the image show the letter 'Y' from 'MYSTIFY' being correctly shifted to 'U' (again)?,1
+68,"1: The image correctly represents all the letters being shifted three positions ahead, 0: The image contains any errors in the shifts.",8,"Does the image show the correct encryption process, where each letter in 'MYSTIFY' is shifted three positions ahead in the alphabet?",1
+69,"1: The encoding '2' is displayed correctly, 0: The encoding '2' is not displayed.",1,"Does the image display the encoding '2' in hexadecimal, with the content being represented as '2'?",8
+69,"1: The encoding '5' is displayed correctly, 0: The encoding '5' is not displayed.",2,"Does the image display the encoding '5' in hexadecimal, with the content being represented as '5'?",8
+69,"1: No invalid encoding is present, 0: An invalid encoding is present.",3,"Does the image display any invalid encoding, such as showing an encoding that doesn't correspond to a valid hexadecimal representation of '100101'?",5
+69,"1: The conversion is correct and without errors, 0: There is an error or misalignment in the conversion.",4,"Does the image represent the binary to hexadecimal conversion correctly, without any errors or misalignments in the sequence '2 5'?",5
+70,"1: The encoding '51' for 'Q' is correctly displayed in the image, 0: The encoding '51' for 'Q' is not displayed or is incorrect.",1,Does the image show the hexadecimal encoding '51' for the character 'Q'?,8
+70,"1: The encoding '55' for 'U' is correctly displayed in the image, 0: The encoding '55' for 'U' is not displayed or is incorrect.",2,Does the image show the hexadecimal encoding '55' for the character 'U'?,8
+70,"1: The encoding '52' for 'R' is correctly displayed in the image, 0: The encoding '52' for 'R' is not displayed or is incorrect.",3,Does the image show the hexadecimal encoding '52' for the character 'R'?,8
+70,"1: The encoding '45' for 'E' is correctly displayed in the image, 0: The encoding '45' for 'E' is not displayed or is incorrect.",4,Does the image show the hexadecimal encoding '45' for the character 'E'?,8
+70,"1: The encoding '59' for 'Y' is correctly displayed in the image, 0: The encoding '59' for 'Y' is not displayed or is incorrect.",5,Does the image show the hexadecimal encoding '59' for the character 'Y'?,8
+70,"1: There are no invalid encodings or misrepresented characters, 0: There is at least one invalid encoding or misrepresented character.",6,Does the image show any invalid encodings or misrepresented characters?,5
+70,"1: The complete sequence '51 55 52 45 59' is correctly represented, 0: There are errors or misalignments in the sequence.",7,"Does the image represent the complete hexadecimal sequence '51 55 52 45 59' correctly, without any errors or misalignments?",5
+71,"1: 'P' is correctly transformed to 'C', 0: 'P' is not correctly transformed",1,Does the image show an encoding where the first letter 'P' is transformed correctly to 'C'?,8
+71,"1: 'R' is correctly transformed to 'N', 0: 'R' is not correctly transformed",2,Does the image show an encoding where the second letter 'R' is transformed correctly to 'N'?,8
+71,"1: 'E' is correctly transformed to 'Q', 0: 'E' is not correctly transformed",3,Does the image show an encoding where the third letter 'E' is transformed correctly to 'Q'?,8
+71,"1: 'D' is correctly transformed to 'R', 0: 'D' is not correctly transformed",4,Does the image show an encoding where the fourth letter 'D' is transformed correctly to 'R'?,8
+71,"1: 'I' is correctly transformed to 'K', 0: 'I' is not correctly transformed",5,Does the image show an encoding where the fifth letter 'I' is transformed correctly to 'K'?,8
+71,"1: 'C' is correctly transformed to 'V', 0: 'C' is not correctly transformed",6,Does the image show an encoding where the sixth letter 'C' is transformed correctly to 'V'?,8
+71,"1: 'T' is correctly transformed to 'G', 0: 'T' is not correctly transformed",7,Does the image show an encoding where the seventh letter 'T' is transformed correctly to 'G'?,8
+71,"1: 'I' is correctly transformed to 'R', 0: 'I' is not correctly transformed",8,Does the image show an encoding where the eighth letter 'I' is transformed correctly to 'R'?,8
+71,"1: 'O' is correctly transformed to 'F', 0: 'O' is not correctly transformed",9,Does the image show an encoding where the ninth letter 'O' is transformed correctly to 'F'?,8
+71,"1: 'N' is correctly transformed to 'S', 0: 'N' is not correctly transformed",10,Does the image show an encoding where the tenth letter 'N' is transformed correctly to 'S'?,8
+71,"1: No illegal characters present, 0: Illegal characters present",11,"Does the image show any illegal or incorrect characters in the encoding, such as non-ROT13 characters?",5
+71,"1: Entire encoding is correct, 0: There is an error or misalignment",12,"Does the image represent the entire ROT13 transformation of 'PREDICTION' correctly, without any errors or misalignments?",5
+72,"1: The exact Base64 encoding 'TW9kaWZ5IERhdGE=' is displayed correctly in the image, 0: The encoding is not shown or is incorrect.",1,"Does the image display the correct Base64 encoding for the string 'MODIFY DATA', which is 'TW9kaWZ5IERhdGE='?",8
+72,"1: The encoding matches the UTF-8 standard and the string 'MODIFY DATA' is properly represented, 0: The encoding is not in UTF-8 or is corrupted.",2,Does the image show the Base64 encoding in the correct UTF-8 format?,8
+72,"1: The encoding shown is valid and correct, 0: The image displays an invalid or corrupted encoding.",3,"Does the image display any incorrect or corrupted Base64 encoding (e.g., invalid characters or incomplete encoding)?",5
+72,"1: The encoding is properly aligned, complete, and error-free, 0: The encoding is misaligned, truncated, or has visual errors.",4,"Does the image represent the Base64 encoding without any errors or misalignments (e.g., no truncation or visual errors in the characters)?",5
+73,"1: The encoding 88 is displayed correctly for the character 'X', 0: The encoding 88 is not displayed or displayed incorrectly.",1,"Does the image display the Unicode encoding for the character 'X', which is 88?",8
+73,"1: The encoding 89 is displayed correctly for the character 'Y', 0: The encoding 89 is not displayed or displayed incorrectly.",2,"Does the image display the Unicode encoding for the character 'Y', which is 89?",8
+73,"1: The encoding 90 is displayed correctly for the character 'Z', 0: The encoding 90 is not displayed or displayed incorrectly.",3,"Does the image display the Unicode encoding for the character 'Z', which is 90?",8
+73,"1: The code points are separated with proper spacing, 0: The code points are not separated properly.",4,"Does the image show the correct separation between each character's Unicode code point (88, 89, 90) with appropriate spacing?",5
+73,"1: The Unicode code points are correctly represented with no errors or misalignments, 0: There are errors or misalignments in the representation of the code points.",5,"Does the image represent the Unicode code points (88, 89, 90) correctly, without any errors or misalignments?",5
+74,"1: The string 'QUIZ' is correctly shown without any change, 0: 'QUIZ' is altered or missing",1,Does the image display the encoding for the string 'QUIZ' correctly?,8
+74,"1: The space is correctly shown as '%20', 0: The space is shown incorrectly or is missing",2,"Does the image display the encoding for the space (' ') between 'QUIZ' and 'NIGHT' correctly, as '%20'?",8
+74,"1: The string 'NIGHT' is correctly shown without any change, 0: 'NIGHT' is altered or missing",3,Does the image display the encoding for the string 'NIGHT' correctly?,8
+74,"1: The entire string 'QUIZ%20NIGHT' is shown correctly, 0: The string is truncated or altered",4,Does the image show the entire string 'QUIZ%20NIGHT' without any truncation or unexpected changes?,5
+74,"1: There are no invalid encodings, 0: Invalid encoding (e.g., '%2G', '%XY') is present",5,"Does the image display any invalid encoding, such as incorrect percent symbols, characters, or escape sequences?",5
+74,"1: The encoded string is presented clearly and accurately, without errors or misalignments, 0: The encoded string has errors or misalignments",6,Does the image accurately represent the URL encoding without any misalignment or distortion in the visual structure of the encoded string?,5
+74,"1: The image shows the correct UTF-8 encoded format, 0: The image shows an incorrect or non-UTF-8 encoding format",7,"Does the image represent the encoding for UTF-8 correctly (i.e., it shows the correct percent-encoded format)?",4
+74,"1: The image focuses solely on the encoded string without irrelevant content, 0: The image includes irrelevant or distracting information",8,Does the image avoid showing any irrelevant or extraneous information unrelated to the URL encoding task?,3
+75,"1: Yes, it shows 'L', 0: No, it does not show 'L'",1,Does the image display the encoding of the letter 'E' as 'L'?,8
+75,"1: Yes, it shows 'V', 0: No, it does not show 'V'",2,Does the image display the encoding of the letter 'N' as 'V'?,8
+75,"1: Yes, it shows 'P', 0: No, it does not show 'P'",3,Does the image display the encoding of the letter 'I' as 'P'?,8
+75,"1: Yes, it shows 'D', 0: No, it does not show 'D'",4,Does the image display the encoding of the letter 'G' as 'D'?,8
+75,"1: Yes, it shows 'H', 0: No, it does not show 'H'",5,Does the image display the encoding of the letter 'M' as 'H'?,8
+75,"1: No, there are no invalid encodings, 0: Yes, there are invalid encodings",6,"Does the image show any invalid encoding, such as shifting a letter outside the allowed range?",5
+75,"1: Yes, all characters are correctly shifted, 0: No, there are errors or misalignments in the shift",7,"Does the image represent the Caesar cipher shift correctly, with all characters shifted by exactly 7 positions?",5
+76,"1: The encoding '01011000' exists correctly in the image, 0: The encoding '01011000' is missing or incorrect",1,Does the image display the encoding '01011000' correctly?,8
+76,"1: The encoding '01011001' exists correctly in the image, 0: The encoding '01011001' is missing or incorrect",2,Does the image display the encoding '01011001' correctly?,8
+76,"1: The encoding '01011010' exists correctly in the image, 0: The encoding '01011010' is missing or incorrect",3,Does the image display the encoding '01011010' correctly?,8
+76,"1: The encoding '01011100' exists correctly in the image, 0: The encoding '01011100' is missing or incorrect",4,Does the image display the encoding '01011100' correctly?,8
+76,"1: No invalid encoding exists in the image, 0: An invalid encoding exists in the image",5,"Does the image display any invalid encoding, such as a character outside the valid ASCII range?",5
+76,"1: The encodings are displayed correctly, with no errors or misalignments, 0: There are errors or misalignments in the representation of the encodings",6,"Does the image represent the ASCII encodings correctly, without any errors or misalignments?",5
+77,"1: The exact Base64 encoding 'U2FsdXRhdGlvbnMgVW5pdmVyc2U=' is visible in the image, 0: The Base64 encoding is incorrect or missing.",1,Does the image show the correct Base64 encoding for 'Salutations Universe'? The expected encoding is 'U2FsdXRhdGlvbnMgVW5pdmVyc2U='.,8
+77,"1: The Base64 encoding is clear and legible with no distortions, 0: The encoding is unclear or distorted.",2,"Does the image display the Base64 encoding clearly, with no distortion or hidden characters?",8
+77,"1: No invalid characters or broken Base64 encoding are present, 0: There are invalid or broken parts in the encoding.",3,"Does the image include any invalid characters or broken Base64 encoding (e.g., characters that are not valid in Base64 format)?",5
+77,"1: The sequence of characters is correct and ordered properly, 0: There is an error or misalignment in the sequence.",4,Does the image accurately reflect the correct sequence of characters from the Base64 encoding 'U2FsdXRhdGlvbnMgVW5pdmVyc2U='?,5
+78,"1: Exists as '56', 0: Does not exist as '56'",1,Does the image display the encoding '56' corresponding to the letter 'V' in ASCII?,8
+78,"1: Exists as '45', 0: Does not exist as '45'",2,Does the image display the encoding '45' corresponding to the letter 'E' in ASCII?,8
+78,"1: Exists as '43', 0: Does not exist as '43'",3,Does the image display the encoding '43' corresponding to the letter 'C' in ASCII?,8
+78,"1: Exists as '54', 0: Does not exist as '54'",4,Does the image display the encoding '54' corresponding to the letter 'T' in ASCII?,8
+78,"1: Exists as '4F', 0: Does not exist as '4F'",5,Does the image display the encoding '4F' corresponding to the letter 'O' in ASCII?,8
+78,"1: Exists as '52', 0: Does not exist as '52'",6,Does the image display the encoding '52' corresponding to the letter 'R' in ASCII?,8
+78,"1: No invalid encodings, 0: Contains invalid encodings",7,Does the image contain any invalid encodings that do not correspond to any valid ASCII characters?,5
+78,"1: Correct and well-aligned, 0: Contains errors or misalignments",8,"Does the image represent the hexadecimal encoding of 'VECTOR' correctly, without any errors or misalignments?",5
+79,"1: Yes, 'T' is correctly displayed as 'T', 0: No, 'T' is not shown as 'T' ",1,Does the image show an encoding of 'T' as 'T'?,8
+79,"1: Yes, 'R' is correctly displayed as 'L', 0: No, 'R' is not shown as 'L' ",2,Does the image show an encoding of 'R' as 'L'?,8
+79,"1: Yes, 'E' is correctly displayed as 'W', 0: No, 'E' is not shown as 'W' ",3,Does the image show an encoding of 'E' as 'W'?,8
+79,"1: Yes, 'A' is correctly displayed as 'U', 0: No, 'A' is not shown as 'U' ",4,Does the image show an encoding of 'A' as 'U'?,8
+79,"1: Yes, 'S' is correctly displayed as 'N', 0: No, 'S' is not shown as 'N' ",5,Does the image show an encoding of 'S' as 'N'?,8
+79,"1: Yes, 'U' is correctly displayed as 'R', 0: No, 'U' is not shown as 'R' ",6,Does the image show an encoding of 'U' as 'R'?,8
+79,"1: Yes, 'R' is correctly displayed as 'L' again, 0: No, 'R' is not correctly displayed as 'L' ",7,"Does the image show an encoding of 'R' as 'L' again, as per the repeated letter in the original word?",8
+79,"1: Yes, 'E' is correctly displayed as 'Q', 0: No, 'E' is not shown as 'Q' ",8,Does the image show an encoding of 'E' as 'Q'?,5
+79,"1: No, there are no invalid encodings, 0: Yes, there are invalid encodings shown",9,"Does the image depict any invalid encodings, such as showing 'T' as a non-valid cipher or any other invalid letter?",5
+79,"1: Yes, the full cipher text 'TLWUNRLQ' is shown correctly, 0: No, there are errors or misalignments in the ciphered text",10,Does the image represent the full Vigenère ciphered text 'TLWUNRLQ' without any errors or misalignments?,5
+80,"1: Yes, the encoding 01110111 is present, 0: No, the encoding 01110111 is missing",1,Does the image display the encoding 01110111?,8
+80,"1: Yes, the encoding 01101100 is present, 0: No, the encoding 01101100 is missing",2,Does the image display the encoding 01101100?,8
+80,"1: Yes, the encoding 01111000 is present, 0: No, the encoding 01111000 is missing",3,Does the image display the encoding 01111000?,8
+80,"1: Yes, the encoding 00111000 is present, 0: No, the encoding 00111000 is missing",4,Does the image display the encoding 00111000?,8
+80,"1: Yes, the encoding 00111010 is present, 0: No, the encoding 00111010 is missing",5,Does the image display the encoding 00111010?,8
+80,"1: Yes, the encoding 00111001 is present, 0: No, the encoding 00111001 is missing",6,Does the image display the encoding 00111001?,8
+80,"1: No illegal encoding is present, 0: Illegal encoding is present",7,"Does the image display any illegal encoding, i.e., a sequence that doesn't follow the binary format of the expected message?",5
+80,"1: The encoding is shown correctly without errors, 0: There is a misalignment or error in the encoding",8,Does the image represent the binary encoding without any errors or misalignments?,5
+81,"1: The image shows 'O' encoded as '---', 0: The image does not show 'O' encoded as '---'",1,Does the image show the encoding for the letter 'O' as '---'?,8
+81,"1: The image shows 'B' encoded as '-...', 0: The image does not show 'B' encoded as '-...'",2,Does the image show the encoding for the letter 'B' as '-...'?,8
+81,"1: The image shows 'S' encoded as '...', 0: The image does not show 'S' encoded as '...'",3,Does the image show the encoding for the letter 'S' as '...'?,8
+81,"1: The image shows 'C' encoded as '-.-.', 0: The image does not show 'C' encoded as '-.-.'",4,Does the image show the encoding for the letter 'C' as '-.-.'?,8
+81,"1: The image shows 'U' encoded as '..-', 0: The image does not show 'U' encoded as '..-'",5,Does the image show the encoding for the letter 'U' as '..-'?,8
+81,"1: The image shows 'R' encoded as '.-.', 0: The image does not show 'R' encoded as '.-'",6,Does the image show the encoding for the letter 'R' as '.-.'?,8
+81,"1: The image shows 'E' encoded as '.', 0: The image does not show 'E' encoded as '.'",7,Does the image show the encoding for the letter 'E' as '.'?,8
+81,"1: No illegal encoding situation, 0: There is an illegal encoding situation",8,"Does the image show any illegal encoding situation (e.g., showing any encoding that does not belong to the Morse code for 'OBSCURE')?",5
+81,"1: All letters are represented correctly with no errors or misalignments, 0: There is an error or misalignment in the representation of any letter",9,"Does the image represent all letters of the word 'OBSCURE' correctly, without any errors or misalignments?",5
+82,"1: The image correctly shows 'BOSCFTNGR', 0: The image does not show 'BOSCFTNGR'",1,Does the image display the encoding of 'OBFUSCATE' as 'BOSCFTNGR'?,8
+82,"1: The letter 'B' is displayed as the first character, 0: The letter 'B' is not displayed as the first character",2,Does the image display the letter 'B' as the first character?,8
+82,"1: The letter 'O' is correctly transformed to 'B', 0: The letter 'O' is not correctly transformed",3,Does the image display the letter 'O' from the original word 'OBFUSCATE' correctly transformed to 'B'?,8
+82,"1: The image contains only the letters that match the ROT13 encryption, 0: The image contains incorrect letters that do not match the ROT13 encryption",4,Does the image show any other letters that are not part of the ROT13 encryption of 'OBFUSCATE'?,8
+82,"1: The letters are displayed correctly, with no errors or misalignments, 0: There are errors or misalignments in the displayed letters",5,Does the image correctly show each letter of 'BOSCFTNGR' without errors or misalignments?,5
+82,"1: The image does not contain any illegitimate characters, 0: The image contains illegitimate characters",6,"Does the image contain any illegitimate encoding, such as random or unrelated characters?",5
+83,"1: The character 'B' is correctly displayed, 0: The character 'B' is not displayed",1,Does the image display the character 'B' as the first character of the encoding?,8
+83,"1: The character 'O' is correctly transformed to 'O', 0: The character 'O' is not correctly transformed",2,Does the image display the character 'O' transformed to 'O' in the encoding?,8
+83,"1: The character 'F' is correctly displayed, 0: The character 'F' is not displayed",3,Does the image display the character 'F' as 'F' in the encoding?,8
+83,"1: The character 'U' is correctly transformed to 'S', 0: The character 'U' is not correctly transformed",4,Does the image display the character 'U' transformed to 'S' in the encoding?,8
+83,"1: The character 'S' is correctly transformed to 'C', 0: The character 'S' is not correctly transformed",5,Does the image display the character 'S' transformed to 'C' in the encoding?,8
+83,"1: The character 'C' is correctly transformed to 'F', 0: The character 'C' is not correctly transformed",6,Does the image display the character 'C' transformed to 'F' in the encoding?,8
+83,"1: The character 'A' is correctly transformed to 'T', 0: The character 'A' is not correctly transformed",7,Does the image display the character 'A' transformed to 'T' in the encoding?,8
+83,"1: The character 'T' is correctly transformed to 'N', 0: The character 'T' is not correctly transformed",8,Does the image display the character 'T' transformed to 'N' in the encoding?,8
+83,"1: The character 'E' is correctly transformed to 'G', 0: The character 'E' is not correctly transformed",9,Does the image display the character 'E' transformed to 'G' in the encoding?,8
+83,"1: Only the correct characters 'BOSCFTNGR' are displayed, 0: Extra or incorrect characters are displayed",10,Does the image display only the correct characters from the ROT13 encryption of 'OBFUSCATE' ('BOSCFTNGR') without any extra or incorrect characters?,5
+83,"1: The full sequence 'BOSCFTNGR' is displayed correctly, 0: There are errors or misalignments in the sequence",11,Does the image correctly display the full sequence 'BOSCFTNGR' with no errors or misalignments in the character order?,5
+84,"1: The encoding for 'A' is correctly shown as 65, 0: The encoding for 'A' is not shown or incorrect.",1,Does the image display the encoding for the letter 'A' as 65?,8
+84,"1: The encoding for 'S' is correctly shown as 83, 0: The encoding for 'S' is not shown or incorrect.",2,Does the image display the encoding for the letter 'S' as 83?,8
+84,"1: The encoding for 'T' is correctly shown as 84, 0: The encoding for 'T' is not shown or incorrect.",3,Does the image display the encoding for the letter 'T' as 84?,8
+84,"1: The encoding for 'R' is correctly shown as 82, 0: The encoding for 'R' is not shown or incorrect.",4,Does the image display the encoding for the letter 'R' as 82?,8
+84,"1: The encoding for 'O' is correctly shown as 79, 0: The encoding for 'O' is not shown or incorrect.",5,Does the image display the encoding for the letter 'O' as 79?,8
+84,"1: The encoding for 'N' is correctly shown as 78, 0: The encoding for 'N' is not shown or incorrect.",6,Does the image display the encoding for the letter 'N' as 78?,8
+84,"1: The encoding for 'M' is correctly shown as 77, 0: The encoding for 'M' is not shown or incorrect.",7,Does the image display the encoding for the letter 'M' as 77?,8
+84,"1: The encoding for 'Y' is correctly shown as 89, 0: The encoding for 'Y' is not shown or incorrect.",8,Does the image display the encoding for the letter 'Y' as 89?,8
+84,"1: No invalid encodings are displayed, 0: There is an invalid encoding displayed.",9,Does the image display any invalid encoding for the letters in the word 'ASTRONOMY'?,5
+84,"1: All encodings are correctly spaced with no errors, 0: There are misalignments or spacing errors.",10,Does the image represent all the encodings without any misalignments or errors in spacing?,5
+85,"1: The encoding 0x0045 for 'E' is present, 0: The encoding 0x0045 for 'E' is missing or incorrect",1,"Does the image display the encoding for 'E', which is 0x0045?",8
+85,"1: The encoding 0x004E for 'N' is present, 0: The encoding 0x004E for 'N' is missing or incorrect",2,"Does the image display the encoding for 'N', which is 0x004E?",8
+85,"1: The encoding 0x004C for 'L' is present, 0: The encoding 0x004C for 'L' is missing or incorrect",3,"Does the image display the encoding for 'L', which is 0x004C?",8
+85,"1: The encoding 0x0049 for 'I' is present, 0: The encoding 0x0049 for 'I' is missing or incorrect",4,"Does the image display the encoding for 'I', which is 0x0049?",8
+85,"1: The encoding 0x0047 for 'G' is present, 0: The encoding 0x0047 for 'G' is missing or incorrect",5,"Does the image display the encoding for 'G', which is 0x0047?",8
+85,"1: The encoding 0x0048 for 'H' is present, 0: The encoding 0x0048 for 'H' is missing or incorrect",6,"Does the image display the encoding for 'H', which is 0x0048?",8
+85,"1: The encoding 0x0054 for 'T' is present, 0: The encoding 0x0054 for 'T' is missing or incorrect",7,"Does the image display the encoding for 'T', which is 0x0054?",8
+85,"1: The encoding 0x0044 for 'D' is present, 0: The encoding 0x0044 for 'D' is missing or incorrect",8,"Does the image display the encoding for 'D', which is 0x0044?",8
+85,"1: The encoding 0x0020 for space is correct, 0: The encoding 0x0020 for space is missing or incorrect",9,Does the image display the encoding for the space character (0x0020) correctly?,5
+85,"1: The encoding 0x004D for 'M' is present, 0: The encoding 0x004D for 'M' is missing or incorrect",10,"Does the image display the encoding for 'M', which is 0x004D?",5
+85,"1: The encoding 0x0053 for 'S' is present, 0: The encoding 0x0053 for 'S' is missing or incorrect",11,"Does the image display the encoding for 'S', which is 0x0053?",5
+85,"1: No invalid encoding is shown, 0: An invalid encoding is present",12,"Does the image display any invalid encoding, such as non-UTF-16 compliant codes?",5
+85,"1: The sequence is correct and aligned, 0: There are errors or misalignments in the sequence",13,Does the image represent the entire sequence of 'ENLIGHTENED MINDS' correctly in UTF-16 without any errors or misalignments?,5
+86,"1: The encoding 0045 for 'E' is present in the image, 0: The encoding 0045 for 'E' is not present in the image",1,Does the image show the correct UTF-16 encoding for the letter 'E' as 0045?,8
+86,"1: The encoding 004E for 'N' is present in the image, 0: The encoding 004E for 'N' is not present in the image",2,Does the image show the correct UTF-16 encoding for the letter 'N' as 004E?,8
+86,"1: The encoding 004C for 'L' is present in the image, 0: The encoding 004C for 'L' is not present in the image",3,Does the image show the correct UTF-16 encoding for the letter 'L' as 004C?,8
+86,"1: The encoding 0049 for 'I' is present in the image, 0: The encoding 0049 for 'I' is not present in the image",4,Does the image show the correct UTF-16 encoding for the letter 'I' as 0049?,8
+86,"1: The encoding 0047 for 'G' is present in the image, 0: The encoding 0047 for 'G' is not present in the image",5,Does the image show the correct UTF-16 encoding for the letter 'G' as 0047?,8
+86,"1: The encoding 0048 for 'H' is present in the image, 0: The encoding 0048 for 'H' is not present in the image",6,Does the image show the correct UTF-16 encoding for the letter 'H' as 0048?,8
+86,"1: The encoding 0054 for 'T' is present in the image, 0: The encoding 0054 for 'T' is not present in the image",7,Does the image show the correct UTF-16 encoding for the letter 'T' as 0054?,8
+86,"1: The encoding 0044 for 'D' is present in the image, 0: The encoding 0044 for 'D' is not present in the image",8,Does the image show the correct UTF-16 encoding for the letter 'D' as 0044?,8
+86,"1: The encoding 0020 for space is present in the image, 0: The encoding 0020 for space is not present in the image",9,Does the image show the correct UTF-16 encoding for the space character as 0020?,8
+86,"1: The encoding 004D for 'M' is present in the image, 0: The encoding 004D for 'M' is not present in the image",10,Does the image show the correct UTF-16 encoding for the letter 'M' as 004D?,8
+86,"1: The encoding 0053 for 'S' is present in the image, 0: The encoding 0053 for 'S' is not present in the image",11,Does the image show the correct UTF-16 encoding for the letter 'S' as 0053?,8
+86,"1: There are no illegal or incorrect encodings, 0: There are illegal or incorrect encodings present",12,"Does the image show any illegal or incorrect UTF-16 encoding for any character, such as unexpected hexadecimal values?",5
+86,"1: The encoding is represented correctly, 0: There are errors or misalignments in the representation",13,"Does the image represent the hexadecimal encoding of the phrase 'ENLIGHTENED MINDS' correctly, without any errors or misalignments?",5
+87,"1: The binary encoding '01001100' for the letter 'L' is present in the image, 0: The binary encoding '01001100' for the letter 'L' is not present in the image.",1,Does the image display the binary encoding for the letter 'L' as '01001100'?,8
+87,"1: The binary encoding '01000001' for the letter 'A' is present in the image, 0: The binary encoding '01000001' for the letter 'A' is not present in the image.",2,Does the image display the binary encoding for the letter 'A' as '01000001'?,8
+87,"1: The binary encoding '01000010' for the letter 'B' is present in the image, 0: The binary encoding '01000010' for the letter 'B' is not present in the image.",3,Does the image display the binary encoding for the letter 'B' as '01000010'?,8
+87,"1: The binary encoding '01011001' for the letter 'Y' is present in the image, 0: The binary encoding '01011001' for the letter 'Y' is not present in the image.",4,Does the image display the binary encoding for the letter 'Y' as '01011001'?,8
+87,"1: The binary encoding '01010010' for the letter 'R' is present in the image, 0: The binary encoding '01010010' for the letter 'R' is not present in the image.",5,Does the image display the binary encoding for the letter 'R' as '01010010'?,8
+87,"1: The binary encoding '01001001' for the letter 'I' is present in the image, 0: The binary encoding '01001001' for the letter 'I' is not present in the image.",6,Does the image display the binary encoding for the letter 'I' as '01001001'?,8
+87,"1: The binary encoding '01001110' for the letter 'N' is present in the image, 0: The binary encoding '01001110' for the letter 'N' is not present in the image.",7,Does the image display the binary encoding for the letter 'N' as '01001110'?,8
+87,"1: The binary encoding '01010100' for the letter 'T' is present in the image, 0: The binary encoding '01010100' for the letter 'T' is not present in the image.",8,Does the image display the binary encoding for the letter 'T' as '01010100'?,8
+87,"1: The binary encoding '00100000' for the space character is present in the image, 0: The binary encoding '00100000' for the space character is not present in the image.",9,Does the image display the binary encoding for the space character (20) as '00100000'?,8
+87,"1: The binary encoding '01010000' for the letter 'P' is present in the image, 0: The binary encoding '01010000' for the letter 'P' is not present in the image.",10,Does the image display the binary encoding for the letter 'P' as '01010000'?,8
+87,"1: The binary encoding '01000001' for the letter 'A' is present again in the image, 0: The binary encoding '01000001' for the letter 'A' is not present again in the image.",11,Does the image display the binary encoding for the letter 'A' as '01000001' again for the second occurrence?,8
+87,"1: The binary encoding '01010100' for the letter 'T' is present again in the image, 0: The binary encoding '01010100' for the letter 'T' is not present again in the image.",12,Does the image display the binary encoding for the letter 'T' as '01010100' again for the second occurrence?,8
+87,"1: The binary encoding '01001000' for the letter 'H' is present in the image, 0: The binary encoding '01001000' for the letter 'H' is not present in the image.",13,Does the image display the binary encoding for the letter 'H' as '01001000'?,8
+87,"1: No invalid binary encodings are present, 0: Invalid binary encodings are present.",14,"Does the image show any invalid binary encodings, such as incorrect bit lengths or non-ASCII characters?",5
+87,"1: The binary encodings are correctly represented, 0: There are errors or misalignments in the representation.",15,"Does the image represent the binary encodings correctly, without any errors or misalignments (i.e., the sequences are in the proper order)?",5
+88,"1: Correctly displayed as 'Q: %', 0: Missing or incorrect representation",1,Does the image show the encoding 'Q: %' for the letter 'Q'?,8
+88,"1: Correctly displayed as 'U: %', 0: Missing or incorrect representation",2,Does the image show the encoding 'U: %' for the letter 'U'?,8
+88,"1: Correctly displayed as 'I: %', 0: Missing or incorrect representation",3,Does the image show the encoding 'I: %' for the letter 'I'?,8
+88,"1: Correctly displayed as 'E: %', 0: Missing or incorrect representation",4,Does the image show the encoding 'E: %' for the letter 'E'?,8
+88,"1: Correctly displayed as 'S: %', 0: Missing or incorrect representation",5,Does the image show the encoding 'S: %' for the letter 'S'?,8
+88,"1: Correctly displayed as 'C: %', 0: Missing or incorrect representation",6,Does the image show the encoding 'C: %' for the letter 'C'?,8
+88,"1: Correctly displayed as 'N: %', 0: Missing or incorrect representation",7,Does the image show the encoding 'N: %' for the letter 'N'?,8
+88,"1: Correctly displayed as '20: |', 0: Missing or incorrect representation",8,Does the image show the encoding '20: |' for the space character?,8
+88,"1: Correctly displayed as 'D: %', 0: Missing or incorrect representation",9,Does the image show the encoding 'D: %' for the letter 'D'?,8
+88,"1: Correctly displayed as 'K: %', 0: Missing or incorrect representation",10,Does the image show the encoding 'K: %' for the letter 'K'?,8
+88,"1: No invalid encodings, 0: Contains incorrect symbols",11,"Does the image contain any invalid encodings (e.g., symbols not matching '%' for letters or '|' for space)?",5
+88,"1: Perfect sequence, 0: Errors in order or spacing",12,Is the entire sequence ('QUIESCENCE DUSK') represented in the correct order without misalignment?,5
+89,1: 'J' appears as the encryption of 'E'. 0: Incorrect or missing.,1,Does the image show 'E' encrypted as 'J' (shift +5)?,1
+89,1: 'C' appears as the encryption of 'X'. 0: Incorrect or missing.,2,"Does the image show 'X' encrypted as 'C' (shift +5, wrapping from Z→A)?",1
+89,1: Accepts either 'U' (correct shift) or 'Q' (if adhering strictly to expected output). 0: Neither is present.,3,"Does the image show 'P' encrypted as 'U' (shift +5)? **Note:** Expected output shows 'Q', but this is inconsistent with Caesar cipher logic (P+5=U). Should we accept 'Q' as correct?",1
+89,1: 'Q' appears as the encryption of 'L'. 0: Incorrect or missing.,4,Does the image show 'L' encrypted as 'Q' (shift +5)?,1
+89,1: 'T' appears as the encryption of 'O'. 0: Incorrect or missing.,5,Does the image show 'O' encrypted as 'T' (shift +5)?,1
+89,1: Accepts either 'W' (correct shift) or 'T' (expected output). 0: Neither is present.,6,Does the image show 'R' encrypted as 'W' (shift +5)? **Note:** Expected output shows 'T' (inconsistent). Should we accept 'W' or 'T'?,1
+89,1: Accepts either 'F' (correct shift) or 'J' (expected output). 0: Neither is present.,7,Does the image show 'A' encrypted as 'F' (shift +5)? **Note:** Expected output shows 'J' (inconsistent). Should we accept 'F' or 'J'?,1
+89,1: 'Y' appears as the encryption of 'T'. 0: Incorrect or missing.,8,Does the image show 'T' encrypted as 'Y' (shift +5)?,1
+89,1: Accepts either 'N' (correct shift) or 'T' (expected output). 0: Neither is present.,9,Does the image show 'I' encrypted as 'N' (shift +5)? **Note:** Expected output shows 'T' (inconsistent). Should we accept 'N' or 'T'?,1
+89,1: 'T' appears as the encryption of 'O'. 0: Incorrect or missing.,10,Does the image show 'O' encrypted as 'T' (shift +5)?,1
+89,1: 'S' appears as the encryption of 'N'. 0: Incorrect or missing.,11,Does the image show 'N' encrypted as 'S' (shift +5)?,1
+89,"1: Visual proof of shifting (e.g., arrows, aligned alphabets). 0: No cipher mechanics shown.",12,"Does the image **correctly depict the Caesar cipher mechanics** (e.g., alphabet shift visualization, wrap-around from Z→A)?",5
+89,1: Only valid letters are shown. 0: Invalid characters appear.,13,"Does the image **avoid non-alphabetic characters** (e.g., numbers, symbols) in the cipher output?",3
+90,1: The exact string 'RW5pZ21h' is present in the image. 0: The string is missing or incorrect.,1,"Does the image visibly display the correct Base64 encoding of 'ENIGMA' (i.e., 'RW5pZ21h')?",8
+90,"1: The image suggests encoding logic (e.g., arrows, steps, or labels explaining the conversion). 0: No encoding logic is depicted.",2,"Does the image visually represent the concept of encoding (e.g., showing 'ENIGMA → RW5pZ21h' or a transformation process)?",8
+90,"1: No invalid encoding is present. 0: The image includes incorrect/misleading encoding (e.g., 'XYZ123').",3,"Does the image contain any incorrect or nonsensical encoding (e.g., random characters, wrong Base64 output)?",5
+90,"1: The input and output are clearly linked (e.g., side-by-side, labeled). 0: Misaligned, garbled, or unreadable.",4,Does the image correctly align the Base64 output ('RW5pZ21h') with the input ('ENIGMA') without visual errors?,5
+90,1: The encoding is depicted creatively (beyond plain text). 0: Only plain text is shown.,5,"Does the image creatively represent the encoding (e.g., as a puzzle, machine, or abstract visualization)?",4
+91,"1: The binary encoding for 'L' (01001100) is present in the image, 0: The binary encoding for 'L' (01001100) is not present.",1,Does the image display the binary encoding for 'L' as 01001100?,8
+91,"1: The binary encoding for 'A' (01000001) is present in the image, 0: The binary encoding for 'A' (01000001) is not present.",2,Does the image display the binary encoding for 'A' as 01000001?,8
+91,"1: The binary encoding for 'B' (01000010) is present in the image, 0: The binary encoding for 'B' (01000010) is not present.",3,Does the image display the binary encoding for 'B' as 01000010?,8
+91,"1: The binary encoding for 'Y' (01011001) is present in the image, 0: The binary encoding for 'Y' (01011001) is not present.",4,Does the image display the binary encoding for 'Y' as 01011001?,8
+91,"1: The binary encoding for 'R' (01010010) is present in the image, 0: The binary encoding for 'R' (01010010) is not present.",5,Does the image display the binary encoding for 'R' as 01010010?,8
+91,"1: The binary encoding for 'I' (01001001) is present in the image, 0: The binary encoding for 'I' (01001001) is not present.",6,Does the image display the binary encoding for 'I' as 01001001?,8
+91,"1: The binary encoding for 'N' (01001110) is present in the image, 0: The binary encoding for 'N' (01001110) is not present.",7,Does the image display the binary encoding for 'N' as 01001110?,8
+91,"1: The binary encoding for 'T' (01010100) is present in the image, 0: The binary encoding for 'T' (01010100) is not present.",8,Does the image display the binary encoding for 'T' as 01010100?,8
+91,"1: The binary encoding for 'H' (01001000) is present in the image, 0: The binary encoding for 'H' (01001000) is not present.",9,Does the image display the binary encoding for 'H' as 01001000?,8
+91,"1: There are no illegal encoding sequences in the image, 0: There are illegal encoding sequences in the image.",10,"Does the image show any illegal binary encoding sequences, such as encodings with more than 8 bits or incorrect patterns?",5
+91,"1: The encoding is displayed correctly and aligned, 0: There is an error or misalignment in the binary representation.",11,"Does the image represent the binary encoding of the word 'LABYRINTH' correctly, without any errors or misalignments?",5
+92,"1: The encoding 'M' -> 'C' is correctly depicted in the image, 0: The encoding is incorrect or missing",1,"Does the image show the correct encoding for the first letter of 'MYSTERY', which is 'M' encrypted with the key 'C' resulting in 'C'?",8
+92,"1: The encoding 'Y' -> 'U' is correctly depicted in the image, 0: The encoding is incorrect or missing",2,"Does the image show the correct encoding for the second letter of 'MYSTERY', which is 'Y' encrypted with the key 'L' resulting in 'U'?",8
+92,"1: The encoding 'S' -> 'N' is correctly depicted in the image, 0: The encoding is incorrect or missing",3,"Does the image show the correct encoding for the third letter of 'MYSTERY', which is 'S' encrypted with the key 'U' resulting in 'N'?",8
+92,"1: The encoding 'T' -> 'Q' is correctly depicted in the image, 0: The encoding is incorrect or missing",4,"Does the image show the correct encoding for the fourth letter of 'MYSTERY', which is 'T' encrypted with the key 'E' resulting in 'Q'?",8
+92,"1: The encoding 'E' -> 'A' is correctly depicted in the image, 0: The encoding is incorrect or missing",5,"Does the image show the correct encoding for the fifth letter of 'MYSTERY', which is 'E' encrypted with the key 'C' resulting in 'A'?",5
+92,"1: The encoding 'R' -> 'Z' is correctly depicted in the image, 0: The encoding is incorrect or missing",6,"Does the image show the correct encoding for the sixth letter of 'MYSTERY', which is 'R' encrypted with the key 'L' resulting in 'Z'?",5
+92,"1: The encoding 'Y' -> 'S' is correctly depicted in the image, 0: The encoding is incorrect or missing",7,"Does the image show the correct encoding for the seventh letter of 'MYSTERY', which is 'Y' encrypted with the key 'U' resulting in 'S'?",5
+92,"1: No invalid encoding or errors present, 0: Invalid encoding or errors present",8,Does the image depict any incorrect or invalid encoding for any of the letters in 'MYSTERY' (such as shifting beyond the alphabet range or using invalid characters)?,5
+92,"1: Correct, no errors or misalignments in the final result, 0: Errors or misalignments in the final result",9,"Does the image represent the Vigenère cipher encryption of 'MYSTERY' with the key 'CLUE' correctly, without any errors or misalignments in the final result?",5
+93,"1: The encoding 'Rknzcyr' is clearly visible, 0: The encoding is not 'Rknzcyr'",1,Does the image display the encoding 'Rknzcyr' as the ROT13 transformation of 'EXAMPLE'?,8
+93,"1: The characters in 'Rknzcyr' are all correctly placed, 0: There are errors or missing characters",2,Does the image show the correct sequence of characters in 'Rknzcyr' without any additional or missing characters?,8
+93,"1: No invalid characters or unrelated encoding present, 0: Invalid or unrelated encoding appears",3,Does the image correctly avoid showing any invalid characters or encoding that is unrelated to 'Rknzcyr'?,5
+93,"1: The image representation is accurate and error-free, 0: There are errors or misalignments",4,"Does the image represent the ROT13 encoding of 'EXAMPLE' correctly, without any errors or misalignments?",5
+94,"1: The binary representation 01000111 for 'G' is present in the image, 0: The binary representation for 'G' is not present in the image",1,"Does the image display the binary encoding for 'G', which is 01000111?",8
+94,"1: The binary representation 01000001 for 'A' is present in the image, 0: The binary representation for 'A' is not present in the image",2,"Does the image display the binary encoding for 'A', which is 01000001?",8
+94,"1: The binary representation 01000100 for 'D' is present in the image, 0: The binary representation for 'D' is not present in the image",3,"Does the image display the binary encoding for 'D', which is 01000100?",8
+94,"1: The binary representation 01000111 for 'G' is present in the image, 0: The binary representation for 'G' is not present in the image",4,"Does the image display the binary encoding for 'G' (again), which is 01000111?",8
+94,"1: The binary representation 01000101 for 'E' is present in the image, 0: The binary representation for 'E' is not present in the image",5,"Does the image display the binary encoding for 'E', which is 01000101?",8
+94,"1: The binary representation 01010100 for 'T' is present in the image, 0: The binary representation for 'T' is not present in the image",6,"Does the image display the binary encoding for 'T', which is 01010100?",8
+94,"1: No invalid binary encoding is present, 0: An invalid binary encoding is present",7,"Does the image show any invalid or incorrect binary encoding, such as the use of wrong binary sequences for any character?",5
+94,"1: All binary encodings are correctly displayed without error or misalignment, 0: There are errors or misalignments in the display of binary encodings",8,"Does the image represent all the binary encodings correctly, without any errors or misalignments?",5
+95,"1: The letter 'R' is shown, 0: The letter 'R' is not shown",1,"Does the image show the encoding for the first letter of 'PRACTICE', which is 'P' shifted by 2 to 'R'?",8
+95,"1: The letter 'T' is shown, 0: The letter 'T' is not shown",2,"Does the image show the encoding for the second letter of 'PRACTICE', which is 'R' shifted by 2 to 'T'?",8
+95,"1: The letter 'C' is shown, 0: The letter 'C' is not shown",3,"Does the image show the encoding for the third letter of 'PRACTICE', which is 'A' shifted by 2 to 'C'?",8
+95,"1: The letter 'E' is shown, 0: The letter 'E' is not shown",4,"Does the image show the encoding for the fourth letter of 'PRACTICE', which is 'C' shifted by 2 to 'E'?",8
+95,"1: The letter 'V' is shown, 0: The letter 'V' is not shown",5,"Does the image show the encoding for the fifth letter of 'PRACTICE', which is 'T' shifted by 2 to 'V'?",8
+95,"1: The letter 'K' is shown, 0: The letter 'K' is not shown",6,"Does the image show the encoding for the sixth letter of 'PRACTICE', which is 'I' shifted by 2 to 'K'?",8
+95,"1: The letter 'E' is shown, 0: The letter 'E' is not shown",7,"Does the image show the encoding for the seventh letter of 'PRACTICE', which is 'C' shifted by 2 to 'E'?",8
+95,"1: The letter 'G' is shown, 0: The letter 'G' is not shown",8,"Does the image show the encoding for the eighth letter of 'PRACTICE', which is 'E' shifted by 2 to 'G'?",8
+95,"1: No invalid encodings, 0: Invalid encoding present",9,"Does the image show any invalid encoding, such as a letter being shifted in a way that breaks the rules of the Caesar cipher?",5
+95,"1: The full word 'RTCVUEKG' is represented correctly, 0: Errors or misalignments are present",10,Does the image represent the entire word 'PRACTICE' encoded correctly with the Caesar cipher shift of 2 without errors or misalignments?,5
+96,"1: The encoding '37' exists in the image, 0: The encoding '37' does not exist in the image",1,"Does the image display the encoding '37', corresponding to the hexadecimal representation of the character '7'?",8
+96,"1: The encoding '35' exists in the image, 0: The encoding '35' does not exist in the image",2,"Does the image display the encoding '35', corresponding to the hexadecimal representation of the character '5'?",8
+96,"1: The encoding '33' exists in the image, 0: The encoding '33' does not exist in the image",3,"Does the image display the encoding '33', corresponding to the hexadecimal representation of the character '3'?",8
+96,"1: No incorrect encoding is shown, 0: Incorrect encoding is shown",4,Does the image display any incorrect encodings that deviate from the hexadecimal encoding of '753'?,5
+96,"1: The image accurately displays the encoding '37 35 33', 0: There are errors or misalignments in the representation",5,"Does the image represent the hexadecimal encoding of '753' correctly, without any errors or misalignments?",5
+97,"1: The encoding 01010110 for 'V' is present, 0: The encoding for 'V' is incorrect or absent",1,Does the image show the binary encoding for the letter 'V' as 01010110?,8
+97,"1: The encoding 01000101 for 'E' is present, 0: The encoding for 'E' is incorrect or absent",2,Does the image show the binary encoding for the letter 'E' as 01000101?,8
+97,"1: The encoding 01001100 for 'L' is present, 0: The encoding for 'L' is incorrect or absent",3,Does the image show the binary encoding for the letter 'L' as 01001100?,8
+97,"1: The encoding 01001111 for 'O' is present, 0: The encoding for 'O' is incorrect or absent",4,Does the image show the binary encoding for the letter 'O' as 01001111?,8
+97,"1: The encoding 01000011 for 'C' is present, 0: The encoding for 'C' is incorrect or absent",5,Does the image show the binary encoding for the letter 'C' as 01000011?,8
+97,"1: The encoding 01001001 for 'I' is present, 0: The encoding for 'I' is incorrect or absent",6,Does the image show the binary encoding for the letter 'I' as 01001001?,8
+97,"1: The encoding 01010100 for 'T' is present, 0: The encoding for 'T' is incorrect or absent",7,Does the image show the binary encoding for the letter 'T' as 01010100?,8
+97,"1: The encoding 01011001 for 'Y' is present, 0: The encoding for 'Y' is incorrect or absent",8,Does the image show the binary encoding for the letter 'Y' as 01011001?,8
+97,"1: No invalid encodings are present, 0: Invalid encoding is present",9,"Does the image show any invalid binary encoding, such as an incorrect or non-UTF-8 value for any letter?",5
+97,"1: The encodings are correct and aligned, 0: There are errors or misalignments in the encodings",10,"Does the image represent the binary encoding for each letter of the word 'VELOCITY' correctly, without any errors or misalignments?",5
+98,"1: The image correctly displays 'OEBJAVRE', 0: The image does not display 'OEBJAVRE'",1,Does the image display an encoding of 'OEBJAVRE'?,8
+98,"1: The word is clear and readable, 0: The word is distorted or unclear",2,"Is the word 'OEBJAVRE' displayed in a clear, readable font without distortion?",8
+98,"1: No incorrect encoding, 0: Incorrect encoding appears",3,Does the image show any encoding that is not part of the ROT13 cipher result of 'BROWNIER'?,5
+98,"1: The word is shown correctly without any alignment issues, 0: There are errors or misalignments",4,Does the image represent 'OEBJAVRE' without any errors or misalignments?,5
+99,"1: The encoding 01010011 for 'S' exists in the image, 0: The encoding 01010011 for 'S' is missing from the image",1,Does the image show the encoding for 'S' as 01010011?,8
+99,"1: The encoding 01011001 for 'Y' exists in the image, 0: The encoding 01011001 for 'Y' is missing from the image",2,Does the image show the encoding for 'Y' as 01011001?,8
+99,"1: The encoding 01001101 for 'M' exists in the image, 0: The encoding 01001101 for 'M' is missing from the image",3,Does the image show the encoding for 'M' as 01001101?,8
+99,"1: The encoding 01010000 for 'P' exists in the image, 0: The encoding 01010000 for 'P' is missing from the image",4,Does the image show the encoding for 'P' as 01010000?,8
+99,"1: The encoding 01001000 for 'H' exists in the image, 0: The encoding 01001000 for 'H' is missing from the image",5,Does the image show the encoding for 'H' as 01001000?,8
+99,"1: The encoding 01001111 for 'O' exists in the image, 0: The encoding 01001111 for 'O' is missing from the image",6,Does the image show the encoding for 'O' as 01001111?,8
+99,"1: The encoding 01001110 for 'N' exists in the image, 0: The encoding 01001110 for 'N' is missing from the image",7,Does the image show the encoding for 'N' as 01001110?,8
+99,"1: The encoding 01011001 for 'Y' appears correctly in the image, 0: The encoding 01011001 for 'Y' is missing or incorrect in the image",8,Does the image show the encoding for 'Y' as 01011001 (again)?,8
+99,"1: No invalid encoding appears in the image, 0: Invalid encoding appears in the image",9,Does the image display any encoding that is not a valid UTF-8 binary representation for the characters in 'SYMPHONY'?,5
+99,"1: The encoding is displayed correctly with no errors or misalignments, 0: There is an error or misalignment in the encoding",10,"Does the image represent the binary encoding of 'SYMPHONY' correctly, without any errors or misalignments?",5
+100,"1: The letter 'T' is correctly displayed, 0: The letter 'T' is missing or incorrect.",1,"Does the image display the encoding 'T', which is the first letter of the encoded word?",8
+100,"1: The letter 'N' is correctly displayed, 0: The letter 'N' is missing or incorrect.",2,"Does the image display the encoding 'N', which is the second letter of the encoded word?",8
+100,"1: The letter 'E' is correctly displayed, 0: The letter 'E' is missing or incorrect.",3,"Does the image display the encoding 'E', which is the third letter of the encoded word?",8
+100,"1: The letter 'Q' is correctly displayed, 0: The letter 'Q' is missing or incorrect.",4,"Does the image display the encoding 'Q', which is the fourth letter of the encoded word?",8
+100,"1: The letter 'G' is correctly displayed, 0: The letter 'G' is missing or incorrect.",5,"Does the image display the encoding 'G', which is the fifth letter of the encoded word?",8
+100,"1: The letter 'R' is correctly displayed, 0: The letter 'R' is missing or incorrect.",6,"Does the image display the encoding 'R', which is the sixth letter of the encoded word?",8
+100,"1: The letter 'F' is correctly displayed, 0: The letter 'F' is missing or incorrect.",7,"Does the image display the encoding 'F', which is the seventh letter of the encoded word?",8
+100,"1: The letters 'FKE' are correctly displayed, 0: The letters 'FKE' are missing or incorrect.",8,"Does the image display the encoding 'FKE', which is the second part of the encoded word?",8
+100,"1: No extraneous encodings are displayed, 0: There are extraneous encodings.",9,Does the image display any encoding that is not part of the ciphered word 'TNEQGRF FKE'?,5
+100,"1: The formatting is correct without errors or misalignments, 0: There are errors or misalignments in the formatting.",10,Does the image display the correct formatting of the encoded word 'TNEQGRF FKE' with correct spacing and alignment?,5
