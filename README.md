@@ -1,7 +1,7 @@
 # 🧠 R2I-Bench: Benchmarking Reasoning-Driven Text-to-Image Generation
 
-> Official repository for the paper:
-> ⭐️ [**R2I-Bench: Benchmarking Reasoning-Driven Text-to-Image Generation**](https://arxiv.org/abs/2505.23493)🌟
+> 🌟Official repository for the paper:
+> ⭐️[**R2I-Bench: Benchmarking Reasoning-Driven Text-to-Image Generation**](https://arxiv.org/abs/2505.23493)⭐️
 
 ---
 
@@ -55,7 +55,7 @@ python evaluation.py
 
 ## 📌 Citation
 
-If you find this repository helpful in your research or applications, please consider citing:🌞
+🎀 If you find this repository helpful in your research or applications, please consider citing:
 
 ```bibtex
 @misc{chen2025r2ibenchbenchmarkingreasoningdriventexttoimage,
