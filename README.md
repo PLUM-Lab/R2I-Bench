@@ -49,7 +49,8 @@ To evaluate generated results:
 ```bash
 python evaluation.py
 ```
-
+### 🎈 Contact
+`2252538@tongji.edu.cn`
 
 ---
 
