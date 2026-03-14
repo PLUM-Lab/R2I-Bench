@@ -59,13 +59,11 @@ python evaluation.py
 🎀 If you find this repository helpful in your research or applications, please consider citing:
 
 ```bibtex
-@misc{chen2025r2ibenchbenchmarkingreasoningdriventexttoimage,
-  title={R2I-Bench: Benchmarking Reasoning-Driven Text-to-Image Generation}, 
-  author={Kaijie Chen and Zihao Lin and Zhiyang Xu and Ying Shen and Yuguang Yao and Joy Rimchala and Jiaxin Zhang and Lifu Huang},
-  year={2025},
-  eprint={2505.23493},
-  archivePrefix={arXiv},
-  primaryClass={cs.CV},
-  url={https://arxiv.org/abs/2505.23493}
+@inproceedings{chen2025r2i,
+  title={R2i-bench: Benchmarking reasoning-driven text-to-image generation},
+  author={Chen, Kaijie and Lin, Zihao and Xu, Zhiyang and Shen, Ying and Yao, Yuguang and Rimchala, Joy and Zhang, Jiaxin and Huang, Lifu},
+  booktitle={Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing},
+  pages={12606--12641},
+  year={2025}
 }
 ```
